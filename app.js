@@ -13,7 +13,7 @@ var app = express();
 
 // rendering views
 app.engine('html', swig.renderFile);
-app.set('view engine', 'swig');
+app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view cache', false);
 
