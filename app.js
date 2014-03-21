@@ -11,14 +11,13 @@ var express = require('express'),
     path = require('path'),
     app = express();
 
-// use swig's renderFile function to render html files
+// rendering environments
 app.engine('html', swig.renderFile);
-
-// all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
-app.use(express.favicon());
+
+// all other environments
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
