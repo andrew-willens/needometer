@@ -3,22 +3,26 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var routes = require('./routes');
-var http = require('http');
-var path = require('path');
-var swig = require('swig');
+var express = require('express'),
+    swig = require('swig'),
+    routes = require('./routes'),
+    user = require('./routes/user'),
+    http = require('http'),
+    path = require('path'),
+    app = express();
 
-var app = express();
+// use swig's renderFile function to render html files
+app.engine('html', swig.renderFile);
 
 // rendering views
 app.engine('html', swig.renderFile);
+app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view cache', false);
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
