@@ -6,7 +6,6 @@
 var express = require('express'),
     swig = require('swig'),
     routes = require('./routes'),
-    user = require('./routes/user'),
     http = require('http'),
     path = require('path'),
     app = express();
@@ -22,7 +21,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view cache', false);
 
 // all environments
-app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
