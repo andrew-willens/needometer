@@ -1,0 +1,4262 @@
+{
+  "searchTerms": "Applied Learning",
+  "searchURL": "http://www.donorschoose.org/donors/search.html?subject5=-5&utm_source=api&utm_medium=feed&utm_content=searchlink&utm_campaign=DONORSCHOOSE",
+  "totalProposals": "2741",
+  "index": "1",
+  "max": "50",
+  "breadcrumb": [
+    [
+      "subject5",
+      "-5",
+      "Applied Learning"
+    ],
+    [
+      "max",
+      "50",
+      ""
+    ]
+  ],
+  "proposals": [
+    {
+      "id": "1196045",
+      "proposalURL": "http://www.donorschoose.org/project/train-a-child/1196045/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1196045&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1075723_sm.jpg?timestamp=1389280349343",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1075723_thmb.jpg?timestamp=1389280349343",
+      "title": "Train a Child",
+      "shortDescription": "A typical day in my classroom would look like a day of employment at McDonald&#039;s or Dunkin Donuts. For that hands on training and experience students operate a bakery with delivery service to the...",
+      "fulfillmentTrailer": "My students need a Point of Sales System to prepare them for the workforce.  .",
+      "snippets": [],
+      "percentFunded": "88",
+      "numDonors": "5",
+      "costToComplete": "31.22",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "250.22",
+      "freeShipping": "true",
+      "teacherId": "1075723",
+      "teacherName": "Mrs. Ponder",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 13,
+          "name": "CenturyLink"
+        }
+      ],
+      "schoolName": "West Port High School",
+      "schoolUrl": "http://www.donorschoose.org/school/west-port-high-school/69377/",
+      "city": "Ocala",
+      "zip": "34481-5406",
+      "state": "FL",
+      "stateFullName": "Florida",
+      "latitude": "29.153526000000000",
+      "longitude": "-82.249741000000000",
+      "zone": {
+        "id": "312",
+        "name": "Florida"
+      },
+      "subject": {
+        "id": "23",
+        "name": "Special Needs",
+        "groupId": "7"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-07-05",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1203397",
+      "proposalURL": "http://www.donorschoose.org/project/beavers-books-and-a-book-cart-oh-my/1203397/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1203397&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1491763_sm.jpg?timestamp=1351355711000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1491763_thmb.jpg?timestamp=1351355711000",
+      "title": "Beavers, Books, and a Book Cart: Oh, My!",
+      "shortDescription": "&#034;Oh, magic hour, when a child first knows she can read printed words!&#034; - A Tree Grows in Brooklyn, 1943 &lt;br /&gt;&lt;br /&gt;My transitional kindergarten and kindergarten students are just beginning to read words...",
+      "fulfillmentTrailer": "My students need one book cart with book bins and 20+ highly engaging beginning leveled readers that my transitional kindergarten and kindergarten students can read.",
+      "snippets": [],
+      "percentFunded": "79",
+      "numDonors": "6",
+      "costToComplete": "89.00",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 26",
+        "code": "INSPIRE",
+        "matchingKey": "teacherProm5",
+        "name": "Matching Donor",
+        "type": "PROMO",
+        "logoURL": "",
+        "description": ""
+      },
+      "totalPrice": "429.11",
+      "freeShipping": "true",
+      "teacherId": "1491763",
+      "teacherName": "Mrs. Choudhary",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 9,
+          "name": "NEA Member"
+        }
+      ],
+      "schoolTypes": [{
+        "id": 15,
+        "name": "Kia (partner)"
+      }],
+      "schoolName": "Lincoln Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/lincoln-elementary-school/36476/",
+      "city": "Escondido",
+      "zip": "92026-3043",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "33.134323000000000",
+      "longitude": "-117.087236000000000",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "1",
+        "name": "Books"
+      },
+      "expirationDate": "2014-07-17",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1201891",
+      "proposalURL": "http://www.donorschoose.org/project/reading-is-fun-damental/1201891/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1201891&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u11681_sm.jpg?timestamp=1353323000000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u11681_thmb.jpg?timestamp=1353323000000",
+      "title": "Reading is FUN-damental!",
+      "shortDescription": "With the California Common Core Standards gearing up to be implemented into the classrooms, I want to prepare my students for an education that goes beyond &#034;regular&#034; Language Arts textbooks and...",
+      "fulfillmentTrailer": "My students need 35 books and 1 DVD to support their novel study of &#034;Hachiko Waits.&#034;",
+      "snippets": [],
+      "percentFunded": "71",
+      "numDonors": "6",
+      "costToComplete": "96.98",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "330.98",
+      "freeShipping": "true",
+      "teacherId": "11681",
+      "teacherName": "Mrs. Hamada-Wong",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        }
+      ],
+      "schoolName": "Woodlake Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/woodlake-elementary-school/32792/",
+      "city": "Sacramento",
+      "zip": "95815-3895",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "38.602459000000000",
+      "longitude": "-121.451279000000000",
+      "zone": {
+        "id": "402",
+        "name": "California (North)"
+      },
+      "subject": {
+        "id": "3",
+        "name": "Literature &amp; Writing",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "1",
+        "name": "Books"
+      },
+      "expirationDate": "2014-07-13",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1201189",
+      "proposalURL": "http://www.donorschoose.org/project/headphones-for-our-blended-learning-lab/1201189/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1201189&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u451941_sm.jpg?timestamp=1314414564000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u451941_thmb.jpg?timestamp=1314414564000",
+      "title": "Headphones for our Blended Learning Lab!",
+      "shortDescription": "Our young scholars are being introduced to new technology in our Blended Learning Lab. They are developing valuable skills in self-pacing, self-regulation, 21st-century skills and other necessary...",
+      "fulfillmentTrailer": "My students need 60 headphones to use in our Blended Learning Lab. We serve a population of low-income students and we would like to provide these for them.",
+      "snippets": [],
+      "percentFunded": "86",
+      "numDonors": "12",
+      "costToComplete": "166.14",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "1208.38",
+      "freeShipping": "false",
+      "teacherId": "451941",
+      "teacherName": "Mr. Pittman",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 1,
+          "name": "Charter"
+        },
+        {
+          "id": 9,
+          "name": "KIPP"
+        }
+      ],
+      "schoolName": "KIPP McDonogh 15 Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/kipp-mcdonogh-15-middle-school/28277/",
+      "city": "New Orleans",
+      "zip": "70116",
+      "state": "LA",
+      "stateFullName": "Louisiana",
+      "latitude": "29.960622042417526",
+      "longitude": "-90.062827393412590",
+      "zone": {
+        "id": "322",
+        "name": "Louisiana"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-07-12",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1201023",
+      "proposalURL": "http://www.donorschoose.org/project/ilearn-with-an-ipad/1201023/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1201023&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1929206_sm.png?timestamp=1394591841876",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1929206_thmb.png?timestamp=1394591841876",
+      "title": "iLearn with an iPad",
+      "shortDescription": "&#034;We need technology in every classroom and in every student and teacher&#039;s hand, because it is the pen and paper of our time, and it is the lens through which we experience much of our world.&#034;...",
+      "fulfillmentTrailer": "My students need a class iPad and case for learning and behavior tracking.",
+      "snippets": [],
+      "percentFunded": "87",
+      "numDonors": "9",
+      "costToComplete": "101.13",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 26",
+        "code": "INSPIRE",
+        "matchingKey": "teacherProm5",
+        "name": "Matching Donor",
+        "type": "PROMO",
+        "logoURL": "",
+        "description": ""
+      },
+      "totalPrice": "774.66",
+      "freeShipping": "false",
+      "teacherId": "1929206",
+      "teacherName": "Ms. Cessnun",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 5,
+        "name": "SONIC Teacher"
+      }],
+      "schoolTypes": [{
+        "id": 14,
+        "name": "Kia (partner)"
+      }],
+      "schoolName": "Jerry Junkins Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/jerry-junkins-elementary-school/27474/",
+      "city": "Carrollton",
+      "zip": "75006-2603",
+      "state": "TX",
+      "stateFullName": "Texas",
+      "latitude": "32.973816000000000",
+      "longitude": "-96.856956000000000",
+      "zone": {
+        "id": "321",
+        "name": "Texas"
+      },
+      "subject": {
+        "id": "8",
+        "name": "Mathematics",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-07-18",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1206245",
+      "proposalURL": "http://www.donorschoose.org/project/fresh-off-the-hp-printing-press/1206245/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1206245&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u24196_sm.jpg?timestamp=1385592790818",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u24196_thmb.jpg?timestamp=1385592790818",
+      "title": "Fresh Off the HP Printing Press",
+      "shortDescription": "&#034;Ms. Romaniello, can I print my picture? Why doesn&#039;t the printer work anymore?&#034; These are some of the questions my students ask each day, now that our classroom printer doesn&#039;t work. My students...",
+      "fulfillmentTrailer": "My students need and deserve a printer to print out classroom activities to share with friends and family at home.",
+      "snippets": [],
+      "percentFunded": "82",
+      "numDonors": "6",
+      "costToComplete": "32.81",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 29",
+        "code": "100WOMEN",
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "100Women_small.jpg",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "totalPrice": "184.22",
+      "freeShipping": "false",
+      "teacherId": "24196",
+      "teacherName": "Ms. Romaniello",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 5,
+        "name": "SONIC Teacher"
+      }],
+      "schoolTypes": [
+        {
+          "id": 4,
+          "name": "Magnet"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "PS 251 Paedergat",
+      "schoolUrl": "http://www.donorschoose.org/school/ps-251-paedergat/752/",
+      "city": "Brooklyn",
+      "zip": "11234-1602",
+      "state": "NY",
+      "stateFullName": "New York",
+      "latitude": "40.631962000000000",
+      "longitude": "-73.923897000000000",
+      "zone": {
+        "id": "103",
+        "name": "New York (City)"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-07-20",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1181836",
+      "proposalURL": "http://www.donorschoose.org/project/non-verbal-autistic-students-need-z-vibe/1181836/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1181836&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2154651_sm.jpg?timestamp=1391869516749",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2154651_thmb.jpg?timestamp=1391869516749",
+      "title": "Non-Verbal Autistic Students Need Z-Vibe",
+      "shortDescription": "My students are Non-Verbal and are constantly struggling with communication. They deserve the appropriate tools needed to help facilitate speech, despite them attending school in a high-poverty,...",
+      "fulfillmentTrailer": "My students need a Z-Vibe tool for oral-motor stimulation and sensory input.",
+      "snippets": [],
+      "percentFunded": "71",
+      "numDonors": "2",
+      "costToComplete": "49.84",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "169.84",
+      "freeShipping": "false",
+      "teacherId": "2154651",
+      "teacherName": "Ms. Kokkinos",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "P369K @ P67K",
+      "schoolUrl": "http://www.donorschoose.org/school/p369k---p67k/98705/",
+      "city": "Brooklyn",
+      "zip": "11205",
+      "state": "NY",
+      "stateFullName": "New York",
+      "latitude": "40.694501000000000",
+      "longitude": "-73.977848000000000",
+      "zone": {
+        "id": "103",
+        "name": "New York (City)"
+      },
+      "subject": {
+        "id": "23",
+        "name": "Special Needs",
+        "groupId": "7"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-06-08",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1198736",
+      "proposalURL": "http://www.donorschoose.org/project/help-pre-k-get-organized-in-their-classr/1198736/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1198736&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2187313_sm.jpg?timestamp=1393372719741",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2187313_thmb.jpg?timestamp=1393372719741",
+      "title": "Help Pre K Get Organized In Their Classroom Environment",
+      "shortDescription": "You have brains in your head. You have feet in your shoes. You can steer yourself in any direction you choose. You&#039;re on your own, and you know what you know. And you are the guy who&#039;ll decide...",
+      "fulfillmentTrailer": "My students need storage baskets, organizer tower with 10 removable drawers and storage shelves.",
+      "snippets": [],
+      "percentFunded": "58",
+      "numDonors": "4",
+      "costToComplete": "87.54",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "206.95",
+      "freeShipping": "false",
+      "teacherId": "2187313",
+      "teacherName": "Mrs. Zilm",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 13,
+          "name": "CenturyLink"
+        }
+      ],
+      "schoolName": "Mann Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/mann-elementary-school/78024/",
+      "city": "Saint Louis",
+      "zip": "63116-3913",
+      "state": "MO",
+      "stateFullName": "Missouri",
+      "latitude": "38.601967000000000",
+      "longitude": "-90.253964000000000",
+      "zone": {
+        "id": "223",
+        "name": "Missouri"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-09",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1202578",
+      "proposalURL": "http://www.donorschoose.org/project/supplies-needed-for-spring-science-explo/1202578/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1202578&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1117856_sm.jpg?timestamp=1353029445000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1117856_thmb.jpg?timestamp=1353029445000",
+      "title": "Supplies Needed for Spring Science Exploration!",
+      "shortDescription": "Help us learn about Spring through science discovery! My Pre-Kindergarten students are enthusiastic, &#034;college bound&#034; learners! They are intelligent, young students; but the reality is that their...",
+      "fulfillmentTrailer": "My students need a butterfly garden, ant farm, aquaria, frog habitat and construction paper/index cards to learn about Spring!",
+      "snippets": [],
+      "percentFunded": "49",
+      "numDonors": "2",
+      "costToComplete": "86.85",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 25",
+        "code": "INSPIRE",
+        "matchingKey": "teacherProm5",
+        "name": "Matching Donor",
+        "type": "PROMO",
+        "logoURL": "",
+        "description": ""
+      },
+      "totalPrice": "171.85",
+      "freeShipping": "true",
+      "teacherId": "1117856",
+      "teacherName": "Ms. Cox",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Arundel Elementary Middle School 164",
+      "schoolUrl": "http://www.donorschoose.org/school/arundel-elementary-mid-school-164/64473/",
+      "city": "Baltimore",
+      "zip": "21225-1099",
+      "state": "MD",
+      "stateFullName": "Maryland",
+      "latitude": "39.251961000000000",
+      "longitude": "-76.628265000000000",
+      "zone": {
+        "id": "112",
+        "name": "Maryland"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "7",
+        "name": "Environmental Science",
+        "groupId": "4"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-05-01",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1160800",
+      "proposalURL": "http://www.donorschoose.org/project/if-you-can-dream-it-you-can-do-it-with/1160800/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1160800&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u782896_sm.png?timestamp=1336649835000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u782896_thmb.png?timestamp=1336649835000",
+      "title": "If You Can Dream It, You Can Do It",
+      "shortDescription": "Our urban school has the incredible opportunity to maintain learning gardens (one here at school and one in the community). We want the children to be able to learn more about gardening through...",
+      "fulfillmentTrailer": "My students need a television and DVD player to enjoy our school&#039;s collection of gardening related DVDs!",
+      "snippets": [],
+      "percentFunded": "70",
+      "numDonors": "6",
+      "costToComplete": "83.61",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "275.52",
+      "freeShipping": "false",
+      "teacherId": "782896",
+      "teacherName": "Ms. Currier",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [{
+        "id": 12,
+        "name": "Horace Mann (partner)"
+      }],
+      "schoolName": "Macdonough Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/macdonough-elementary-school/43899/",
+      "city": "Middletown",
+      "zip": "06457-2262",
+      "state": "CT",
+      "stateFullName": "Connecticut",
+      "latitude": "41.566440000000000",
+      "longitude": "-72.656450000000000",
+      "zone": {
+        "id": "101",
+        "name": "Connecticut"
+      },
+      "subject": {
+        "id": "21",
+        "name": "Community Service",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-05-02",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1194223",
+      "proposalURL": "http://www.donorschoose.org/project/little-ones-would-love-a-laminator/1194223/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1194223&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u554954_sm.jpg?timestamp=1379014632557",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u554954_thmb.jpg?timestamp=1379014632557",
+      "title": "Little Ones Would Love a Laminator!",
+      "shortDescription": "As an educator, I am always looking for new and lasting ways to keep my students engaged in their learning. One way I think I can accomplish this goal is to have a personal classroom laminator to...",
+      "fulfillmentTrailer": "My students need a new laminator and laminating pouches to help make manipulatives and learning activities more durable.",
+      "snippets": [],
+      "percentFunded": "69",
+      "numDonors": "5",
+      "costToComplete": "81.29",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "260.94",
+      "freeShipping": "true",
+      "teacherId": "554954",
+      "teacherName": "Ms. Zaidman",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 4,
+          "name": "Magnet"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "PS 251 Queens",
+      "schoolUrl": "http://www.donorschoose.org/school/ps-251-queens/1048/",
+      "city": "Sprngfld Gdns",
+      "zip": "11413-3344",
+      "state": "NY",
+      "stateFullName": "New York",
+      "latitude": "40.664344000000000",
+      "longitude": "-73.759986000000000",
+      "zone": {
+        "id": "103",
+        "name": "New York (City)"
+      },
+      "subject": {
+        "id": "23",
+        "name": "Special Needs",
+        "groupId": "7"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-05-02",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1193712",
+      "proposalURL": "http://www.donorschoose.org/project/watch-and-learn-in-our-stem-kindergarten/1193712/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1193712&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1023147_sm.jpg?timestamp=1312765905000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1023147_thmb.jpg?timestamp=1312765905000",
+      "title": "Watch and Learn in Our STEM Kindergarten",
+      "shortDescription": "My kindergartners come from homes where reading and technology aren&#039;t priorities, making their initial LITERACY GAP wider! Strong literacy skills are essential in school and the real world. We...",
+      "fulfillmentTrailer": "My students need LeapFrog alphabet and reading games to go on our LeapFrog Ultra tablet including: Letter Factory, LeapSchool Reading Learning Game and Disney Tangled.",
+      "snippets": [],
+      "percentFunded": "56",
+      "numDonors": "2",
+      "costToComplete": "79.42",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "180.42",
+      "freeShipping": "false",
+      "teacherId": "1023147",
+      "teacherName": "Ms. Carlson",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Jb Wright Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/jb-wright-elementary-school/63124/",
+      "city": "Tucson",
+      "zip": "85712-3298",
+      "state": "AZ",
+      "stateFullName": "Arizona",
+      "latitude": "32.245701000000000",
+      "longitude": "-110.900101000000000",
+      "zone": {
+        "id": "421",
+        "name": "Arizona"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-07-01",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1205414",
+      "proposalURL": "http://www.donorschoose.org/project/lights-camera-learning/1205414/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1205414&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1155963_sm.jpg?timestamp=1328280351000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1155963_thmb.jpg?timestamp=1328280351000",
+      "title": "Lights, Camera, Learning!",
+      "shortDescription": "Drop the pencil. Put away that worksheet. Today in speech therapy we&#039;re producing our own short film. My students have mild to moderate cognitive disabilities and language learning challenges....",
+      "fulfillmentTrailer": "My students need a lighting kit and backdrops (with case) to produce educational videos for peers.",
+      "snippets": [],
+      "percentFunded": "75",
+      "numDonors": "3",
+      "costToComplete": "60.33",
+      "matchingFund": {
+        "matchingKey": "ATT14",
+        "name": "AT&amp;T Foundation",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/att_135.gif",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=ATT14",
+        "amount": "120.34",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/att_250.gif\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>The AT&T Foundation will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>At AT&T we believe that investing in education is one of the most important things we can do for a strong future. It's an issue that's important to us, our customers and our country.  The support for DonorsChoose.org is part of AT&T Aspire, the company's $350 million commitment to education. AT&T is funding projects at schools that need it most, with the goal of equipping students with the tools necessary to graduate high school and succeed in college, careers and life.<\/p>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=735\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 28",
+        "code": "100WOMEN",
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "100Women_small.jpg",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "totalPrice": "240.67",
+      "freeShipping": "true",
+      "teacherId": "1155963",
+      "teacherName": "Mr. Shull",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [],
+      "schoolName": "Josiah Quincy Upper School",
+      "schoolUrl": "http://www.donorschoose.org/school/josiah-quincy-upper-school/94810/",
+      "city": "Boston",
+      "zip": "02116",
+      "state": "MA",
+      "stateFullName": "Massachusetts",
+      "latitude": "42.348512000000000",
+      "longitude": "-71.069114000000000",
+      "zone": {
+        "id": "121",
+        "name": "Massachusetts"
+      },
+      "subject": {
+        "id": "23",
+        "name": "Special Needs",
+        "groupId": "7"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-07-19",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1204289",
+      "proposalURL": "http://www.donorschoose.org/project/kindergarten-math/1204289/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1204289&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1489962_sm.jpg?timestamp=1392520767908",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1489962_thmb.jpg?timestamp=1392520767908",
+      "title": "Kindergarten Math",
+      "shortDescription": "My students have learned many new math concepts this year, such as: addition, subtraction, telling time, 3-dimensional shapes, and identifying coins. My students are excited by their new skills,...",
+      "fulfillmentTrailer": "My students need math games and puzzles that will allow them to practice and retain the new math concepts we are learning this year.",
+      "snippets": [],
+      "percentFunded": "78",
+      "numDonors": "3",
+      "costToComplete": "94.33",
+      "matchingFund": {
+        "matchingKey": "KAISER14",
+        "name": "George Kaiser Family Foundation",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/kaiser_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=KAISER14",
+        "amount": "214.33",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/kaiser_large.jpg\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>The Kaiser Family Foundation will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>Based in and focused on Tulsa, Oklahoma, George Kaiser Family Foundation is a charitable organization dedicated to breaking the cycle of poverty through investments in early childhood education, community health, social services and civic enhancement projects.<\/p>\r\n\r\n<p>To learn more about the foundation, please visit <a target=\"_blank\" href=\"http://www.gkff.org\">http://www.gkff.org<\/a>.<\/p>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=736\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 26",
+        "code": "INSPIRE",
+        "matchingKey": "teacherProm5",
+        "name": "Matching Donor",
+        "type": "PROMO",
+        "logoURL": "",
+        "description": ""
+      },
+      "totalPrice": "428.66",
+      "freeShipping": "true",
+      "teacherId": "1489962",
+      "teacherName": "Mrs. Bolterstein",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 5,
+          "name": "Year Round"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Chouteau Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/chouteau-elementary-school/87422/",
+      "city": "Tulsa",
+      "zip": "74127-6347",
+      "state": "OK",
+      "stateFullName": "Oklahoma",
+      "latitude": "36.158135000000000",
+      "longitude": "-96.038959000000000",
+      "zone": {
+        "id": "323",
+        "name": "Oklahoma"
+      },
+      "subject": {
+        "id": "8",
+        "name": "Mathematics",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-06-02",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1146584",
+      "proposalURL": "http://www.donorschoose.org/project/bouncing-our-way-to-learning/1146584/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1146584&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1527294_sm.jpg?timestamp=1386277885719",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1527294_thmb.jpg?timestamp=1386277885719",
+      "title": "Bouncing Our Way To Learning",
+      "shortDescription": "Every morning we start are day off with a song to get us up our of our chairs and moving. Here in pre-k we have a lot of wiggles we need to work out throughout the day! My students are 4 and 5...",
+      "fulfillmentTrailer": "My students need 30 stability ball chairs for working at their tables and in small groups. A few of my students also require small cushions for the carpet.",
+      "snippets": [],
+      "percentFunded": "71",
+      "numDonors": "16",
+      "costToComplete": "266.65",
+      "completedMatching": {
+        "matchingKey": "DISNEYP14",
+        "name": "Disney",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/disney_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=DISNEYP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "<p>Disney is amplifying the impact of teachers who rally support for their classroom projects. Any teacher who posts a new project has seven days to inspire friends and family to donate to their classrooms, and Disney will match that generosity. <a target=\"_blank\" href=\"http://help.donorschoose.org/app/answers/detail/a_id/405\">Details for teachers<\/a>.<\/p>\r\n\r\n<p>About Disney:<br>We believe that if you can dream it, you can do it. Our goal is to motivate generations of kids to harness the power of creativity to help improve their communities. The world's next great artists, innovators, athletes, engineers, architects, zoologists and dreamers are out there. Disney is thrilled to play a role in supporting teachers while providing kids with the tools they need to learn, thrive and create the future they imagine. By inspiring creativity in young people today, we hope to ignite the spark of innovation that will lead us all to a brighter tomorrow. Learn more about <a target=\"_blank\" href=\"http://www.thewaltdisneycompany.com/citizenship\">Disney's Citizenship efforts<\/a>.<\/p>"
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "914.68",
+      "freeShipping": "false",
+      "teacherId": "1527294",
+      "teacherName": "Ms. Weimert",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Glenmount Elementary Middle School 235",
+      "schoolUrl": "http://www.donorschoose.org/school/glenmount-elementary-middle-school-235/64388/",
+      "city": "Baltimore",
+      "zip": "21206-2357",
+      "state": "MD",
+      "stateFullName": "Maryland",
+      "latitude": "39.351597000000000",
+      "longitude": "-76.542719000000000",
+      "zone": {
+        "id": "112",
+        "name": "Maryland"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "3",
+        "name": "Literature &amp; Writing",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-04-03",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1194944",
+      "proposalURL": "http://www.donorschoose.org/project/listening-and-learning-part-2/1194944/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1194944&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u547124_sm.jpg?timestamp=1362104132900",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u547124_thmb.jpg?timestamp=1362104132900",
+      "title": "Listening And Learning Part 2",
+      "shortDescription": "&#034;Be awesome! Be a book nut!&#034; Dr. Seuss. I want all of my students to be book nuts! Books and reading are a very important part of kindergarten. My goal for my students is to have them reading when...",
+      "fulfillmentTrailer": "My students need 4 chairs for their listening center and 5 book with CD sets.",
+      "snippets": [],
+      "percentFunded": "71",
+      "numDonors": "27",
+      "costToComplete": "199.18",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "689.71",
+      "freeShipping": "true",
+      "teacherId": "547124",
+      "teacherName": "Ms. Austin",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 9,
+          "name": "NEA Member"
+        }
+      ],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Terre Town Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/terre-town-elementary-school/19508/",
+      "city": "Terre Haute",
+      "zip": "47805-2899",
+      "state": "IN",
+      "stateFullName": "Indiana",
+      "latitude": "39.514171000000000",
+      "longitude": "-87.385009000000000",
+      "zone": {
+        "id": "203",
+        "name": "Indiana"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "1",
+        "name": "Books"
+      },
+      "expirationDate": "2014-07-03",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1196169",
+      "proposalURL": "http://www.donorschoose.org/project/opening-locks-for-our-future/1196169/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1196169&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1406387_sm.jpg?timestamp=1329495271000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1406387_thmb.jpg?timestamp=1329495271000",
+      "title": "Opening Locks for our Future",
+      "shortDescription": "We all remember that terrifying first day of middle school. Where are my classes? Which locker is mine? Will I forget my combination? But that is only the beginning. Without some basic knowledge...",
+      "fulfillmentTrailer": "My students need 30 combination locks.",
+      "snippets": [],
+      "percentFunded": "56",
+      "numDonors": "4",
+      "costToComplete": "139.74",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "318.56",
+      "freeShipping": "false",
+      "teacherId": "1406387",
+      "teacherName": "Mrs. Krinock",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 5,
+        "name": "SONIC Teacher"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Slater-Marietta Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/slater-marietta-elementary-school/6847/",
+      "city": "Marietta",
+      "zip": "29661-9503",
+      "state": "SC",
+      "stateFullName": "South Carolina",
+      "latitude": "35.023849000000000",
+      "longitude": "-82.496811000000000",
+      "zone": {
+        "id": "303",
+        "name": "South Carolina"
+      },
+      "subject": {
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-05",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1187062",
+      "proposalURL": "http://www.donorschoose.org/project/the-best-summer-ever-2014/1187062/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1187062&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2236259_sm.jpg?timestamp=1392748118748",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2236259_thmb.jpg?timestamp=1392748118748",
+      "title": "The Best Summer Ever! 2014",
+      "shortDescription": "I am School Counselor and we are going to have the Best Summer Ever! We are hosting a Summer Enrichment program to improve our school community and get our students College Ready! These art...",
+      "fulfillmentTrailer": "My students need art supplies to enhance our summer enrichment programming. Our students are trying to build a positive school community.",
+      "snippets": [],
+      "percentFunded": "76",
+      "numDonors": "4",
+      "costToComplete": "121.11",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "ATT14",
+        "name": "AT&amp;T Foundation",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/att_135.gif",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=ATT14",
+        "amount": "256.11",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/att_250.gif\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>The AT&T Foundation will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>At AT&T we believe that investing in education is one of the most important things we can do for a strong future. It's an issue that's important to us, our customers and our country.  The support for DonorsChoose.org is part of AT&T Aspire, the company's $350 million commitment to education. AT&T is funding projects at schools that need it most, with the goal of equipping students with the tools necessary to graduate high school and succeed in college, careers and life.<\/p>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=735\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "totalPrice": "512.22",
+      "freeShipping": "true",
+      "teacherId": "2236259",
+      "teacherName": "Mrs. McComb",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 1,
+          "name": "Charter"
+        }
+      ],
+      "schoolName": "Camden Academy Charter High School",
+      "schoolUrl": "http://www.donorschoose.org/school/camden-academy-charter-high-school/70801/",
+      "city": "Camden",
+      "zip": "08105-4227",
+      "state": "NJ",
+      "stateFullName": "New Jersey",
+      "latitude": "39.957784000000000",
+      "longitude": "-75.085615000000000",
+      "zone": {
+        "id": "102",
+        "name": "New Jersey"
+      },
+      "subject": {
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-06-21",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1186598",
+      "proposalURL": "http://www.donorschoose.org/project/learning-well/1186598/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1186598&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2235187_sm.jpg?timestamp=1392669309969",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2235187_thmb.jpg?timestamp=1392669309969",
+      "title": "Learning Well",
+      "shortDescription": "I am in charge of coordinating activities during Recess with no option for outside Recess or gym. We have the basics like; balls but because of the low ceilings, we don&#039;t use them. I have students...",
+      "fulfillmentTrailer": "My students need 2 indoor basketball arcades and a set of fitness dice, for indoor recess.",
+      "snippets": [],
+      "percentFunded": "65",
+      "numDonors": "4",
+      "costToComplete": "148.85",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 23",
+        "code": "100WOMEN",
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "100Women_small.jpg",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "totalPrice": "425.85",
+      "freeShipping": "false",
+      "teacherId": "2235187",
+      "teacherName": "Ms. Munoz",
+      "gradeLevel": {
+        "id": "3",
+        "name": "Grades 6-8"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 5,
+          "name": "Year Round"
+        },
+        {
+          "id": 4,
+          "name": "Magnet"
+        }
+      ],
+      "schoolName": "Madero Middle School",
+      "schoolUrl": "http://www.donorschoose.org/school/madero-middle-school/5700/",
+      "city": "Chicago",
+      "zip": "60623-4708",
+      "state": "IL",
+      "stateFullName": "Illinois",
+      "latitude": "41.841016000000000",
+      "longitude": "-87.705172000000000",
+      "zone": {
+        "id": "201",
+        "name": "Illinois (Chicago)"
+      },
+      "subject": {
+        "id": "27",
+        "name": "Health &amp; Wellness",
+        "groupId": "2"
+      },
+      "additionalSubjects": [{
+        "id": "21",
+        "name": "Community Service",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-07-15",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1150981",
+      "proposalURL": "http://www.donorschoose.org/project/teach-me-chess/1150981/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1150981&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u367510_sm.jpg?timestamp=1383429298563",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u367510_thmb.jpg?timestamp=1383429298563",
+      "title": "Teach Me Chess!",
+      "shortDescription": "Have you ever seen the amazing chess players in the park, or during a funny animated film? My 5th graders have been BEGGING me to start a chess club and teach them chess. Problem is- I don&#039;t know...",
+      "fulfillmentTrailer": "My students need the opportunity to learn strategy while playing chess!",
+      "snippets": [],
+      "percentFunded": "68",
+      "numDonors": "4",
+      "costToComplete": "110.20",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "339.61",
+      "freeShipping": "true",
+      "teacherId": "367510",
+      "teacherName": "Mrs. McKoy",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 11,
+        "name": "U.S. Cellular Teacher"
+      }],
+      "schoolTypes": [{
+        "id": 12,
+        "name": "Horace Mann (partner)"
+      }],
+      "schoolName": "Cedar Ridge Intermediate",
+      "schoolUrl": "http://www.donorschoose.org/school/branson-east-elementary-school/78153/",
+      "city": "Branson",
+      "zip": "65616-8142",
+      "state": "MO",
+      "stateFullName": "Missouri",
+      "latitude": "36.660309000000000",
+      "longitude": "-93.244041000000000",
+      "zone": {
+        "id": "223",
+        "name": "Missouri"
+      },
+      "subject": {
+        "id": "17",
+        "name": "Extracurricular",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "2",
+        "name": "Sports",
+        "groupId": "2"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-04-09",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1192886",
+      "proposalURL": "http://www.donorschoose.org/project/t-is-for-technology/1192886/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1192886&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1173824_sm.jpg?timestamp=1374771221795",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1173824_thmb.jpg?timestamp=1374771221795",
+      "title": "&#034;T&#034; is for Technology",
+      "shortDescription": "Every morning we chant &#034;We are future Scientists, Technologists, Engineers, Artists and Mathematicians&#034;. My students are excited to be involved in engaging activities that integrate science, math...",
+      "fulfillmentTrailer": "My students need an iPad with learning apps and two sets of headphones to support the technology piece of our STEM program.",
+      "snippets": [],
+      "percentFunded": "71",
+      "numDonors": "5",
+      "costToComplete": "126.40",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "441.40",
+      "freeShipping": "false",
+      "teacherId": "1173824",
+      "teacherName": "Mrs. Hartman",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Jb Wright Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/jb-wright-elementary-school/63124/",
+      "city": "Tucson",
+      "zip": "85712-3298",
+      "state": "AZ",
+      "stateFullName": "Arizona",
+      "latitude": "32.245701000000000",
+      "longitude": "-110.900101000000000",
+      "zone": {
+        "id": "421",
+        "name": "Arizona"
+      },
+      "subject": {
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-06-27",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1194732",
+      "proposalURL": "http://www.donorschoose.org/project/book-tubs-for-easier-accessibility-to-cl/1194732/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1194732&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1938620_sm.jpg?timestamp=1393882577297",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1938620_thmb.jpg?timestamp=1393882577297",
+      "title": "Book Tubs for Easier Accessibility to Classroom Library",
+      "shortDescription": "Reading is one of my students&#039; favorite activities. Our classroom library is the place where every student can spend time carefully picking out their next reading adventure. Teaching at a school...",
+      "fulfillmentTrailer": "My students need 20 new book tubs in our classroom library to replace our old tubs that are worn-out, cracked, and falling apart.",
+      "snippets": [],
+      "percentFunded": "38",
+      "numDonors": "4",
+      "costToComplete": "161.18",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "261.18",
+      "freeShipping": "true",
+      "teacherId": "1938620",
+      "teacherName": "Mrs. Wilson",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 13,
+          "name": "CenturyLink"
+        }
+      ],
+      "schoolName": "Oakland Heights Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/oakland-heights-elementary-school/54278/",
+      "city": "Russellville",
+      "zip": "72801-7299",
+      "state": "AR",
+      "stateFullName": "Arkansas",
+      "latitude": "35.264834000000000",
+      "longitude": "-93.129594000000000",
+      "zone": {
+        "id": "324",
+        "name": "Arkansas"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-03",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1177417",
+      "proposalURL": "http://www.donorschoose.org/project/ready-to-read/1177417/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1177417&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u527804_sm.jpg?timestamp=1391932258553",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u527804_thmb.jpg?timestamp=1391932258553",
+      "title": "Ready to Read!",
+      "shortDescription": "Help my emergent readers build their confidence and independence with literacy-based, file folder games. My students are a lively bunch of five and six-year old children. They are eager to learn....",
+      "fulfillmentTrailer": "My students need literacy-based file folder games for independent reading practice.",
+      "snippets": [],
+      "percentFunded": "48",
+      "numDonors": "4",
+      "costToComplete": "104.96",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "199.96",
+      "freeShipping": "true",
+      "teacherId": "527804",
+      "teacherName": "Ms. Barnes",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 9,
+          "name": "NEA Member"
+        },
+        {
+          "id": 1,
+          "name": "Teach For America"
+        }
+      ],
+      "schoolTypes": [{
+        "id": 3,
+        "name": "Special Education"
+      }],
+      "schoolName": "G N Smith Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/g-n-smith-elementary-school/16816/",
+      "city": "Jackson",
+      "zip": "39213-6099",
+      "state": "MS",
+      "stateFullName": "Mississippi",
+      "latitude": "32.346870000000000",
+      "longitude": "-90.206650000000000",
+      "zone": {
+        "id": "314",
+        "name": "Mississippi"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "1",
+        "name": "Books"
+      },
+      "expirationDate": "2014-06-04",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1164495",
+      "proposalURL": "http://www.donorschoose.org/project/exploring-printmaking/1164495/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1164495&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2015459_sm.jpg?timestamp=1384095323689",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2015459_thmb.jpg?timestamp=1384095323689",
+      "title": "Exploring Printmaking",
+      "shortDescription": "&#034;The act of printing has always seemed to me a miracle, just such a miracle as the growing up of a tiny seed of grain to an ear - an everyday miracle, even the greater because it happens everyday....",
+      "fulfillmentTrailer": "My students need the printmaking starter kit, a press, additional inks and papers to gain experience working with other media to enhance their conceptualization skills.",
+      "snippets": [],
+      "percentFunded": "83",
+      "numDonors": "6",
+      "costToComplete": "119.05",
+      "matchingFund": {
+        "matchingKey": "ATT14",
+        "name": "AT&amp;T Foundation",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/att_135.gif",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=ATT14",
+        "amount": "348.06",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/att_250.gif\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>The AT&T Foundation will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>At AT&T we believe that investing in education is one of the most important things we can do for a strong future. It's an issue that's important to us, our customers and our country.  The support for DonorsChoose.org is part of AT&T Aspire, the company's $350 million commitment to education. AT&T is funding projects at schools that need it most, with the goal of equipping students with the tools necessary to graduate high school and succeed in college, careers and life.<\/p>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=735\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "totalPrice": "696.11",
+      "freeShipping": "true",
+      "teacherId": "2015459",
+      "teacherName": "Ms. Gordon",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 11,
+          "name": "U.S. Cellular Teacher"
+        }
+      ],
+      "schoolTypes": [
+        {
+          "id": 1,
+          "name": "Charter"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Milwaukee Collegiate Academy",
+      "schoolUrl": "http://www.donorschoose.org/school/ceo-leadership-academy/102388/",
+      "city": "Milwaukee",
+      "zip": "53216",
+      "state": "WI",
+      "stateFullName": "Wisconsin",
+      "latitude": "43.087978363037109",
+      "longitude": "-87.977066040039062",
+      "zone": {
+        "id": "204",
+        "name": "Wisconsin"
+      },
+      "subject": {
+        "id": "11",
+        "name": "Visual Arts",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-05-12",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1150848",
+      "proposalURL": "http://www.donorschoose.org/project/i-research-create-learn-and-build/1150848/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1150848&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1864453_sm.jpg?timestamp=1371409780285",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1864453_thmb.jpg?timestamp=1371409780285",
+      "title": "I-Research, Create, Learn, and Build",
+      "shortDescription": "My classroom is full of students discovering new ways to feed the world! Agricultural Science encourages students to use Math, Science, and Technology to solve a myriad of the world&#039;s problems and...",
+      "fulfillmentTrailer": "My students need 2 tablets to document their progress in pictures. My students love to discover new ways to build and create using videos and texts online.",
+      "snippets": [],
+      "percentFunded": "83",
+      "numDonors": "5",
+      "costToComplete": "124.05",
+      "completedMatching": {
+        "matchingKey": "DISNEYP14",
+        "name": "Disney",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/disney_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=DISNEYP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "<p>Disney is amplifying the impact of teachers who rally support for their classroom projects. Any teacher who posts a new project has seven days to inspire friends and family to donate to their classrooms, and Disney will match that generosity. <a target=\"_blank\" href=\"http://help.donorschoose.org/app/answers/detail/a_id/405\">Details for teachers<\/a>.<\/p>\r\n\r\n<p>About Disney:<br>We believe that if you can dream it, you can do it. Our goal is to motivate generations of kids to harness the power of creativity to help improve their communities. The world's next great artists, innovators, athletes, engineers, architects, zoologists and dreamers are out there. Disney is thrilled to play a role in supporting teachers while providing kids with the tools they need to learn, thrive and create the future they imagine. By inspiring creativity in young people today, we hope to ignite the spark of innovation that will lead us all to a brighter tomorrow. Learn more about <a target=\"_blank\" href=\"http://www.thewaltdisneycompany.com/citizenship\">Disney's Citizenship efforts<\/a>.<\/p>"
+      },
+      "matchingFund": {
+        "matchingKey": "ATT14",
+        "name": "AT&amp;T Foundation",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/att_135.gif",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=ATT14",
+        "amount": "359.04",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/att_250.gif\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>The AT&T Foundation will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>At AT&T we believe that investing in education is one of the most important things we can do for a strong future. It's an issue that's important to us, our customers and our country.  The support for DonorsChoose.org is part of AT&T Aspire, the company's $350 million commitment to education. AT&T is funding projects at schools that need it most, with the goal of equipping students with the tools necessary to graduate high school and succeed in college, careers and life.<\/p>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=735\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "totalPrice": "718.09",
+      "freeShipping": "false",
+      "teacherId": "1864453",
+      "teacherName": "Mrs. Rymel",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 6,
+          "name": "Vocational Education"
+        }
+      ],
+      "schoolName": "Marshall High School",
+      "schoolUrl": "http://www.donorschoose.org/school/marshall-high-school/12254/",
+      "city": "Marshall",
+      "zip": "75670-6352",
+      "state": "TX",
+      "stateFullName": "Texas",
+      "latitude": "32.526962506961091",
+      "longitude": "-94.355443383466053",
+      "zone": {
+        "id": "321",
+        "name": "Texas"
+      },
+      "subject": {
+        "id": "7",
+        "name": "Environmental Science",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-04-09",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1124765",
+      "proposalURL": "http://www.donorschoose.org/project/hands-on-geometry/1124765/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1124765&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1006380_sm.jpg?timestamp=1326844401000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1006380_thmb.jpg?timestamp=1326844401000",
+      "title": "Hands-On Geometry",
+      "shortDescription": "My students often view new math concepts as difficult, I want them to know building and creating are two important parts of math they love! My students love math and are willing to work hard to...",
+      "fulfillmentTrailer": "My students need magnet tiles and builders to have more hands on practice with geometry in our classroom.",
+      "snippets": [],
+      "percentFunded": "73",
+      "numDonors": "7",
+      "costToComplete": "117.55",
+      "completedMatching": {
+        "matchingKey": "DISNEYP14",
+        "name": "Disney",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/disney_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=DISNEYP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "<p>Disney is amplifying the impact of teachers who rally support for their classroom projects. Any teacher who posts a new project has seven days to inspire friends and family to donate to their classrooms, and Disney will match that generosity. <a target=\"_blank\" href=\"http://help.donorschoose.org/app/answers/detail/a_id/405\">Details for teachers<\/a>.<\/p>\r\n\r\n<p>About Disney:<br>We believe that if you can dream it, you can do it. Our goal is to motivate generations of kids to harness the power of creativity to help improve their communities. The world's next great artists, innovators, athletes, engineers, architects, zoologists and dreamers are out there. Disney is thrilled to play a role in supporting teachers while providing kids with the tools they need to learn, thrive and create the future they imagine. By inspiring creativity in young people today, we hope to ignite the spark of innovation that will lead us all to a brighter tomorrow. Learn more about <a target=\"_blank\" href=\"http://www.thewaltdisneycompany.com/citizenship\">Disney's Citizenship efforts<\/a>.<\/p>"
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "429.32",
+      "freeShipping": "true",
+      "teacherId": "1006380",
+      "teacherName": "Mrs. Dashner",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 5,
+        "name": "SONIC Teacher"
+      }],
+      "schoolTypes": [],
+      "schoolName": "Rocky View Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/rocky-view-elementary-school/61399/",
+      "city": "Gallup",
+      "zip": "87301-4655",
+      "state": "NM",
+      "stateFullName": "New Mexico",
+      "latitude": "35.525773242115974",
+      "longitude": "-108.691159933805470",
+      "zone": {
+        "id": "423",
+        "name": "New Mexico"
+      },
+      "subject": {
+        "id": "8",
+        "name": "Mathematics",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-04-27",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1174780",
+      "proposalURL": "http://www.donorschoose.org/project/publish-and-preserving-our-work/1174780/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1174780&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1622529_sm.jpg?timestamp=1376702721788",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1622529_thmb.jpg?timestamp=1376702721788",
+      "title": "Publish and Preserving Our Work",
+      "shortDescription": "My students are always so proud and amazed that something they created can be printed from the computer. They feel as if they are truly authors granted this wonderful opportunity to see their very...",
+      "fulfillmentTrailer": "My students need black and color ink cartridges to publish their work from our classroom printer and laminating pouches to preserve their work.",
+      "snippets": [],
+      "percentFunded": "33",
+      "numDonors": "6",
+      "costToComplete": "148.71",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "222.69",
+      "freeShipping": "true",
+      "teacherId": "1622529",
+      "teacherName": "Mrs. Huckaby",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        }
+      ],
+      "schoolName": "Ladonia Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/ladonia-elementary-school/15849/",
+      "city": "Phenix City",
+      "zip": "36869-5410",
+      "state": "AL",
+      "stateFullName": "Alabama",
+      "latitude": "32.468522000000000",
+      "longitude": "-85.084485000000000",
+      "zone": {
+        "id": "311",
+        "name": "Alabama"
+      },
+      "subject": {
+        "id": "3",
+        "name": "Literature &amp; Writing",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-05-26",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1201266",
+      "proposalURL": "http://www.donorschoose.org/project/runway-in-the-tunnel/1201266/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1201266&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1473457_sm.jpg?timestamp=1394646080098",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1473457_thmb.jpg?timestamp=1394646080098",
+      "title": "Runway in the Tunnel",
+      "shortDescription": "Like a box of chocolates, you never know what you are going to get in our classroom. The energy I give off is sometimes overwhelming for my students, but they do rise to the occasion to learn for...",
+      "fulfillmentTrailer": "My students need posters, markers and bright white paper to create advertising for a fashion show and incentive charts to keep track of responsibilities.  .",
+      "snippets": [],
+      "percentFunded": "64",
+      "numDonors": "3",
+      "costToComplete": "67.08",
+      "matchingFund": {
+        "matchingKey": "ATT14",
+        "name": "AT&amp;T Foundation",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/att_135.gif",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=ATT14",
+        "amount": "92.61",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/att_250.gif\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>The AT&T Foundation will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>At AT&T we believe that investing in education is one of the most important things we can do for a strong future. It's an issue that's important to us, our customers and our country.  The support for DonorsChoose.org is part of AT&T Aspire, the company's $350 million commitment to education. AT&T is funding projects at schools that need it most, with the goal of equipping students with the tools necessary to graduate high school and succeed in college, careers and life.<\/p>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=735\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 25",
+        "code": "100WOMEN",
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "100Women_small.jpg",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "totalPrice": "185.22",
+      "freeShipping": "false",
+      "teacherId": "1473457",
+      "teacherName": "Mrs. McNamara",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Lowell High School",
+      "schoolUrl": "http://www.donorschoose.org/school/lowell-high-school/61638/",
+      "city": "Lowell",
+      "zip": "01852-1037",
+      "state": "MA",
+      "stateFullName": "Massachusetts",
+      "latitude": "42.647871000000000",
+      "longitude": "-71.310707000000000",
+      "zone": {
+        "id": "121",
+        "name": "Massachusetts"
+      },
+      "subject": {
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-04-19",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1197067",
+      "proposalURL": "http://www.donorschoose.org/project/a-cart-for-a-class/1197067/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1197067&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u273129_sm.jpg?timestamp=1250286210000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u273129_thmb.jpg?timestamp=1250286210000",
+      "title": "A Cart for a Class",
+      "shortDescription": "Thanks to Donors Choose our classroom now has math manipulatives, more quality literature, and two new laptops. Now we are faced with a new issue. We need some organization for our technology...",
+      "fulfillmentTrailer": "My students need  an Oklahoma Sound PRC200 Steel Premium Presentation Cart .",
+      "snippets": [],
+      "percentFunded": "59",
+      "numDonors": "1",
+      "costToComplete": "70.41",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 28",
+        "code": "100WOMEN",
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "100Women_small.jpg",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "totalPrice": "170.41",
+      "freeShipping": "true",
+      "teacherId": "273129",
+      "teacherName": "Mrs. Speller",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 5,
+        "name": "SONIC Teacher"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 4,
+          "name": "Magnet"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "PS 251 Queens",
+      "schoolUrl": "http://www.donorschoose.org/school/ps-251-queens/1048/",
+      "city": "Sprngfld Gdns",
+      "zip": "11413-3344",
+      "state": "NY",
+      "stateFullName": "New York",
+      "latitude": "40.664344000000000",
+      "longitude": "-73.759986000000000",
+      "zone": {
+        "id": "103",
+        "name": "New York (City)"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-19",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1199851",
+      "proposalURL": "http://www.donorschoose.org/project/the-last-piece-of-the-puzzle/1199851/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1199851&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1291576_sm.jpg?timestamp=1346253697000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1291576_thmb.jpg?timestamp=1346253697000",
+      "title": "The Last Piece of the Puzzle!",
+      "shortDescription": "My students love kicking off their shoes and exploring the motor room during their Occupational Therapy sessions! My students are preschool-aged children who reside in low-income neighborhoods....",
+      "fulfillmentTrailer": "My students need two piggy banks, a set of play money, nine animal puzzles, and a fun and unique game called Stormy Seas Game of Balance to establish and enhance their problem solving skills!",
+      "snippets": [],
+      "percentFunded": "70",
+      "numDonors": "1",
+      "costToComplete": "51.25",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 28",
+        "code": "100WOMEN",
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "100Women_small.jpg",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "totalPrice": "168.89",
+      "freeShipping": "true",
+      "teacherId": "1291576",
+      "teacherName": "Ms. Becker",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [{
+        "id": 15,
+        "name": "Kia (partner)"
+      }],
+      "schoolName": "Cameron School",
+      "schoolUrl": "http://www.donorschoose.org/school/cameron-school/25468/",
+      "city": "El Cerrito",
+      "zip": "94530-2218",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "37.922118000000000",
+      "longitude": "-122.306701000000000",
+      "zone": {
+        "id": "402",
+        "name": "California (North)"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-18",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1205180",
+      "proposalURL": "http://www.donorschoose.org/project/oohooh-pick-me/1205180/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1205180&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1482635_sm.jpg?timestamp=1338493382000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1482635_thmb.jpg?timestamp=1338493382000",
+      "title": "Ooh,Ooh, Pick Me!!",
+      "shortDescription": "Our classroom is filled with fun and engaging learning activities. We are actively involved in a rotating workshop, internet researches and many other rigorous activities. My students are a class...",
+      "fulfillmentTrailer": "My students need a wireless Eggspert classroom game system and sand timers.",
+      "snippets": [],
+      "percentFunded": "68",
+      "numDonors": "1",
+      "costToComplete": "66.58",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 29",
+        "code": "100WOMEN",
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "100Women_small.jpg",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "totalPrice": "207.75",
+      "freeShipping": "true",
+      "teacherId": "1482635",
+      "teacherName": "Mrs. Gaines",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 9,
+          "name": "NEA Member"
+        }
+      ],
+      "schoolTypes": [{
+        "id": 3,
+        "name": "Special Education"
+      }],
+      "schoolName": "Longfellow Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/longfellow-elementary-school/7726/",
+      "city": "Compton",
+      "zip": "90220-4496",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "33.886234000000000",
+      "longitude": "-118.241053000000000",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "25",
+        "name": "ESL",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-20",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1207263",
+      "proposalURL": "http://www.donorschoose.org/project/donated-ipads-need-cases/1207263/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1207263&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2178635_sm.jpg?timestamp=1389896738709",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2178635_thmb.jpg?timestamp=1389896738709",
+      "title": "Donated iPads Need Cases!",
+      "shortDescription": "How lucky we were to have received three donated iPads for our classroom! We need cases to protect them from spills, scratches, dents and the inevitable occasional drop to the floor. My school is...",
+      "fulfillmentTrailer": "My students need three iPad cases to protect our donated iPads!",
+      "snippets": [],
+      "percentFunded": "41",
+      "numDonors": "6",
+      "costToComplete": "93.80",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 30",
+        "code": "INSPIRE",
+        "matchingKey": "teacherProm5",
+        "name": "Matching Donor",
+        "type": "PROMO",
+        "logoURL": "",
+        "description": ""
+      },
+      "totalPrice": "158.27",
+      "freeShipping": "true",
+      "teacherId": "2178635",
+      "teacherName": "Mrs. Schopp",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 13,
+          "name": "CenturyLink"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Newman Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/newman-elementary-school/78792/",
+      "city": "Billings",
+      "zip": "59101-4708",
+      "state": "MT",
+      "stateFullName": "Montana",
+      "latitude": "45.758925000000000",
+      "longitude": "-108.535512000000000",
+      "zone": {
+        "id": "243",
+        "name": "Montana"
+      },
+      "subject": {
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      },
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-05-23",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1167789",
+      "proposalURL": "http://www.donorschoose.org/project/using-creativity-through-art-to-inspire/1167789/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1167789&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u731797_sm.jpg?timestamp=1364249254241",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u731797_thmb.jpg?timestamp=1364249254241",
+      "title": "Using Creativity Through Art To Inspire Wrighting And Reading",
+      "shortDescription": "These children, which include ESL learners, are learning fundamentals to help them achieve the goal of becoming good writers. I would love to give them materials where they can work on skills to...",
+      "fulfillmentTrailer": "My students need paper, paint, dotters, Hot Dots, and letter stamps with ink pads.",
+      "snippets": [],
+      "percentFunded": "76",
+      "numDonors": "2",
+      "costToComplete": "90.00",
+      "matchingFund": {
+        "matchingKey": "CFNJ14",
+        "name": "The Community Foundation of New Jersey",
+        "type": "ALMOST_HOME",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/cfnj_135.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=CFNJ14",
+        "amount": "350.68",
+        "description": "<p align=\"center\"><img src=\"http://www.donorschoose.org/images/logos/cfnj_250.jpg\"><\/p><p>You can bring this project to life for less than $100!<\/p>\r\n\r\n<p>Thanks to funding from the Community Foundation of New Jersey, this project is \"Almost Home!\" The Community Foundation of New Jersey will fund most of this project if someone like you provides the remainder. By completing this project you will leverage the impact of your donation.<\/p>\r\n\r\n<a target=\"_blank\" href=\"../donors/search.html?matchingId=615\">See all projects eligible for this Double Your Impact offer.<\/a><\/p>\r\n\r\n<p>Established in 1979, the Community Foundation of New Jersey is an alliance of families, businesses and foundations that work together to create lasting differences in people's lives and communities.  Our mission is to support charitable giving that is inspired by our donors, targeted at making our communities stronger, driven by creative solutions, and effective in achieving lasting change. We have a network of affiliates in Newark, Mercer, Monmouth and Morris Counties, and in South Jersey.  Through a combination of Legacy Funds and Donor Advised Funds, the foundation has granted an average of more than $25 million each year to charitable organizations and currently stewards over $250 million in charitable assets for current needs and future challenges.<\/p>"
+      },
+      "totalPrice": "447.68",
+      "freeShipping": "true",
+      "teacherId": "731797",
+      "teacherName": "Ms. Horvath",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [{
+        "id": 3,
+        "name": "Special Education"
+      }],
+      "schoolName": "Columbus School",
+      "schoolUrl": "http://www.donorschoose.org/school/columbus-school/81491/",
+      "city": "Carteret",
+      "zip": "07008-2575",
+      "state": "NJ",
+      "stateFullName": "New Jersey",
+      "latitude": "40.573419000000000",
+      "longitude": "-74.221309000000000",
+      "zone": {
+        "id": "102",
+        "name": "New Jersey"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "3",
+        "name": "Literature &amp; Writing",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-05-14",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1192067",
+      "proposalURL": "http://www.donorschoose.org/project/ipad-for-academic-pentathlon-team/1192067/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1192067&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2248334_sm.jpg?timestamp=1393455130764",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2248334_thmb.jpg?timestamp=1393455130764",
+      "title": "IPad for Academic Pentathlon Team",
+      "shortDescription": "Remember being able to use technology to satisfy a learning assignment? I remember in typing class having to wait for my week to use the electric typewriters instead of the archaic manuals. My...",
+      "fulfillmentTrailer": "My students need an iPad in order to access their curriculum in a more streamlined way.",
+      "snippets": [],
+      "percentFunded": "92",
+      "numDonors": "1",
+      "costToComplete": "54.01",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "642.25",
+      "freeShipping": "false",
+      "teacherId": "2248334",
+      "teacherName": "Mr. Sailors",
+      "gradeLevel": {
+        "id": "3",
+        "name": "Grades 6-8"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [],
+      "schoolName": "Ernest O Lawrence Elementary School @ Chapman Center",
+      "schoolUrl": "http://www.donorschoose.org/school/ernest-o-lawrence-elementary-school/91716/",
+      "city": "Garden Grove",
+      "zip": "92841",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "37.148139953613281",
+      "longitude": "-119.644248962402340",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "17",
+        "name": "Extracurricular",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-06-27",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1193674",
+      "proposalURL": "http://www.donorschoose.org/project/creating-well-round-little-people/1193674/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1193674&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u462899_sm.jpg?timestamp=1395019396472",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u462899_thmb.jpg?timestamp=1395019396472",
+      "title": "Creating Well-Round Little People",
+      "shortDescription": "&#034;A book is like a garden, carried in the pocket.&#034; - Chinese Proverb My little ones want, want, want to learn and grow. They are eager little beavers when it comes to their education. I don&#039;t think...",
+      "fulfillmentTrailer": "My students need a variety of character education and Black History Month books, including &#034;Stand in My Shoes,&#034; &#034;A Picture Book of Harriet Tubman&#034; and &#034;Wilma Jean the Worry Machine.&#034;",
+      "snippets": [],
+      "percentFunded": "59",
+      "numDonors": "2",
+      "costToComplete": "73.39",
+      "matchingFund": {
+        "matchingKey": "BCFAMILY14",
+        "name": "Burroughs and Chapin Family Fund Foundation",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/bcfamily_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=BCFAMILY14",
+        "amount": "89.39",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/bcfamily_large.jpg\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>The Burroughs and Chapin Family Fund will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>Utilizing the \"Double Your Impact\" matching program, all qualifying Horry County, SC literacy, math, science, and gardening projects will have an opportunity for half-funding by the Burroughs and Chapin Family Fund. Citizen philanthropists are needed to make the remaining donations to these projects. By making donations in conjunction with this \"Double Your Impact\" matching offer, the impact of your contribution is significantly increased. <\/p>\r\n\r\n<p>The Burroughs and Chapin Family Fund is excited and proud to partner with Donors Choose to enhance Horry County, SC schools. We believe every child should have the tools necessary for success in the classroom.<\/p>\r\n\r\n<p>The Burroughs and Chapin Family Fund is grateful to Burroughs and Chapin Company, Inc. for providing the funding for this partnership with Donors Choose.<\/p>\r\n\r\n<a target=\"_blank\" href=\"http://www.burroughschapin.com\">www.burroughschapin.com<\/a>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=694\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "totalPrice": "178.78",
+      "freeShipping": "true",
+      "teacherId": "462899",
+      "teacherName": "Mrs. Collins",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 7,
+          "name": "U.S. Cellular Teacher"
+        }
+      ],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Green Sea Floyds Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/green-sea-floyds-elementary-school/6793/",
+      "city": "Green Sea",
+      "zip": "29545-4977",
+      "state": "SC",
+      "stateFullName": "South Carolina",
+      "latitude": "34.141226000000000",
+      "longitude": "-79.022906000000000",
+      "zone": {
+        "id": "303",
+        "name": "South Carolina"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "1",
+        "name": "Books"
+      },
+      "expirationDate": "2014-07-02",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1186684",
+      "proposalURL": "http://www.donorschoose.org/project/ipad-for-applying-for-jobs/1186684/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1186684&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2235430_sm.jpg?timestamp=1392681312281",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2235430_thmb.jpg?timestamp=1392681312281",
+      "title": "Ipad for Applying for Jobs!",
+      "shortDescription": "For me, applying for college and jobs was easy. I could go to school and use the Internet to finish my essays or research college programs from my local library. For my students, these luxuries I...",
+      "fulfillmentTrailer": "My students need an iPad and protection plan to have the ability to apply for jobs, complete college applications, and access the internet.",
+      "snippets": [],
+      "percentFunded": "74",
+      "numDonors": "11",
+      "costToComplete": "204.86",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "789.86",
+      "freeShipping": "true",
+      "teacherId": "2235430",
+      "teacherName": "Ms. Millson",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 1,
+        "name": "Teach For America"
+      }],
+      "schoolTypes": [
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 2,
+          "name": "Adult Education"
+        },
+        {
+          "id": 8,
+          "name": "New Leaders"
+        },
+        {
+          "id": 6,
+          "name": "Vocational Education"
+        }
+      ],
+      "schoolName": "Ballou Senior High School",
+      "schoolUrl": "http://www.donorschoose.org/school/ballou-senior-high-school/24047/",
+      "city": "Washington",
+      "zip": "20032-5406",
+      "state": "DC",
+      "stateFullName": "District of Columbia",
+      "latitude": "38.840233000000000",
+      "longitude": "-77.000735000000000",
+      "zone": {
+        "id": "114",
+        "name": "Washington D.C."
+      },
+      "subject": {
+        "id": "23",
+        "name": "Special Needs",
+        "groupId": "7"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-06-18",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1201742",
+      "proposalURL": "http://www.donorschoose.org/project/class-library-make-over/1201742/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1201742&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2269588_sm.jpg?timestamp=1394672253166",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2269588_thmb.jpg?timestamp=1394672253166",
+      "title": "Class Library Make-Over",
+      "shortDescription": "First grade is more than glue and crayons. In my classroom students are growing as readers and writers. Reading time in our room is exciting. Students move from center to center exploring books....",
+      "fulfillmentTrailer": "My students need five Tribeca Eco Modern 3-Shelf Bookcases and colored Closet Fabric Drawers.",
+      "snippets": [],
+      "percentFunded": "66",
+      "numDonors": "11",
+      "costToComplete": "325.65",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "teacherFFPromoCodeFund": {
+        "eligible": "true",
+        "deadline": "March 23",
+        "code": "INSPIRE",
+        "matchingKey": "teacherProm5",
+        "name": "Matching Donor",
+        "type": "PROMO",
+        "logoURL": "",
+        "description": ""
+      },
+      "totalPrice": "952.65",
+      "freeShipping": "false",
+      "teacherId": "2269588",
+      "teacherName": "Ms. Petoskey",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 8,
+        "name": "University of Phoenix"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        }
+      ],
+      "schoolName": "Cedar Hill Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/cedar-hill-elementary-school/54021/",
+      "city": "Lawrenceville",
+      "zip": "30044-5484",
+      "state": "GA",
+      "stateFullName": "Georgia",
+      "latitude": "33.926522000000000",
+      "longitude": "-84.023487000000000",
+      "zone": {
+        "id": "313",
+        "name": "Georgia"
+      },
+      "subject": {
+        "id": "3",
+        "name": "Literature &amp; Writing",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-14",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1185645",
+      "proposalURL": "http://www.donorschoose.org/project/a-nice-place-to-sit/1185645/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1185645&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1874885_sm.jpg?timestamp=1384220947486",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1874885_thmb.jpg?timestamp=1384220947486",
+      "title": "A Nice Place To Sit...",
+      "shortDescription": "&#034;Sitting still is overrated. It makes sense for the opera or for meditating, but in most classrooms and child care centers, it&#039;s given far more honor than it deserves. Children need to move.&#034; ~Tom...",
+      "fulfillmentTrailer": "My students need 5 Hokki stools for our small group table.  These amazing seats will allow my more active students to move while being engaged in our activities.",
+      "snippets": [],
+      "percentFunded": "43",
+      "numDonors": "8",
+      "costToComplete": "391.07",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "681.07",
+      "freeShipping": "true",
+      "teacherId": "1874885",
+      "teacherName": "Mrs. Sanders",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        }
+      ],
+      "schoolName": "Cheraw Intermediate School",
+      "schoolUrl": "http://www.donorschoose.org/school/cheraw-intermediate-school/6737/",
+      "city": "Cheraw",
+      "zip": "29520-3054",
+      "state": "SC",
+      "stateFullName": "South Carolina",
+      "latitude": "34.692026605923000",
+      "longitude": "-79.905959628250628",
+      "zone": {
+        "id": "303",
+        "name": "South Carolina"
+      },
+      "subject": {
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "4",
+        "name": "Health &amp; Life Science",
+        "groupId": "4"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-06-22",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1176903",
+      "proposalURL": "http://www.donorschoose.org/project/the-bare-necessities-of-life-will-come-t/1176903/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1176903&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2060523_sm.jpg?timestamp=1381952041147",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2060523_thmb.jpg?timestamp=1381952041147",
+      "title": "The Bare Necessities of Life Will Come to You",
+      "shortDescription": "Every day, the children in my class are actively engaged in the process of pretend play. They use dolls and small animals to build stories as children take on the role of being the mother, father...",
+      "fulfillmentTrailer": "My students need plastic animals from Jungle, forest and farms, baby dolls, and doll clothes  and art supplies such as Tempera Blocks, Mini Stampers, Collage sponges and ten squeeze bottles, so our classroom can encourage pretend play and creative expression.",
+      "snippets": [],
+      "percentFunded": "60",
+      "numDonors": "8",
+      "costToComplete": "250.22",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "630.22",
+      "freeShipping": "true",
+      "teacherId": "2060523",
+      "teacherName": "Ms. Wirth",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        }
+      ],
+      "schoolName": "Riverton Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/riverton-elementary-school/42944/",
+      "city": "Portland",
+      "zip": "04103-1399",
+      "state": "ME",
+      "stateFullName": "Maine",
+      "latitude": "43.697008000000000",
+      "longitude": "-70.307415000000000",
+      "zone": {
+        "id": "122",
+        "name": "Maine"
+      },
+      "subject": {
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-06-02",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1164880",
+      "proposalURL": "http://www.donorschoose.org/project/little-fingers-breaking-barriers-with-te/1164880/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1164880&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u990314_sm.jpg?timestamp=1306887417000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u990314_thmb.jpg?timestamp=1306887417000",
+      "title": "Little Fingers Breaking Barriers with Technology",
+      "shortDescription": "Special needs students are just that SPECIAL and each one holds a special place in our hearts. We want to give each and every one of our students the opportunity to live up to their full...",
+      "fulfillmentTrailer": "My students need access to iPad technology they can manipulate with their hands. My students have fine and gross motor delays.  We have not technology they are able to access.",
+      "snippets": [],
+      "percentFunded": "62",
+      "numDonors": "8",
+      "costToComplete": "220.65",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "575.94",
+      "freeShipping": "false",
+      "teacherId": "990314",
+      "teacherName": "Ms. England",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 11,
+          "name": "U.S. Cellular Teacher"
+        }
+      ],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Jefferson Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/jefferson-elementary-school/39314/",
+      "city": "Parkersburg",
+      "zip": "26101-4986",
+      "state": "WV",
+      "stateFullName": "West Virginia",
+      "latitude": "39.265026000000000",
+      "longitude": "-81.541594000000000",
+      "zone": {
+        "id": "214",
+        "name": "West Virginia"
+      },
+      "subject": {
+        "id": "23",
+        "name": "Special Needs",
+        "groupId": "7"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-05-09",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1178863",
+      "proposalURL": "http://www.donorschoose.org/project/bring-tech-to-east-oakland-computers-fo/1178863/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1178863&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1522542_sm.jpg?timestamp=1394176118330",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1522542_thmb.jpg?timestamp=1394176118330",
+      "title": "Bring Tech to East Oakland: Computers for Aspiring Engineers",
+      "shortDescription": "This year, my students have competed in a Hackathon and won! The judges were inspired by their idea for a mobile application, a product called SafeBlok, which was designed specifically to address...",
+      "fulfillmentTrailer": "My students need 3 Chromebooks.",
+      "snippets": [],
+      "percentFunded": "54",
+      "numDonors": "8",
+      "costToComplete": "372.46",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "812.46",
+      "freeShipping": "true",
+      "teacherId": "1522542",
+      "teacherName": "Ms. Shorall",
+      "gradeLevel": {
+        "id": "4",
+        "name": "Grades 9-12"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [],
+      "schoolName": "Castlemont Senior High School",
+      "schoolUrl": "http://www.donorschoose.org/school/castlemont-senior-high-school/3903/",
+      "city": "Oakland",
+      "zip": "94605",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "37.758312000000000",
+      "longitude": "-122.163292000000000",
+      "zone": {
+        "id": "402",
+        "name": "California (North)"
+      },
+      "subject": {
+        "id": "6",
+        "name": "Applied Sciences",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-06-03",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1195656",
+      "proposalURL": "http://www.donorschoose.org/project/my-kids-need-a-hero-good-news-she-alre/1195656/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1195656&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u370615_sm.jpg?timestamp=1245197116000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u370615_thmb.jpg?timestamp=1245197116000",
+      "title": "My Kids Need a Hero. Good News: She Already Exists!",
+      "shortDescription": "Back at Thanksgiving I told my students the story of Malala Yousafzai based on an interview I saw her do with John Stewart. Her brief story inspired my kids to be thankful for what they already...",
+      "fulfillmentTrailer": "My students need a class set of &#034;I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban.&#034;",
+      "snippets": [],
+      "percentFunded": "61",
+      "numDonors": "9",
+      "costToComplete": "301.52",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "776.52",
+      "freeShipping": "true",
+      "teacherId": "370615",
+      "teacherName": "Mr. Roughton",
+      "gradeLevel": {
+        "id": "3",
+        "name": "Grades 6-8"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 7,
+          "name": "U.S. Cellular Teacher"
+        }
+      ],
+      "schoolTypes": [{
+        "id": 12,
+        "name": "Horace Mann (partner)"
+      }],
+      "schoolName": "Jurupa Middle School",
+      "schoolUrl": "http://www.donorschoose.org/school/jurupa-middle-school/32642/",
+      "city": "Jurupa Valley",
+      "zip": "92509-3298",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "34.004500061273575",
+      "longitude": "-117.473134696483610",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "9",
+        "name": "History &amp; Geography",
+        "groupId": "3"
+      },
+      "additionalSubjects": [{
+        "id": "16",
+        "name": "College &amp; Career Prep",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "1",
+        "name": "Books"
+      },
+      "expirationDate": "2014-06-01",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1200239",
+      "proposalURL": "http://www.donorschoose.org/project/making-haste-to-reduce-waste/1200239/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1200239&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u648274_sm.jpg?timestamp=1395016574757",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u648274_thmb.jpg?timestamp=1395016574757",
+      "title": "Making Haste to Reduce Waste",
+      "shortDescription": "&#034;A picture is worth a thousand words.&#034; Lectures and books are not enough for our students to learn about current events and learn about transformational practices. Images are so powerful! My...",
+      "fulfillmentTrailer": "My students need a camcorder and flash drives to make public service announcements about conservation.",
+      "snippets": [],
+      "percentFunded": "59",
+      "numDonors": "11",
+      "costToComplete": "306.54",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "741.84",
+      "freeShipping": "false",
+      "teacherId": "648274",
+      "teacherName": "Mrs. Melgar",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Ambassador School Of Global Education",
+      "schoolUrl": "http://www.donorschoose.org/school/ambassador-school-of-global-education/99372/",
+      "city": "Los Angeles",
+      "zip": "90005",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "34.057873000000000",
+      "longitude": "-118.297808000000000",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "7",
+        "name": "Environmental Science",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "21",
+        "name": "Community Service",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-06-07",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1156862",
+      "proposalURL": "http://www.donorschoose.org/project/saving-superior-sound/1156862/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1156862&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2155003_sm.jpg?timestamp=1387760475147",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2155003_thmb.jpg?timestamp=1387760475147",
+      "title": "Saving Superior Sound",
+      "shortDescription": "One of the biggest challenges I face with my students is exposing their young ears to quality sound fidelity. The sound system I currently have uses mini jacks to plug in portable devices....",
+      "fulfillmentTrailer": "My students need speakers with Bluetooth technology to stream sound from iPads and iPods. The power strip and extension cable will facilitate the use of this technology.",
+      "snippets": [],
+      "percentFunded": "63",
+      "numDonors": "14",
+      "costToComplete": "388.02",
+      "completedMatching": {
+        "matchingKey": "DISNEYP14",
+        "name": "Disney",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/disney_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=DISNEYP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "<p>Disney is amplifying the impact of teachers who rally support for their classroom projects. Any teacher who posts a new project has seven days to inspire friends and family to donate to their classrooms, and Disney will match that generosity. <a target=\"_blank\" href=\"http://help.donorschoose.org/app/answers/detail/a_id/405\">Details for teachers<\/a>.<\/p>\r\n\r\n<p>About Disney:<br>We believe that if you can dream it, you can do it. Our goal is to motivate generations of kids to harness the power of creativity to help improve their communities. The world's next great artists, innovators, athletes, engineers, architects, zoologists and dreamers are out there. Disney is thrilled to play a role in supporting teachers while providing kids with the tools they need to learn, thrive and create the future they imagine. By inspiring creativity in young people today, we hope to ignite the spark of innovation that will lead us all to a brighter tomorrow. Learn more about <a target=\"_blank\" href=\"http://www.thewaltdisneycompany.com/citizenship\">Disney's Citizenship efforts<\/a>.<\/p>"
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "1052.38",
+      "freeShipping": "false",
+      "teacherId": "2155003",
+      "teacherName": "Mr. Hecox",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        }
+      ],
+      "schoolName": "Elm Park Community School",
+      "schoolUrl": "http://www.donorschoose.org/school/elm-park-community-school/63978/",
+      "city": "Worcester",
+      "zip": "01609-3044",
+      "state": "MA",
+      "stateFullName": "Massachusetts",
+      "latitude": "42.268918000000000",
+      "longitude": "-71.806973000000000",
+      "zone": {
+        "id": "121",
+        "name": "Massachusetts"
+      },
+      "subject": {
+        "id": "12",
+        "name": "Music",
+        "groupId": "1"
+      },
+      "additionalSubjects": [{
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "2",
+        "name": "Technology"
+      },
+      "expirationDate": "2014-04-23",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1196007",
+      "proposalURL": "http://www.donorschoose.org/project/help-us-colorful-learning-rug-needed/1196007/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1196007&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1175057_sm.jpg?timestamp=1327904544000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1175057_thmb.jpg?timestamp=1327904544000",
+      "title": "Help Us--Colorful Learning Rug Needed",
+      "shortDescription": "Every day I have my students sit on the rug for a variety of lessons. In geography I would like my students to know the names and locations of all 50 states, but many of them are not familiar with...",
+      "fulfillmentTrailer": "My students need a new colorful rug that will help them learn the 50 states.",
+      "snippets": [],
+      "percentFunded": "65",
+      "numDonors": "9",
+      "costToComplete": "229.72",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "658.84",
+      "freeShipping": "true",
+      "teacherId": "1175057",
+      "teacherName": "Mrs. Antilla",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 4,
+          "name": "Magnet"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "Canterbury Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/canterbury-avenue-elementary-school/7092/",
+      "city": "Arleta",
+      "zip": "91331-6199",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "34.232918000000000",
+      "longitude": "-118.429207000000000",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "9",
+        "name": "History &amp; Geography",
+        "groupId": "3"
+      },
+      "additionalSubjects": [{
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-05-11",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1160310",
+      "proposalURL": "http://www.donorschoose.org/project/we-stick-together/1160310/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1160310&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2181189_sm.jpg?timestamp=1388542539809",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2181189_thmb.jpg?timestamp=1388542539809",
+      "title": "We Stick Together!",
+      "shortDescription": "&#039;Imagination is more important than knowledge. For knowledge is limited to all we now know and understand, while imagination embraces the entire world, and all there ever will be to know and...",
+      "fulfillmentTrailer": "My students need magnet sets, a magnet construction set, magnetic gears and a magnetic board.",
+      "snippets": [],
+      "percentFunded": "49",
+      "numDonors": "36",
+      "costToComplete": "200.52",
+      "completedMatching": {
+        "matchingKey": "DISNEYP14",
+        "name": "Disney",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/disney_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=DISNEYP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "<p>Disney is amplifying the impact of teachers who rally support for their classroom projects. Any teacher who posts a new project has seven days to inspire friends and family to donate to their classrooms, and Disney will match that generosity. <a target=\"_blank\" href=\"http://help.donorschoose.org/app/answers/detail/a_id/405\">Details for teachers<\/a>.<\/p>\r\n\r\n<p>About Disney:<br>We believe that if you can dream it, you can do it. Our goal is to motivate generations of kids to harness the power of creativity to help improve their communities. The world's next great artists, innovators, athletes, engineers, architects, zoologists and dreamers are out there. Disney is thrilled to play a role in supporting teachers while providing kids with the tools they need to learn, thrive and create the future they imagine. By inspiring creativity in young people today, we hope to ignite the spark of innovation that will lead us all to a brighter tomorrow. Learn more about <a target=\"_blank\" href=\"http://www.thewaltdisneycompany.com/citizenship\">Disney's Citizenship efforts<\/a>.<\/p>"
+      },
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "392.22",
+      "freeShipping": "true",
+      "teacherId": "2181189",
+      "teacherName": "Ms. Altizer",
+      "gradeLevel": {
+        "id": "1",
+        "name": "Grades PreK-2"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 4,
+          "name": "Magnet"
+        }
+      ],
+      "schoolName": "Fairview Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/fairview-elementary-school/34976/",
+      "city": "Roanoke",
+      "zip": "24017-4998",
+      "state": "VA",
+      "stateFullName": "Virginia",
+      "latitude": "37.285184000000000",
+      "longitude": "-79.995341000000000",
+      "zone": {
+        "id": "304",
+        "name": "Virginia"
+      },
+      "subject": {
+        "id": "6",
+        "name": "Applied Sciences",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "18",
+        "name": "Early Development",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "6",
+        "name": "Other"
+      },
+      "expirationDate": "2014-04-30",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1193985",
+      "proposalURL": "http://www.donorschoose.org/project/disney-supports-the-earth-through-us/1193985/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1193985&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2228538_sm.jpg?timestamp=1392155657426",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2228538_thmb.jpg?timestamp=1392155657426",
+      "title": "Disney Supports The Earth Through Us",
+      "shortDescription": "Our planet and our environment need to be cared for and protected. I want my students to learn the importance of why we should take care of environment and what we can do to protect them from...",
+      "fulfillmentTrailer": "My students need a soil test kit, soil &amp; pollution books, storage bins, 20 journals, an organizer, and ipad covers for our outdoor exploration.",
+      "snippets": [],
+      "percentFunded": "71",
+      "numDonors": "11",
+      "costToComplete": "287.63",
+      "completedMatching": {
+        "matchingKey": "100WOMENP14",
+        "name": "100 Women",
+        "type": "PROMO",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/100Women_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=100WOMENP14",
+        "amount": "0.00",
+        "completed": "true",
+        "description": "100 Women in Hedge Funds is proud to support DonorsChoose.org in making a difference in the lives of teachers and students. 100WHF is a global, practitioner-driven non-profit organization serving over 12,000 alternative investment management investors and professionals through educational, professional leverage and philanthropic initiatives."
+      },
+      "matchingFund": {
+        "matchingKey": "DISNEY14",
+        "name": "The Walt Disney Company",
+        "type": "DYI",
+        "logoURL": "http://cdn.donorschoose.net/images/logos/disney_small.jpg",
+        "faqURL": "http://www.donorschoose.org/donors/matching_grant_popup.html?matchingKey=DISNEY14",
+        "amount": "498.52",
+        "description": "<p align=\"center\"><img src=\"http://cdn.donorschoose.net/images/logos/disney_large.jpg\"><\/p>\r\n\r\n<p>You can bring this project to life at half the cost!<\/p>\r\n\r\n<p>Disney will fund 50% of this project if someone like you provides the remainder. By completing this project, you will double the impact of your donation.<\/p>\r\n\r\n<p>Disney is committed to conserving nature and to nurturing critical creative thinking for future generations. We hope to help kids develop life-long conservation values through nature exploration, while promoting learning that encourages play and imagination across disciplines. We are excited to support DonorsChoose.org to help educators continue to activate their classrooms through exciting and imaginative environmental projects. By leading your students toward environmental education, you can motivate them to learn about science, conservation, creative critical thinking and teamwork while teaching concepts customized to your region's education Content Standards or Guidelines. Students are empowered to think and act environmentally at school, at home and in the community.<\/p>\r\n\r\n<p><a target=\"_blank\" href=\"../donors/search.html?matchingId=612\">See all projects eligible for this match offer.<\/a><\/p>"
+      },
+      "totalPrice": "997.04",
+      "freeShipping": "false",
+      "teacherId": "2228538",
+      "teacherName": "Ms. Sadler",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [{
+        "id": 3,
+        "name": "Special Education"
+      }],
+      "schoolName": "Bonsall Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/bonsall-elementary-school/80863/",
+      "city": "Camden",
+      "zip": "08104-1696",
+      "state": "NJ",
+      "stateFullName": "New Jersey",
+      "latitude": "39.925611000000000",
+      "longitude": "-75.105911000000000",
+      "zone": {
+        "id": "102",
+        "name": "New Jersey"
+      },
+      "subject": {
+        "id": "7",
+        "name": "Environmental Science",
+        "groupId": "4"
+      },
+      "additionalSubjects": [{
+        "id": "21",
+        "name": "Community Service",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-07-03",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1175031",
+      "proposalURL": "http://www.donorschoose.org/project/teen-title-takeover/1175031/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1175031&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1393720_sm.jpg?timestamp=1330095193000",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1393720_thmb.jpg?timestamp=1330095193000",
+      "title": "Teen Title Takeover",
+      "shortDescription": "Let&#039;s face it. Not all of our memories of our teenagers years were positive. Remember the awkwardness? How about not feeling comfortable in your own skin? I&#039;d like to give support to my teen...",
+      "fulfillmentTrailer": "My students need books that help them through their teens.  Some examples are &#034;Chicken Soup for the Teenage Soul,&#034; &#034;Don&#039;t Sweat the Small Stuff,&#034; and &#034;Teens &amp; Family Issues.&#034;",
+      "snippets": [],
+      "percentFunded": "45",
+      "numDonors": "39",
+      "costToComplete": "274.36",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "498.84",
+      "freeShipping": "true",
+      "teacherId": "1393720",
+      "teacherName": "Ms. DiTrolio",
+      "gradeLevel": {
+        "id": "3",
+        "name": "Grades 6-8"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [
+        {
+          "id": 5,
+          "name": "SONIC Teacher"
+        },
+        {
+          "id": 9,
+          "name": "NEA Member"
+        }
+      ],
+      "schoolTypes": [
+        {
+          "id": 14,
+          "name": "Kia (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        },
+        {
+          "id": 15,
+          "name": "Kia (partner)"
+        }
+      ],
+      "schoolName": "James Murray Elementary School 38",
+      "schoolUrl": "http://www.donorschoose.org/school/james-murray-elementary-school-38/81320/",
+      "city": "Jersey City",
+      "zip": "07305-1408",
+      "state": "NJ",
+      "stateFullName": "New Jersey",
+      "latitude": "40.709161000000000",
+      "longitude": "-74.090665000000000",
+      "zone": {
+        "id": "102",
+        "name": "New Jersey"
+      },
+      "subject": {
+        "id": "10",
+        "name": "Literacy",
+        "groupId": "6"
+      },
+      "additionalSubjects": [{
+        "id": "21",
+        "name": "Community Service",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "1",
+        "name": "Books"
+      },
+      "expirationDate": "2014-05-27",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1171931",
+      "proposalURL": "http://www.donorschoose.org/project/chess-club/1171931/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1171931&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u2200557_sm.jpg?timestamp=1392649432241",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u2200557_thmb.jpg?timestamp=1392649432241",
+      "title": "Chess Club",
+      "shortDescription": "I have fifth graders that attend a school in the neighborhood. The school has not had a chess club in a long time. I started one and what started out as a one day club is now turned into 2 days a...",
+      "fulfillmentTrailer": "My students need regular chess boards and teaching chess boards.  I am in need of 50 participation trophies and medals.  2 first, second, and third place medals.",
+      "snippets": [],
+      "percentFunded": "42",
+      "numDonors": "3",
+      "costToComplete": "103.82",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "178.82",
+      "freeShipping": "false",
+      "teacherId": "2200557",
+      "teacherName": "Ms. Joseph",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [],
+      "schoolTypes": [{
+        "id": 5,
+        "name": "Year Round"
+      }],
+      "schoolName": "Frances Willard Elementary School",
+      "schoolUrl": "http://www.donorschoose.org/school/frances-willard-elementary-school/26612/",
+      "city": "Long Beach",
+      "zip": "90804-3804",
+      "state": "CA",
+      "stateFullName": "California",
+      "latitude": "33.779940000000000",
+      "longitude": "-118.155869000000000",
+      "zone": {
+        "id": "411",
+        "name": "California (South)"
+      },
+      "subject": {
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "17",
+        "name": "Extracurricular",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-06-17",
+      "fundingStatus": "needs funding"
+    },
+    {
+      "id": "1183031",
+      "proposalURL": "http://www.donorschoose.org/project/classroom-community/1183031/?utm_source=api&utm_medium=feed&utm_content=bodylink&utm_campaign=DONORSCHOOSE",
+      "fundURL": "https://secure.donorschoose.org/donors/givingCart.html?proposalid=1183031&donationAmount=45&utm_source=api&utm_medium=feed&utm_content=fundlink&utm_campaign=DONORSCHOOSE",
+      "imageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/small/u1402984_sm.jpg?timestamp=1384352331181",
+      "thumbImageURL": "http://s3.donorschoose.net/donorschoose-storage/dc_prod/images/user/thumbnail/u1402984_thmb.jpg?timestamp=1384352331181",
+      "title": "Classroom Community",
+      "shortDescription": "Our class works very hard, but in its current set-up, it lacks an easy central meeting place. We want to make sure our room is set up for community. We are in a Montessori room needing...",
+      "fulfillmentTrailer": "My students need markers, clipboards, and a dry erase board to create a second work station in the room to promote classroom management and collaborative work.",
+      "snippets": [],
+      "percentFunded": "33",
+      "numDonors": "2",
+      "costToComplete": "149.21",
+      "matchingFund": {
+        "matchingKey": "",
+        "name": "",
+        "type": "",
+        "logoURL": "",
+        "faqURL": "",
+        "amount": "0.00",
+        "description": ""
+      },
+      "totalPrice": "224.21",
+      "freeShipping": "true",
+      "teacherId": "1402984",
+      "teacherName": "Mr. Abel",
+      "gradeLevel": {
+        "id": "2",
+        "name": "Grades 3-5"
+      },
+      "povertyLevel": "Highest Poverty",
+      "teacherTypes": [{
+        "id": 9,
+        "name": "NEA Member"
+      }],
+      "schoolTypes": [
+        {
+          "id": 12,
+          "name": "Horace Mann (partner)"
+        },
+        {
+          "id": 3,
+          "name": "Special Education"
+        }
+      ],
+      "schoolName": "Grand Rapids Mont-Fountain",
+      "schoolUrl": "http://www.donorschoose.org/school/grand-rapids-montessori-ps/52970/",
+      "city": "Grand Rapids",
+      "zip": "49503-3419",
+      "state": "MI",
+      "stateFullName": "Michigan",
+      "latitude": "42.966500000000000",
+      "longitude": "-85.657119000000000",
+      "zone": {
+        "id": "212",
+        "name": "Michigan"
+      },
+      "subject": {
+        "id": "26",
+        "name": "Character Education",
+        "groupId": "5"
+      },
+      "additionalSubjects": [{
+        "id": "19",
+        "name": "Other",
+        "groupId": "5"
+      }],
+      "resource": {
+        "id": "3",
+        "name": "Supplies"
+      },
+      "expirationDate": "2014-06-10",
+      "fundingStatus": "needs funding"
+    }
+  ],
+  "facetCounts": {
+    "location": {"state": [
+      [
+        "AL",
+        "Alabama",
+        42
+      ],
+      [
+        "AK",
+        "Alaska",
+        11
+      ],
+      [
+        "AZ",
+        "Arizona",
+        65
+      ],
+      [
+        "AR",
+        "Arkansas",
+        36
+      ],
+      [
+        "CA",
+        "California",
+        443
+      ],
+      [
+        "CO",
+        "Colorado",
+        25
+      ],
+      [
+        "CT",
+        "Connecticut",
+        49
+      ],
+      [
+        "DE",
+        "Delaware",
+        7
+      ],
+      [
+        "DC",
+        "District of Columbia",
+        16
+      ],
+      [
+        "FL",
+        "Florida",
+        141
+      ],
+      [
+        "GA",
+        "Georgia",
+        93
+      ],
+      [
+        "HI",
+        "Hawaii",
+        20
+      ],
+      [
+        "ID",
+        "Idaho",
+        6
+      ],
+      [
+        "IL",
+        "Illinois",
+        111
+      ],
+      [
+        "IN",
+        "Indiana",
+        48
+      ],
+      [
+        "IA",
+        "Iowa",
+        20
+      ],
+      [
+        "KS",
+        "Kansas",
+        19
+      ],
+      [
+        "KY",
+        "Kentucky",
+        37
+      ],
+      [
+        "LA",
+        "Louisiana",
+        42
+      ],
+      [
+        "ME",
+        "Maine",
+        13
+      ],
+      [
+        "MD",
+        "Maryland",
+        58
+      ],
+      [
+        "MA",
+        "Massachusetts",
+        47
+      ],
+      [
+        "MI",
+        "Michigan",
+        85
+      ],
+      [
+        "MN",
+        "Minnesota",
+        37
+      ],
+      [
+        "MS",
+        "Mississippi",
+        27
+      ],
+      [
+        "MO",
+        "Missouri",
+        48
+      ],
+      [
+        "MT",
+        "Montana",
+        10
+      ],
+      [
+        "NE",
+        "Nebraska",
+        8
+      ],
+      [
+        "NV",
+        "Nevada",
+        21
+      ],
+      [
+        "NH",
+        "New Hampshire",
+        8
+      ],
+      [
+        "NJ",
+        "New Jersey",
+        143
+      ],
+      [
+        "NM",
+        "New Mexico",
+        12
+      ],
+      [
+        "NY",
+        "New York",
+        158
+      ],
+      [
+        "NC",
+        "North Carolina",
+        124
+      ],
+      [
+        "ND",
+        "North Dakota",
+        7
+      ],
+      [
+        "OH",
+        "Ohio",
+        47
+      ],
+      [
+        "OK",
+        "Oklahoma",
+        55
+      ],
+      [
+        "OR",
+        "Oregon",
+        22
+      ],
+      [
+        "PA",
+        "Pennsylvania",
+        66
+      ],
+      [
+        "RI",
+        "Rhode Island",
+        11
+      ],
+      [
+        "SC",
+        "South Carolina",
+        70
+      ],
+      [
+        "SD",
+        "South Dakota",
+        4
+      ],
+      [
+        "TN",
+        "Tennessee",
+        45
+      ],
+      [
+        "TX",
+        "Texas",
+        187
+      ],
+      [
+        "UT",
+        "Utah",
+        25
+      ],
+      [
+        "VT",
+        "Vermont",
+        10
+      ],
+      [
+        "VA",
+        "Virginia",
+        59
+      ],
+      [
+        "WA",
+        "Washington",
+        39
+      ],
+      [
+        "WV",
+        "West Virginia",
+        14
+      ],
+      [
+        "WI",
+        "Wisconsin",
+        47
+      ],
+      [
+        "WY",
+        "Wyoming",
+        3
+      ]
+    ]},
+    "subject": {
+      "Health & Sports": 85,
+      "Math & Science": 466,
+      "Music & The Arts": 211,
+      "Literacy & Language": 748,
+      "Special Needs": 397,
+      "Applied Learning": "{Character Education=413, Parent Involvement=87, Community Service=131, Other=605, College & Career Prep=613, Early Development=956, Extracurricular=191}",
+      "History & Civics": 69
+    },
+    "proposalType": {
+      "Supplies": 967,
+      "Visitors": 5,
+      "Books": 239,
+      "Trips": 45,
+      "Other": 396,
+      "Technology": 1089
+    },
+    "matching": {
+      "": 192,
+      "Speakaboos": 3,
+      "Horry County, SC": 2,
+      "Environmental Education": 9,
+      "Peoria, Pekin, Morton, IL": 1,
+      "Hurricane Sandy": 4,
+      "Graham Family Foundation": 1,
+      "Jefferson County, KY": 10,
+      "Moore, OK": 16,
+      "Hurricane Sandy, NJ": 6,
+      "Teen Read Week": 1,
+      "Economics, AR": 1,
+      "AT&T Aspire": 94,
+      "STEM - NC": 13,
+      "Greater Tulsa, OK": 3,
+      "First 5 LA": 19,
+      "Ares in Motion": 2,
+      "Rural Environmental": 4,
+      "Georgetown, SC": 2,
+      "UP Schools": 1
+    },
+    "costToComplete": {
+      "$1000-above": 588,
+      "$100-$200": 277,
+      "$200-$1000": 1815,
+      "$0-$99": 61
+    },
+    "partiallyFunded": {
+      "Some Received": 1398,
+      "None Yet": 1343
+    },
+    "teacherNotFunded": "1068",
+    "freeShipping": "1404",
+    "gradeType": {
+      "Grades 9-12": 463,
+      "Grades PreK-2": 1303,
+      "Grades 3-5": 586,
+      "Grades 6-8": 389
+    },
+    "teacherType": {
+      "NY Teaching Fellow": 18,
+      "Teach For America": 69
+    },
+    "schoolType": {
+      "Year Round": 145,
+      "KIPP": 8,
+      "Charter": 200,
+      "Kia (partner)": 968,
+      "College-Ready Promise": 4,
+      "Horace Mann (partner)": 1417,
+      "Magnet": 230,
+      "New Leaders": 15
+    }
+  }
+}

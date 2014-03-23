@@ -58,8 +58,14 @@ var projectSchema = new Schema({
 });
 
 var countiesSchema = new Schema({
-  'school_state': String,
-  'school_county': String
+  'type': String,
+  // properties will have these attributes:
+  // STATEFP (String), AWATER (Number), Projects (Object Array)
+  'properties': Object, // includes state
+  'id': String,
+  'arcs': Array
+  // 'school_state': String,
+  // 'school_county': String
 });
 
 var statesSchema = new Schema({

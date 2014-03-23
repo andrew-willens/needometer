@@ -10,8 +10,6 @@ var express = require('express'),
     path = require('path'),
     app = express();
 
-var jQuery = require('jquery');
-
 // rendering views
 app.engine('html', swig.renderFile);
 app.set('port', process.env.PORT || 3000);
