@@ -14,7 +14,7 @@ var initD3 = function(width) {
 			.attr("height", height)
 
 	d3.json("./data/us.json", function(err, us) {
-		var counties = topojson.feature(us, us.objects.uscounties).features;
+		var counties = topojson.feature(us, us.objects.counties2).features;
 
 		svg.selectAll("path")
 				.data(counties)
