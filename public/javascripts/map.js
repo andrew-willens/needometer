@@ -13,13 +13,18 @@ var initD3 = function(width) {
 			.attr("width", width)
 			.attr("height", height)
 
-	d3.json("./data/us.json", function(err, us) {
+	d3.json("./data/us_with_projects.json", function(err, us) {
 		var counties = topojson.feature(us, us.objects.counties2).features;
 
 		svg.selectAll("path")
 				.data(counties)
 			.enter().append("path")
 			.attr("class", "county")
+			.style("fill", function(d){
+				if (d.properties.projects.length>0){
+					return "red";
+				}
+			})
 			.attr("d", path)
 			.on("click", function(d){
 				console.log(d);
