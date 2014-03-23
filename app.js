@@ -6,10 +6,11 @@
 var express = require('express'),
     swig = require('swig'),
     routes = require('./routes'),
-    user = require('./routes/user'),
     http = require('http'),
     path = require('path'),
     app = express();
+
+var jQuery = require('jquery');
 
 // rendering views
 app.engine('html', swig.renderFile);
