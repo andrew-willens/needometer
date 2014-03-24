@@ -10,9 +10,6 @@ var express = require('express'),
     path = require('path'),
     app = express();
 
-// use swig's renderFile function to render html files
-app.engine('html', swig.renderFile);
-
 // rendering views
 app.engine('html', swig.renderFile);
 app.set('port', process.env.PORT || 3000);
