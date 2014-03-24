@@ -22,7 +22,7 @@ function writeProjects(err, data) {
 
 	j = 0;
 	newProjects = [];
-	for (var k=0; k<5000; k++ ){
+	for (var k=0; k<100000; k++ ){
 		proj = projects[k].split(",");
 		projObj = {};
 		for (var i=0; i<proj.length-1; i++) {
