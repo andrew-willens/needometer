@@ -7,10 +7,6 @@ a {
   color: #00B7FF;
 }
 
-.land {
-	fill: gray;
-}
-
 .state {
 	fill: gray;
 }
@@ -25,3 +21,31 @@ a {
   fill: none;
   stroke: #fff;
 }
+
+.container {
+  padding: 50px;
+}
+
+.bar {
+  fill: blue;
+}
+
+.bar:hover {
+  fill: red;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
