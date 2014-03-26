@@ -3,7 +3,7 @@
 // for information on nested schemas used here
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/donorschoose');
+mongoose.connect('mongodb://localhost/needometer');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
