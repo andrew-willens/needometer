@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.state {
+	fill: gray;
+}
+
+.county-border {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.state-border {
+  fill: none;
+  stroke: #fff;
+}
+
+.container {
+  padding: 50px;
+}
+
+.bar {
+  fill: blue;
+}
+
+.bar:hover {
+  fill: red;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+Hide full text
+
+
