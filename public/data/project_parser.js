@@ -11,20 +11,18 @@ function readProjects(callback) {
 };
 
 function writeProjects(err, data) {
-	// console.log("writeProjects running.")
 	//error handler
 	if (err) {console.log(err); }
 
-	// console.log("Formatting projects data.")
+	console.log("Formatting projects data.")
 	//pull the column heads out of the data. make each project an array of strings, each string is a datum.
 	var projects = data.toString().split("\n");
-	// console.log("done splitting projects data along commas.");
+	console.log("done splitting projects data along commas.");
 	var keys = projects.shift().split(",");
-	// console.log("column headers removed")
+	console.log("column headers removed")
 
-	// console.log("converting project arrays to project objects");
+	console.log("converting project arrays to project objects");
 	// create template for project json objects
-
 	j = 0;
 	newProjects = [];
 	for (var k=0; k<100000; k++ ){
@@ -41,7 +39,7 @@ function writeProjects(err, data) {
 	// console.log("done creating project objects");
 
 	// console.log("stringifying project objects")
-	//convert projects object to format fs.writeFile can read.
+	// convert projects object to format fs.writeFile can read.
 	// newProjects = JSON.stringify(newProjects);
 	// console.log("done stringifying")
 
@@ -49,14 +47,14 @@ function writeProjects(err, data) {
 	// fs.writeFileSync("project_objects.json", newProjects);
 	// console.log("done writing");
 
-		newProjects.forEach(function(project) {
-			Project.create({
-			  'school_city': project.school_city,
-			  'school_state': project.school_state,
-			  'students_reached': project.students_reached,
-			  'date_expiration': project.date_expiration
-			});
-	});
+	// 	newProjects.forEach(function(project) {
+	// 		Project.create({
+	// 		  'school_city': project.school_city,
+	// 		  'school_state': project.school_state,
+	// 		  'students_reached': project.students_reached,
+	// 		  'date_expiration': project.date_expiration
+	// 		});
+	// });
 
 	console.log("Finished! control-c to quit.");
 	return newProjects;
