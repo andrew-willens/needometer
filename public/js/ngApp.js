@@ -45,9 +45,13 @@ needometer.run(function (){
 			.attr("class", "state")
 			.attr("d", path)
 			.on("click", function(d){
-				// console.log(d.properties.STUSPS);
+				console.log(d.properties.STUSPS);
 				// initChart()
-				document.location = '/'+d.properties.STUSPS;
+				var stateData;
+				$.get ( '/'+d.properties.STUSPS, function(data){
+					stateData = data.projects;
+					console.log(stateData);
+				});
       });
 
 		svg.append("path")
