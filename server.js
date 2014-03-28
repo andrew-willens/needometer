@@ -1,4 +1,4 @@
-/**
+ /**
  * Module dependencies.
  */
 
@@ -31,6 +31,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/:state', routes.stateData);
 
 // looker GET request setup
 // var options = {
