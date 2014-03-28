@@ -18,6 +18,8 @@ needometer.config(function($interpolateProvider){
 needometer.run(function (){
 	// console.log(chart);
 
+	var stateData = [];
+
 	var	width = 960,
 			height = width / 2
 			active = d3.select(null);
@@ -47,9 +49,8 @@ needometer.run(function (){
 			.on("click", function(d){
 				console.log(d.properties.STUSPS);
 				// initChart()
-				var stateData;
 				$.get ( '/'+d.properties.STUSPS, function(data){
-					stateData = data.projects;
+					stateData.push(data.projects);
 					console.log(stateData);
 				});
       });
