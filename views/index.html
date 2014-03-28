@@ -30,7 +30,29 @@
 	<script src="js/controllers/ChartCtrl.js"></script>
 	<script src="js/services/ChartService.js" ></script>
 	<script src="js/appRoutes.js"></script>
-	<script src="js/ngApp.js"></script>
+  <script src="js/ngApp.js"></script>
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+  <script>
+    $(function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 2005,
+        max: 2014,
+        step: 1,
+        values: [ 2005, 2014 ],
+        slide: function( event, ui ) {
+          $( "#years" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+        }
+      });
+      $( "#years" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - " + $( "#slider-range" ).slider( "values", 1 ) );
+    });
+  </script>
+
 </head>
 
 <body ng-app="needometer">
@@ -39,129 +61,212 @@
 	  </div>
 	  <div class="col-xs-12">
 	    <h3 style="text-align:center;">What makes __________ unique?</h3><br><br>
-	    <!-- section 1 -->
-	    <p><img src="/images/number1_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Select a city or state</p><br><br>
-	  </div>
-	  <div class="col-xs-1">
-	  </div>
-	</div> <!-- row -->
+      <!-- section 1 -->
+      <p><img src="/images/number1_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Select a city or state</p><br><br>
+    </div>
+    <div class="col-xs-1">
+    </div>
+  </div> <!-- row -->
 
-	<!-- D3 US Map -->
-
-	<div class="row">
-	  <div class="col-xs-1">
-	  </div>
-	  <div class="col-xs-12">
-	    <!-- section 2 -->
-	    <p><img src="/images/number2_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Filter</p><br><br>
-
-	    <div class="btn-group btn-group-justified">
-	      <div class="btn-group">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	          Poverty Level
-	          <span class="caret"></span>
-	        </button>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">Low</a></li>
-	          <li><a href="#">High</a></li>
-	        </ul>
-	      </div>
-	      <div class="btn-group">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	          Funded?
-	          <span class="caret"></span>
-	        </button>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">Yes</a></li>
-	          <li><a href="#">No</a></li>
-	        </ul>
-	      </div>
-	      <div class="btn-group">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	          Resource Type
-	          <span class="caret"></span>
-	        </button>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">A</a></li>
-	          <li><a href="#">B</a></li>
-	          <li><a href="#">C</a></li>
-	          <li><a href="#">D</a></li>
-	          <li><a href="#">E</a></li>
-	          <li><a href="#">F</a></li>
-	        </ul>
-	      </div>
-	      <div class="btn-group">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	          Subject
-	          <span class="caret"></span>
-	        </button>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">A</a></li>
-	          <li><a href="#">B</a></li>
-	          <li><a href="#">C</a></li>
-	          <li><a href="#">D</a></li>
-	          <li><a href="#">E</a></li>
-	          <li><a href="#">F</a></li>
-	        </ul>
-	      </div>
-	      <div class="btn-group">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	          Grade
-	          <span class="caret"></span>
-	        </button>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">Pre-K</a></li>
-	          <li><a href="#">K</a></li>
-	          <li><a href="#">1</a></li>
-	          <li><a href="#">2</a></li>
-	          <li><a href="#">3</a></li>
-	          <li><a href="#">4</a></li>
-	          <li><a href="#">5</a></li>
-	          <li><a href="#">6</a></li>
-	          <li><a href="#">7</a></li>
-	          <li><a href="#">8</a></li>
-	          <li><a href="#">9</a></li>
-	          <li><a href="#">10</a></li>
-	          <li><a href="#">11</a></li>
-	          <li><a href="#">12</a></li>
-	        </ul>
-	      </div>
-	      <div class="btn-group">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	          Metro Area
-	          <span class="caret"></span>
-	        </button>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">Include</a></li>
-	          <li><a href="#">Exclude</a></li>
-	        </ul>
-	      </div>
-	      <div class="btn-group">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	          Product Category
-	          <span class="caret"></span>
-	        </button>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">A</a></li>
-	          <li><a href="#">B</a></li>
-	          <li><a href="#">C</a></li>
-	          <li><a href="#">D</a></li>
-	          <li><a href="#">E</a></li>
-	          <li><a href="#">F</a></li>
-	          <li><a href="#">G</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </div>
-
+  <!-- D3 US Map -->
 
 	<!-- D3 USA Projection -->
 	<div id="mapCanvas">
-    <h3 style="text-align:center;"><p>DonorsChoose.org Needometer Page</p></h3><br>
+    <h3 style="text-align:center;"><p></p></h3><br>
   </div>
 	<!-- end map -->
 
-	<!-- begin charts -->
+  <br><br><br><br><br><br><br>
+
+  <div class="row">
+    <!-- section 2 -->
+    <p><img src="/images/number2_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Filter</p>
+    <nav>
+      <ul>
+        <li><a href="#">Poverty Level</a>
+          <ul>
+            <li><a href="#">Low</a></li>
+            <li><a href="#">High</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Funded?</a>
+          <ul>
+            <li><a href="#">Yes</a></li>
+            <li><a href="#">No</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Resource Type</a>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Subject</a>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Grade</a>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Metro Area</a>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Product Category</a>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <br><br><br><br>
+  <p><img src="/images/number3_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Pick Timeframe</p>
+  <br><br><br><br>
+
+
+
+
+  <p>
+    <label for="years">Select Range of Years:</label>
+    <input type="text" id="years" style="border:0; color:#f6931f; font-weight:bold;">
+    <div class="col-xs-6">
+      <div id="slider-range"></div>
+    </div>
+  </p>
+
+
+
+  <br><br><br><br>
+  <p><img src="/images/number4_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;You are asking:</p>
+  <br><br><br><br>
+<!--
+      <div class="btn-group btn-group-justified">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Poverty Level
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Low</a></li>
+            <li><a href="#">High</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Funded?
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Yes</a></li>
+            <li><a href="#">No</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Resource Type
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">E</a></li>
+            <li><a href="#">F</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Subject
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">E</a></li>
+            <li><a href="#">F</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Grade
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Pre-K</a></li>
+            <li><a href="#">K</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">11</a></li>
+            <li><a href="#">12</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Metro Area
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Include</a></li>
+            <li><a href="#">Exclude</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Product Category
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">E</a></li>
+            <li><a href="#">F</a></li>
+            <li><a href="#">G</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+-->
+
+	<!-- begin charts
 	<h4><p>[[location1]]</p></h4>
 	<div class="well" ng-controller="ChartController">
 	  <div class="row">
@@ -201,35 +306,34 @@
 	    </div>
 	  </div>
 	</div>
-
 	<div class="container">
 	  <table class="table table-hover table-condensed table-responsive">
-	    <tr><!-- "th" doesn't allow centering -->
+	    <tr>
 	      <td align='right'><strong>California</strong></td>
 	      <td align='center'><strong>vs</strong></td>
 	      <td align='left'><strong>New York</strong></td>
 	    </tr>
-	    <tr><!-- "th" doesn't allow centering -->
+	    <tr>
 	      <td align='right'><strong>1,278</strong></td>
 	      <td align='center'><strong>Schools</strong></td>
 	      <td align='left'>1,024</td>
 	    </tr>
-	    <tr><!-- "th" doesn't allow centering -->
+	    <tr>
 	      <td align='right'><strong>14,322</strong></td>
 	      <td align='center'><strong>Teachers</strong></td>
 	      <td align='left'>12,011</td>
 	    </tr>
-	    <tr><!-- "th" doesn't allow centering -->
+	    <tr>
 	      <td align='right'>455,732</td>
 	      <td align='center'><strong>Students</strong></td>
 	      <td align='left'><strong>493,943</strong></td>
 	    </tr>
-	    <tr><!-- "th" doesn't allow centering -->
+	    <tr>
 	      <td align='right'><strong>Highest</strong></td>
 	      <td align='center'><strong>Poverty Level</strong></td>
 	      <td align='left'><strong>Highest</strong></td>
 	    </tr>
-	    <tr><!-- "th" doesn't allow centering -->
+	    <tr>
 	      <td align='right'><strong>38.4%</strong></td>
 	      <td align='center'><strong>% Minority Rate</strong></td>
 	      <td align='left'>32.7%</td>
@@ -238,6 +342,7 @@
 	</div>
 
 	<!-- Remaining Javascripts -->
+
 	<script src="libs/d3/d3.min.js"></script>
 	<script src="libs/topojson/topojson.js"></script>
 
