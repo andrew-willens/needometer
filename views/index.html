@@ -236,5 +236,12 @@
 
 	<script src="libs/d3/d3.min.js"></script>
 	<script src="libs/topojson/topojson.js"></script>
+
+
+	<script>
+		{% autoescape false %}
+			var projects = {{ projects | json }};
+		{% endautoescape %}
+	</script>
 </body>
 </html>
