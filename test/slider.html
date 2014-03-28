@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Slider - Range slider</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+  <script>
+    $(function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 2005,
+        max: 2014,
+        step: 1,
+        values: [ 2005, 2014 ],
+        slide: function( event, ui ) {
+          $( "#years" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+        }
+      });
+      $( "#years" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - " + $( "#slider-range" ).slider( "values", 1 ) );
+    });
+  </script>
+</head>
+<body>
+
+<p>
+  <label for="years">Select Range of Years:</label>
+  <input type="text" id="years" style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+
+<div id="slider-range"></div>
+
+</body>
+</html>
