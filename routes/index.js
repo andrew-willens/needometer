@@ -1,12 +1,22 @@
-
-/*
- * GET home page.
- */
+// dependencies
+// var request = require('request'),
+		path = require('path'),
+    http = require('http'),
+    mongoose = require('mongoose'),
+    models = require('../models');
 
 exports.index = function(req, res) {
-	res.render('index', {title: "Needometer"})
+	res.render('index');
 };
 
+exports.stateData = function(req, res) {
+	// console.log(req.params.state)
+	console.log("querying mongo...")
+	models.Project.find({"school_state": req.params.state }, function(err, projects){
+		if (err) console.log(err);
+		res.render('index', {projects: projects})
+	});
+};
 
 // module.exports = function(app){
 //   // res.render('index', { title: 'Needometer' });
