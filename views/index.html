@@ -126,18 +126,12 @@
   <div class="row">
     <div class="col-xs-1">
     </div>
-    <div class="col-xs-6 col-sm-4">
+    <div id="chartDiv" class="col-xs-6 col-sm-4">
       State 1<br>
-      <script>
-        charts();
-      </script>
       <br>
     </div>
-    <div class="col-xs-6 col-sm-4">
+    <div id="chartDiv"class="col-xs-6 col-sm-4">
       State 2<br>
-      <script>
-        charts();
-      </script>
       <br>
     </div>
     <div class="col-xs-1">
@@ -162,11 +156,13 @@
   <script>
   	initD3();
   	initSlider();
+  	charts();
+		var stateDataCache = [];
   </script>
 	<script>
 		{% autoescape false %}
-			var stateDataCache = [];
-			console.log(stateDataCache);
+			var stateProjects = {{ projects | json }};
+			// var runtime = 0 || {{ runtime }}
 		{% endautoescape %}
 	</script>
 
