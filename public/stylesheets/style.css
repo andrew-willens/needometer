@@ -22,6 +22,11 @@ a {
   stroke: #fff;
 }
 
+#svg {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   padding: 50px;
 }

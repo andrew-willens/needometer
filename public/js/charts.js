@@ -1,6 +1,6 @@
 var charts = function(width) {
-  var width = 960/2,
-      height = 500/2,
+  var width = 960/2.5,
+      height = 500/2.5,
       radius = Math.min(width, height) / 2;
 
   var color = d3.scale.ordinal()

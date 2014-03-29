@@ -10,9 +10,11 @@ var initD3 = function() {
 			.projection(projection);
 
 	var svg = d3.select("#mapCanvas").append("svg")
-			.attr("id", "map")
+			.attr("id", "svg")
 			.attr("width", width)
 			.attr("height", height)
+			.attr("viewBox", "0 0 " + width + " " + height)
+			.attr("preserveAspectRatio", "xMidYMid");
 
 	d3.json("data/us.json", function(err, us) {
 		var states = topojson.feature(us, us.objects.states).features;
