@@ -49,6 +49,10 @@ a {
   display: none;
 }
 
+.arc path {
+  stroke: #fff;
+}
+
 nav {
   margin: 100px auto;
   text-align: center;
