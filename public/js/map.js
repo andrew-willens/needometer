@@ -1,6 +1,4 @@
 var initD3 = function() {
-	var stateData = [];
-
 	var	width = 960,
 			height = width / 2
 			active = d3.select(null);
@@ -30,8 +28,8 @@ var initD3 = function() {
 			.on("click", function(d){
 				console.log(d.properties.STUSPS);
 				$.get ( '/'+d.properties.STUSPS, function(data){
-					stateData.push(data.projects);
-					console.log(stateData);
+					stateDataCache.push(data.projects);
+					poveryData = povertyLevel(data.projects);
 				});
       });
 
