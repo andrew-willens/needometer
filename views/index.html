@@ -13,49 +13,11 @@
   <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="libs/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
   <link href="libs/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel="stylesheet" type="text/css">
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
-
-  <!-- JS Angular dependencies -->
-  <script src="libs/jquery/dist/jquery.min.js"></script>
-
-  <!-- Angular.js libraries -->
-	<script src="libs/angular/angular.min.js"></script>
-	<script src="libs/angular-route/angular-route.min.js"></script>
-
-	<!-- Angular.js local -->
-	<script src="js/directives/ngDirectives.js"></script>
-	<script src="js/controllers/MainCtrl.js"></script>
-	<script src="js/services/MainService.js"></script>
-	<script src="js/controllers/ChartCtrl.js"></script>
-	<script src="js/services/ChartService.js" ></script>
-	<script src="js/appRoutes.js"></script>
-  <script src="js/ngApp.js"></script>
-
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-
-  <script>
-    $(function() {
-      $( "#slider-range" ).slider({
-        range: true,
-        min: 2005,
-        max: 2014,
-        step: 1,
-        values: [ 2005, 2014 ],
-        slide: function( event, ui ) {
-          $( "#years" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-        }
-      });
-      $( "#years" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - " + $( "#slider-range" ).slider( "values", 1 ) );
-    });
-  </script>
-
 </head>
-
-<body ng-app="needometer">
+<body>
 	<div class="row">
 	  <div class="col-xs-1">
 	  </div>
@@ -165,191 +127,31 @@
   <br><br><br><br>
   <p><img src="/images/number4_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;You are asking:</p>
   <br><br><br><br>
-<!--
-      <div class="btn-group btn-group-justified">
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Poverty Level
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Low</a></li>
-            <li><a href="#">High</a></li>
-          </ul>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Funded?
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Yes</a></li>
-            <li><a href="#">No</a></li>
-          </ul>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Resource Type
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-          </ul>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Subject
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-          </ul>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Grade
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Pre-K</a></li>
-            <li><a href="#">K</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-            <li><a href="#">10</a></li>
-            <li><a href="#">11</a></li>
-            <li><a href="#">12</a></li>
-          </ul>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Metro Area
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Include</a></li>
-            <li><a href="#">Exclude</a></li>
-          </ul>
-        </div>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Product Category
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
--->
 
-	<!-- begin charts
-	<h4><p>[[location1]]</p></h4>
-	<div class="well" ng-controller="ChartController">
-	  <div class="row">
-	    <div class="col-xs-12 col-sm-12 col-md-12">
-	      <div class="row">
-	        <div id="chart1" class="col-xs-4 col-sm-4 col-md-4" ng-click="initChart('chart1')" align="center">
-	          Chart 1
-	        </div>
-	        <div id="chart2" class="col-xs-4 col-sm-4 col-md-4" ng-click="initChart('chart2')" align="center">
-	          Chart 2
-	        </div>
-	        <div id="chart3" class="col-xs-4 col-sm-4 col-md-4" ng-click="initChart('chart3')" align="center">
-	          Chart 3
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<br><br>
-
-
-	<h4><p>New York</p></h4>
-	<div class="well">
-	  <div class="row">
-	    <div class="col-xs-12 col-sm-12 col-md-12">
-	      <div class="row">
-	        <div class="col-xs-4 col-sm-4 col-md-4" align="center">
-	          Chart 1
-	        </div>
-	        <div class="col-xs-4 col-sm-4 col-md-4" align="center">
-	          Chart 2
-	        </div>
-	        <div class="col-xs-4 col-sm-4 col-md-4" align="center">
-	          Chart 3
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="container">
-	  <table class="table table-hover table-condensed table-responsive">
-	    <tr>
-	      <td align='right'><strong>California</strong></td>
-	      <td align='center'><strong>vs</strong></td>
-	      <td align='left'><strong>New York</strong></td>
-	    </tr>
-	    <tr>
-	      <td align='right'><strong>1,278</strong></td>
-	      <td align='center'><strong>Schools</strong></td>
-	      <td align='left'>1,024</td>
-	    </tr>
-	    <tr>
-	      <td align='right'><strong>14,322</strong></td>
-	      <td align='center'><strong>Teachers</strong></td>
-	      <td align='left'>12,011</td>
-	    </tr>
-	    <tr>
-	      <td align='right'>455,732</td>
-	      <td align='center'><strong>Students</strong></td>
-	      <td align='left'><strong>493,943</strong></td>
-	    </tr>
-	    <tr>
-	      <td align='right'><strong>Highest</strong></td>
-	      <td align='center'><strong>Poverty Level</strong></td>
-	      <td align='left'><strong>Highest</strong></td>
-	    </tr>
-	    <tr>
-	      <td align='right'><strong>38.4%</strong></td>
-	      <td align='center'><strong>% Minority Rate</strong></td>
-	      <td align='left'>32.7%</td>
-	    </tr>
-	  </table>
-	</div>
 
 	<!-- Remaining Javascripts -->
-
+	<!-- D3 -->
 	<script src="libs/d3/d3.min.js"></script>
 	<script src="libs/topojson/topojson.js"></script>
+  <!-- JQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- local scripts -->
+  <script src="js/dataChlsef.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/JQ.js"></script>
+  <script src="js/map.js"></script>
 
+  <script>
+  	initD3();
+  	initSlider();
+  </script>
 	<script>
 		{% autoescape false %}
-			var projects = {{ projects | json }};
+			var stateDataCache = [];
+			console.log(stateDataCache);
 		{% endautoescape %}
 	</script>
+
 </body>
 </html>
