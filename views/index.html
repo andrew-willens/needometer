@@ -39,23 +39,6 @@
 
   <script src="js/charts.js"></script>
 
-  <script>
-    $(function() {
-      $( "#slider-range" ).slider({
-        range: true,
-        min: 2005,
-        max: 2014,
-        step: 1,
-        values: [ 2005, 2014 ],
-        slide: function( event, ui ) {
-          $( "#years" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-        }
-      });
-      $( "#years" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - " + $( "#slider-range" ).slider( "values", 1 ) );
-    });
-  </script>
-
 </head>
 <body>
 	<div class="row">
@@ -159,14 +142,9 @@
     </div>
   </p>
 
-
-
   <br><br><br><br>
   <p><img src="/images/number4_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;You are asking:</p>
   <br><br><br><br>
-
-  <script src="/js/charts.js"></script>
-  <script src="/js/charts2.js"></script>
 
 	<script src="libs/d3/d3.min.js"></script>
 	<script src="libs/topojson/topojson.js"></script>
@@ -179,14 +157,15 @@
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   <!-- local scripts -->
-  <script src="js/dataChlsef.js"></script>
-  <script src="js/chart.js"></script>
+  <script src="js/dataChef.js"></script>
+  <script src="js/charts.js"></script>
   <script src="js/JQ.js"></script>
   <script src="js/map.js"></script>
 
   <script>
   	initD3();
   	initSlider();
+    charts();
   </script>
 	<script>
 		{% autoescape false %}
