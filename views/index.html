@@ -16,11 +16,6 @@
   <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
-
-  <!-- JQuery dependencies -->
-  <script src="libs/jquery/dist/jquery.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -126,7 +121,6 @@
   <br><br><br><br>
   <p><img src="/images/number4_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;You are asking:</p>
   <br><br><br><br>
-
   <br><br>
 
   <div class="row">
@@ -144,26 +138,28 @@
     </div>
   </div> <!-- row -->
 
-  <!-- Remaining Javascripts -->
-  <!-- D3 -->
-  <script src="libs/d3/d3.min.js"></script>
-  <script src="libs/topojson/topojson.js"></script>
+  <!-- Javascripts -->
+  <!-- JQuery dependencies -->
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<!-- D3 -->
+	<script src="libs/d3/d3.min.js"></script>
+	<script src="libs/topojson/topojson.js"></script>
   <!-- local scripts -->
   <script src="js/dataChef.js"></script>
   <script src="js/charts.js"></script>
   <script src="js/JQ.js"></script>
   <script src="js/map.js"></script>
 
+<!-- script calls -->
   <script>
-    initD3();
-    initSlider();
-    charts();
+  	initD3();
+  	initSlider();
   </script>
-
-  <script>
-    {% autoescape false %}
+	<script>
+		{% autoescape false %}
 			var stateDataCache = [];
-			console.log(stateDataCache);
 		{% endautoescape %}
 	</script>
 
