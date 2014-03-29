@@ -31,7 +31,10 @@ var initD3 = function() {
 				console.log(d.properties.STUSPS);
 				$.get ( '/'+d.properties.STUSPS, function(data){
 					stateDataCache.push(data.projects);
-					poveryData = povertyLevel(data.projects);
+					povertyData = povertyLevel(data.projects);
+					resourceData = resourceType(data.projects);
+					subjectData = focusSubject(data.projects);
+					donors_donations_students = summableProperties(data.projects);
 				});
       });
 
