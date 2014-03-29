@@ -24,24 +24,13 @@
 	  </div>
 	  <div class="col-xs-12">
 	    <h3 style="text-align:center;">What makes __________ unique?</h3><br><br>
-      <!-- section 1 -->
-      <p><img src="/images/number1_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Select a city or state</p><br><br>
     </div>
     <div class="col-xs-1">
     </div>
   </div> <!-- row -->
 
-	<!-- D3 USA Projection -->
-	<div id="mapCanvas">
-    <h3 style="text-align:center;"><p></p></h3><br>
-  </div>
-	<!-- end map -->
-
-  <br><br><br><br><br><br><br>
-
   <div class="row">
-    <!-- section 2 -->
-    <p><img src="/images/number2_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Filter</p>
+    <!-- Filters Bar -->
     <nav>
       <ul>
         <li><a href="#">Poverty Level</a>
@@ -105,12 +94,15 @@
     </nav>
 
   </div>
+  <!-- D3 USA Projection -->
+  <div id="mapCanvas">
+    <h3 style="text-align:center;"><p></p></h3><br>
+  </div>
+  <!-- end map -->
 
   <br><br><br><br>
-  <p><img src="/images/number3_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;Pick Timeframe</p>
-  <br><br><br><br>
 
-  <p>
+  <p align="center">
     <label for="years">Select Range of Years:</label>
     <input type="text" id="years" style="border:0; color:#f6931f; font-weight:bold;">
     <div class="col-xs-6">
@@ -119,18 +111,15 @@
   </p>
 
   <br><br><br><br>
-  <p><img src="/images/number4_white_small.png">&nbsp;&nbsp;&nbsp;&nbsp;You are asking:</p>
-  <br><br><br><br>
-  <br><br>
 
   <div class="row">
     <div class="col-xs-1">
     </div>
-    <div id="chartDiv" class="col-xs-6 col-sm-4">
+    <div id="pieChartDiv" class="col-xs-6 col-sm-4">
       State 1<br>
       <br>
     </div>
-    <div class="col-xs-6 col-sm-4">
+    <div id="scatterPlotDiv" class="col-xs-6 col-sm-4">
       State 2<br>
       <br>
     </div>
@@ -156,6 +145,8 @@
   <script>
   	initD3();
   	initSlider();
+    pieChart();
+    scatterPlot();
   </script>
 	<script>
 		{% autoescape false %}

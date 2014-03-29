@@ -58,6 +58,10 @@ a {
   stroke: #fff;
 }
 
+circle {
+    fill: steelblue;
+}
+
 nav {
   margin: 100px auto;
   text-align: center;
