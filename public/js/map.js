@@ -40,7 +40,6 @@ var initD3 = function() {
 					stateProjectsCache.push(data.projects);
 					resetSnapshotsCache();
 				});
-
       });
 
 		svg.append("path")
