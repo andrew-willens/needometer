@@ -29,33 +29,6 @@ var initD3 = function() {
 			.attr("class", "state")
 			.attr("d", path)
 			.on("click", function(d){
-				click++;
-				// console.log(d.properties.STUSPS);
-
-				$.get ( '/'+d.properties.STUSPS, function(data){
-					stateDataCache.push(data.projects);
-					povertyData = povertyLevel(data.projects);
-					resourceData = resourceType(data.projects);
-					subjectData = focusSubject(data.projects);
-					donors_donations_students = summableProperties(data.projects);
-					// data = [{"age":5, "population":2704659}, {"age":13,"population":4499890}];
-
-					pieChart(povertyData);
-					pieChart(resourceData);
-					pieChart(subjectData);
-				});
-
-    		// $( ".inner" ).append( "You clicked on the map<br>" );
-    		if (click === 2) {
-	    		pieChart1a();
-  	  		scatterPlot1();
-  	  		pieChart1b();
-  	  		pieChart1c();
-    			pieChart2a();
-    			scatterPlot2();
-    			pieChart2b();
-    			pieChart2c();
-    		}
       });
 
 		svg.append("path")
