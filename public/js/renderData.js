@@ -1,19 +1,30 @@
 ////////////////////////////////////////////////////////////////////////////////
-var pieChart = function(data) {
-  pieLogic(data);
-};
-////////////////////////////////////////////////////////////////////////////////
+function createSnapshots(){
+	var column_number = 0;
 
+	stateSnapshotsCache.forEach(function(state){
+		console.log(state);
+		column_number++;
+		snapshotText(state.snapshot_text, state.properties.NAME, column_number);
+		pieChart(state.poverty, column_number);
+		pieChart(state.resource, column_number);
+		pieChart(state.subject, column_number);
+	})
 
-////////////////////////////////////////////////////////////////////////////////
-function snapshotText(data, name){
-	$("#pieChart1aDiv").html("<h2>"+name+"</h2>"+data.num_donors+" donors contributed "+data.total_donations+" to "+data.projects+" projects, reaching "+data.students_reached+" students.");
+	stateSnapshotsCache = [];
 }
 ////////////////////////////////////////////////////////////////////////////////
 
 
 ////////////////////////////////////////////////////////////////////////////////
-function pieLogic(data){
+function snapshotText(data, name, column){
+	$("#col"+column).append("<h2>"+name+"</h2>"+data.num_donors+" donors contributed $"+Math.floor(data.total_donations)+" to "+data.projects+" projects, reaching "+data.students_reached+" students.");
+}
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+function pieChart(data, column){
 	var width = 960/2.5,
       height = 500/2.5,
       radius = Math.min(width, height) / 2;
@@ -29,7 +40,7 @@ function pieLogic(data){
 	    .sort(null)
 	    .value(function(d) { return d.count; });
 
-	var svg = d3.select("#pieChart1aDiv").append("svg")
+	var svg = d3.select("#col"+column).append("svg")
 	    .attr("width", width)
 	    .attr("height", height)
 	  .append("g")

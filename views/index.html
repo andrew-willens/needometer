@@ -89,33 +89,9 @@
   <br><br><br><br>
 
   <div class="row">
-    <div class="col-md-6">
-      <div class="chart-cols">
-        <div class="col-md-6 col-md-offset-1">
-          <div id="pieChart1aDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-4">
-          <div id="pieChart1bDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-2">
-          <div id="pieChart1cDiv"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="chart-cols">
-        <div class="col-md-6 col-md-offset-2">
-          <div id="pieChart2aDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-4">
-          <div id="pieChart2bDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-1">
-          <div id="pieChart2cDiv"></div>
-        </div>
-      </div>
-    </div>
-
+    <div id="col1" class="col-md-6"></div>
+    <div id="col2" class="col-md-6"></div>
+  </div>
   <!-- Javascripts -->
   <!-- JQuery dependencies -->
   <script src="libs/jquery/dist/jquery.min.js"></script>
@@ -128,21 +104,17 @@
   <script src="js/dataChef.js"></script>
   <script src="js/renderData.js"></script>
   <script src="js/JQ.js"></script>
+  <script src="js/mapLogic.js"></script>
   <script src="js/map.js"></script>
 
   <!-- script calls -->
   <script>
   	initD3();
   	initSlider();
-    // pieChart();
-    // scatterPlot();
-    // hideData();
-    // hideShowData();
   </script>
 	<script>
-		{% autoescape false %}
-			var stateDataCache = [];
-		{% endautoescape %}
+		var stateProjectsCache = [];
+		var stateSnapshotsCache = [];
 	</script>
 
 </body>

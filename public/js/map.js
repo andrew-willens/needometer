@@ -17,7 +17,6 @@ var initD3 = function() {
 			.attr("preserveAspectRatio", "xMidYMid");
 
 	d3.json("data/us.json", function(err, us) {
-		var click = 0;
 		var states = topojson.feature(us, us.objects.states).features;
 
     svg.selectAll("path")
@@ -29,35 +28,19 @@ var initD3 = function() {
 			.attr("class", "state")
 			.attr("d", path)
 			.on("click", function(d){
-				click++;
-				// console.log(d.properties.STUSPS);
-
 				$.get ( '/'+d.properties.STUSPS, function(data){
-					console.log(d);
-					stateDataCache.push(data.projects);
-					povertyData = povertyLevel(data.projects);
-					resourceData = resourceType(data.projects);
-					subjectData = focusSubject(data.projects);
-					donors_donations_students = summableProperties(data.projects);
-
-					console.log(donors_donations_students);
-
-					snapshotText(donors_donations_students, d.properties.NAME);
-					pieChart(povertyData);
-					pieChart(resourceData);
-					pieChart(subjectData);
+					var stateObject = {
+						"properties": d.properties,
+						"poverty": povertyLevel(data.projects),
+						"resource": resourceType(data.projects),
+						"subject": focusSubject(data.projects),
+						"snapshot_text": summableProperties(data.projects)
+					};
+					stateSnapshotsCache.push(stateObject);
+					stateProjectsCache.push(data.projects);
+					resetSnapshotsCache();
 				});
 
-    		// if (click === 2) {
-	    	// 	pieChart1a();
-  	  	// 	scatterPlot1();
-  	  	// 	pieChart1b();
-  	  	// 	pieChart1c();
-    		// 	pieChart2a();
-    		// 	scatterPlot2();
-    		// 	pieChart2b();
-    		// 	pieChart2c();
-    		// }
       });
 
 		svg.append("path")
