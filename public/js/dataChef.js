@@ -1,13 +1,7 @@
-
-//Dependencies =================================================================
-// var fs = ('fs');
-//==============================================================================
-
-
 //==============================================================================
 function povertyLevel(dataArray) {
 	var povertyData = {};
-
+	var povertyDataArray =[];
 	dataArray.forEach(function(project){
 		if (!povertyData[project.poverty_level]) {
 			povertyData[project.poverty_level] = 1;
@@ -16,7 +10,11 @@ function povertyLevel(dataArray) {
 		}
 	})
 
-	// fs.writeFile('data/poverty.csv', )
+	for (var val in povertyData){
+		povertyDataArray.push({'type':val, 'count':povertyData[val]});
+	}
+
+	povertyData = povertyDataArray;
 	return povertyData;
 };
 //==============================================================================
@@ -25,6 +23,7 @@ function povertyLevel(dataArray) {
 //==============================================================================
 function resourceType(dataArray) {
 	var resourceData = {};
+	var resourceDataArray =[];
 
 	dataArray.forEach(function(project){
 		if (!resourceData[project.resource_type]) {
@@ -34,7 +33,12 @@ function resourceType(dataArray) {
 		}
 	})
 
-	return resourceData
+	for (var val in resourceData){
+		resourceDataArray.push({'type':val, 'count':resourceData[val]});
+	}
+
+	resourceData = resourceDataArray;
+	return resourceData;
 }
 //==============================================================================
 
@@ -42,6 +46,7 @@ function resourceType(dataArray) {
 //==============================================================================
 function focusSubject(dataArray){
 	var subjectData = {};
+	var subjectDataArray =[];
 
 	dataArray.forEach(function(project){
 		if (!subjectData[project.primary_focus_subject]) {
@@ -51,6 +56,11 @@ function focusSubject(dataArray){
 		}
 	})
 
+	for (var val in subjectData){
+		subjectDataArray.push({'type':val, 'count':subjectData[val]});
+	}
+
+	subjectData = subjectDataArray;
 	return subjectData
 }
 //==============================================================================

@@ -35,6 +35,11 @@ var initD3 = function() {
 					resourceData = resourceType(data.projects);
 					subjectData = focusSubject(data.projects);
 					donors_donations_students = summableProperties(data.projects);
+					// data = [{"age":5, "population":2704659}, {"age":13,"population":4499890}];
+
+					pieChart(povertyData);
+					pieChart(resourceData);
+					pieChart(subjectData);
 				});
       });
 
