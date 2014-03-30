@@ -94,17 +94,16 @@
     </nav>
 
   </div>
+
   <!-- D3 USA Projection -->
-  <div id="mapCanvas">
-    <h3 style="text-align:center;"><p></p></h3><br>
-  </div>
+  <div id="mapCanvas"></div>
   <!-- end map -->
 
   <br><br><br><br>
 
   <p align="center">
     <label for="years">Select Range of Years:</label>
-    <input type="text" id="years" style="border:0; color:#f6931f; font-weight:bold;">
+    <input type="text" id="years" readonly="readonly" style="border:0; color:red; font-weight:bold;">
     <div class="col-xs-6">
       <div id="slider-range"></div>
     </div>
@@ -112,20 +111,44 @@
 
   <br><br><br><br>
 
-  <div class="row">
-    <div class="col-xs-1">
-    </div>
-    <div id="pieChartDiv" class="col-xs-6 col-sm-4">
-      State 1<br>
-      <br>
-    </div>
-    <div id="scatterPlotDiv" class="col-xs-6 col-sm-4">
-      State 2<br>
-      <br>
-    </div>
-    <div class="col-xs-1">
-    </div>
-  </div> <!-- row -->
+  <div class="showcharts">
+    <div class="row">
+      <div class="col-xs-6 col-sm-4" id="pieChart1aDiv">
+      </div>
+      <div class="col-xs-6 col-sm-4" id="pieChart2aDiv">
+      </div>
+    </div> <!-- row -->
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+      <div id="scatterPlot1Div" class="col-xs-6 col-sm-4">
+      </div>
+      <div id="scatterPlot2Div" class="col-xs-6 col-sm-4">
+      </div>
+      <div class="col-xs-1">
+      </div>
+    </div> <!-- row -->
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+      <div id="pieChart1bDiv" class="col-xs-6 col-sm-4">
+      </div>
+      <div id="pieChart2bDiv" class="col-xs-6 col-sm-4">
+      </div>
+      <div class="col-xs-1">
+      </div>
+    </div> <!-- row -->
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+      <div id="pieChart1cDiv" class="col-xs-6 col-sm-4">
+      </div>
+      <div id="pieChart2cDiv" class="col-xs-6 col-sm-4">
+      </div>
+      <div class="col-xs-1">
+      </div>
+    </div> <!-- row -->
+  </div>
 
   <!-- Javascripts -->
   <!-- JQuery dependencies -->
@@ -141,12 +164,14 @@
   <script src="js/JQ.js"></script>
   <script src="js/map.js"></script>
 
-<!-- script calls -->
+  <!-- script calls -->
   <script>
   	initD3();
   	initSlider();
-    pieChart();
-    scatterPlot();
+    // pieChart();
+    // scatterPlot();
+    // hideData();
+    // hideShowData();
   </script>
 	<script>
 		{% autoescape false %}
