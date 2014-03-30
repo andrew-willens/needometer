@@ -53,13 +53,34 @@ function pieChart(data, column){
 
 	g.append("path")
 	    .attr("d", arc)
+	    .attr("data-legend", function(d){return d.data.name})
 	    .style("fill", function(d) { return color(d.data.count); });
 
 	g.append("text")
 	    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
 	    .attr("dy", ".35em")
-	    .style("text-anchor", "middle")
-	    .text(function(d) { return d.data.count+" "+d.data.type; });
+	    // .style("text-anchor", "middle")
+	    // .text(function(d) { return d.data.count+" "+d.data.type; });
+
+	  var legend = d3.select("#col"+column).append("svg")
+			  .attr("class", "legend")
+			  .attr("width", 180)
+			  .attr("height", 180 * 2)
+			  .selectAll("g")
+			  .data(pie(data))
+			  .enter().append("g")
+			  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+	legend.append("rect")
+	  .attr("width", 18)
+	  .attr("height", 18)
+	  .style("fill", function(d, i) { return color(i); });
+
+	legend.append("text")
+	  .attr("x", 24)
+	  .attr("y", 9)
+	  .attr("dy", ".35em")
+	  .text(function(d) { return d.data.type+", "+d.data.count; });
 };
 ////////////////////////////////////////////////////////////////////////////////
 
