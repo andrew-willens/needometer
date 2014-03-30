@@ -14,3 +14,24 @@ function initSlider() {
       " - " + $( "#slider-range" ).slider( "values", 1 ) );
 	});
 }
+
+function hideData() {
+  $( "button" ).click(function() {
+    $( "#hide" ).remove();
+  });
+}
+
+function hideShowData() {
+  $( "button" ).click(function() {
+    $( this ).toggleClass( "off" );
+  });
+  var p;
+  $( "button" ).click(function() {
+    if ( p ) {
+      p.appendTo( "body" );
+      p = null;
+    } else {
+      p = $( "#hideshow" ).detach();
+    }
+  });
+}
