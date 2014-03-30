@@ -27,6 +27,10 @@ a {
   height: auto;
 }
 
+#slider-range {
+  float: center;
+}
+
 .container {
   padding: 50px;
 }
@@ -59,7 +63,7 @@ a {
 }
 
 circle {
-    fill: steelblue;
+  fill: steelblue;
 }
 
 nav {
