@@ -35,6 +35,11 @@ a {
   padding: 50px;
 }
 
+.chart-cols {
+  background-color: #eee;
+  border: 1px;
+}
+
 .bar {
   fill: blue;
 }
