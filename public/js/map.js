@@ -17,6 +17,7 @@ var initD3 = function() {
 			.attr("preserveAspectRatio", "xMidYMid");
 
 	d3.json("data/us.json", function(err, us) {
+		var click = 0;
 		var states = topojson.feature(us, us.objects.states).features;
 
     svg.selectAll("path")
@@ -28,14 +29,29 @@ var initD3 = function() {
 			.attr("class", "state")
 			.attr("d", path)
 			.on("click", function(d){
-				console.log(d.properties.STUSPS);
+				click++;
+				// console.log(d.properties.STUSPS);
+
 				$.get ( '/'+d.properties.STUSPS, function(data){
 					stateDataCache.push(data.projects);
 					povertyData = povertyLevel(data.projects);
 					resourceData = resourceType(data.projects);
 					subjectData = focusSubject(data.projects);
 					donors_donations_students = summableProperties(data.projects);
+					console.log(data.projects);
 				});
+
+    		// $( ".inner" ).append( "You clicked on the map<br>" );
+    		if (click === 2) {
+	    		pieChart1a();
+  	  		scatterPlot1();
+  	  		pieChart1b();
+  	  		pieChart1c();
+    			pieChart2a();
+    			scatterPlot2();
+    			pieChart2b();
+    			pieChart2c();
+    		}
       });
 
 		svg.append("path")
