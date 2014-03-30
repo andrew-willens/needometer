@@ -27,6 +27,17 @@ a {
  stroke:black;
  opacity:0.8; }
 
+path.slice{
+  stroke-width:2px;
+}
+
+polyline{
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
 #svg {
   width: 100%;
   height: auto;
