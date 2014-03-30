@@ -10,11 +10,11 @@ exports.index = function(req, res) {
 };
 
 exports.stateData = function(req, res) {
-	console.log("querying mongo for "+req.params.state+" projects.")
-	console.log(req.params.state);
+	console.log("querying mongo for "+req.params.state+" projects.");
+	console.log(new Date());
 	models.Project.find({"school_state": req.params.state }, function(err, projects){
 		if (err) console.log(err);
-		console.log(projects.length+" projects in "+req.params.state);
+		console.log(new Date())
 		res.send({projects: projects})
 	});
 };
