@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 a {
@@ -20,6 +21,14 @@ a {
 .state-border {
   fill: none;
   stroke: #fff;
+}
+
+.state.selected {
+	fill: orange;
+}
+
+.state.active{
+	fill: yellow;
 }
 
 .legend rect {

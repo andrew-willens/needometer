@@ -1,17 +1,18 @@
 ////////////////////////////////////////////////////////////////////////////////
-function createSnapshots(){
+function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
 
-	stateSnapshotsCache.forEach(function(state){
+	snapshotsCache.forEach(function(state){
 		console.log(state);
 		column_number++;
+		//following four functions in js/dataChef.js
 		snapshotText(state.snapshot_text, state.properties.NAME, column_number);
 		pieChart(state.poverty, column_number);
 		pieChart(state.resource, column_number);
 		pieChart(state.subject, column_number);
 	})
 
-	stateSnapshotsCache = [];
+	stateDataCache = [];
 }
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -62,14 +63,14 @@ function pieChart(data, column){
 	    // .style("text-anchor", "middle")
 	    // .text(function(d) { return d.data.count+" "+d.data.type; });
 
-	  var legend = d3.select("#col"+column).append("svg")
-			  .attr("class", "legend")
-			  .attr("width", 180)
-			  .attr("height", 180 * 2)
-			  .selectAll("g")
-			  .data(pie(data))
-			  .enter().append("g")
-			  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+  var legend = d3.select("#col"+column).append("svg")
+		  .attr("class", "legend")
+		  .attr("width", 180)
+		  .attr("height", 180 * 2)
+		  .selectAll("g")
+		  .data(pie(data))
+		  .enter().append("g")
+		  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
 	legend.append("rect")
 	  .attr("width", 18)
@@ -82,7 +83,7 @@ function pieChart(data, column){
 	  .attr("dy", ".35em")
 	  .text(function(d) { return d.data.type+", "+d.data.count; });
 };
-////////////////////////////////////////////////////////////////////////////////
+//end piechart//////////////////////////////////////////////////////////////////
 
 
 

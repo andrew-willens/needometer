@@ -27,19 +27,21 @@ var initD3 = function() {
 			})
 			.attr("class", "state")
 			.attr("d", path)
+			.on("mouseover", function(d){
+				if (d3.select(this).classed("selected") === false) {
+					d3.select(this).classed("active", true)
+				}
+			})
+			.on("mouseout", function(d){d3.select(this).classed("active", false)})
 			.on("click", function(d){
-				$.get ( '/'+d.properties.STUSPS, function(data){
-					var stateObject = {
-						"properties": d.properties,
-						"poverty": povertyLevel(data.projects),
-						"resource": resourceType(data.projects),
-						"subject": focusSubject(data.projects),
-						"snapshot_text": summableProperties(data.projects)
-					};
-					stateSnapshotsCache.push(stateObject);
-					stateProjectsCache.push(data.projects);
-					resetSnapshotsCache();
-				});
+				if (d3.select(this).classed("selected") === true) {
+					d3.select(this).classed("selected", false);
+					d3.select(this).classed("active", true);
+				} else {
+					d3.select(this).classed("active", false);
+					d3.select(this).classed("selected", true);
+					fetchAndRenderData(d); // from 'js/mapLogic.js'
+				}
       });
 
 		svg.append("path")
