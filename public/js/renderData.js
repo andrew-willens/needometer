@@ -1,17 +1,18 @@
 ////////////////////////////////////////////////////////////////////////////////
-function createSnapshots(){
+function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
 
-	stateSnapshotsCache.forEach(function(state){
+	snapshotsCache.forEach(function(state){
 		console.log(state);
 		column_number++;
+		//following four functions in js/dataChef.js
 		snapshotText(state.snapshot_text, state.properties.NAME, column_number);
 		pieChart(state.poverty, column_number);
 		pieChart(state.resource, column_number);
 		pieChart(state.subject, column_number);
 	})
 
-	stateSnapshotsCache = [];
+	stateDataCache = [];
 }
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -96,7 +97,7 @@ function pieChart(data, column){
 	  .attr("dy", ".35em")
 	  .text(function(d) { return d.data.type+", "+d.data.count; });
 };
-////////////////////////////////////////////////////////////////////////////////
+//end piechart//////////////////////////////////////////////////////////////////
 
 
 
