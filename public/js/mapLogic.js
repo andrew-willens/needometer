@@ -1,7 +1,8 @@
 function fetchAndRenderData(geography){ // called from js/map.js
 	if (dataStore.length === 0) {
 		makeGeoObject(geography);
-	} else if (snapshotsCache.length === 0 || (geography.properties.NAME !== snapshotsCache[0].properties.NAME)){
+	} else {
+	// if (snapshotsCache.length === 0 || (geography.properties.NAME !== snapshotsCache[0].properties.NAME)){
 		dataStore.forEach(function(geo){ //dataStore is an array instantiated in the bottomscripts of views/index.html
 		if (geo.properties.NAME === geography.properties.NAME){
 			snapshotsCache.push(geo);
