@@ -19,9 +19,9 @@
 </head>
 
 <body>
-  <div class="row">
+  <!-- <div class="row"> -->
     <!-- Filters Bar -->
-    <nav>
+    <!-- <nav>
       <ul>
         <li><a href="#">Student Info</a>
           <ul>
@@ -70,12 +70,12 @@
       </ul>
     </nav>
 
-  </div>
+  </div> -->
 
   <!-- D3 USA Projection -->
   <div id="mapCanvas"></div>
   <!-- end map -->
-
+<!--
   <br><br><br><br>
 
   <p align="center">
@@ -84,38 +84,12 @@
     <div class="col-xs-6">
       <div id="slider-range"></div>
     </div>
-  </p>
-
-  <br><br><br><br>
+  </p> -->
 
   <div class="row">
-    <div class="col-md-6">
-      <div class="chart-cols">
-        <div class="col-md-6 col-md-offset-1">
-          <div id="pieChart1aDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-4">
-          <div id="pieChart1bDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-2">
-          <div id="pieChart1cDiv"></div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="chart-cols">
-        <div class="col-md-6 col-md-offset-2">
-          <div id="pieChart2aDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-4">
-          <div id="pieChart2bDiv"></div>
-        </div>
-        <div class="col-md-6 col-md-offset-1">
-          <div id="pieChart2cDiv"></div>
-        </div>
-      </div>
-    </div>
-
+    <div id="col1" class="col-md-6"></div>
+    <div id="col2" class="col-md-6"></div>
+  </div>
   <!-- Javascripts -->
   <!-- JQuery dependencies -->
   <script src="libs/jquery/dist/jquery.min.js"></script>
@@ -126,23 +100,19 @@
 	<script src="libs/topojson/topojson.js"></script>
   <!-- local scripts -->
   <script src="js/dataChef.js"></script>
-  <script src="js/charts.js"></script>
+  <script src="js/renderData.js"></script>
   <script src="js/JQ.js"></script>
+  <script src="js/mapLogic.js"></script>
   <script src="js/map.js"></script>
 
   <!-- script calls -->
   <script>
   	initD3();
-  	initSlider();
-    // pieChart();
-    // scatterPlot();
-    // hideData();
-    // hideShowData();
+  	// initSlider();
   </script>
 	<script>
-		{% autoescape false %}
-			var stateDataCache = [];
-		{% endautoescape %}
+		var stateProjectsCache = [];
+		var stateSnapshotsCache = [];
 	</script>
 
 </body>

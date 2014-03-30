@@ -17,7 +17,6 @@ var initD3 = function() {
 			.attr("preserveAspectRatio", "xMidYMid");
 
 	d3.json("data/us.json", function(err, us) {
-		var click = 0;
 		var states = topojson.feature(us, us.objects.states).features;
 
     svg.selectAll("path")
@@ -29,6 +28,18 @@ var initD3 = function() {
 			.attr("class", "state")
 			.attr("d", path)
 			.on("click", function(d){
+				$.get ( '/'+d.properties.STUSPS, function(data){
+					var stateObject = {
+						"properties": d.properties,
+						"poverty": povertyLevel(data.projects),
+						"resource": resourceType(data.projects),
+						"subject": focusSubject(data.projects),
+						"snapshot_text": summableProperties(data.projects)
+					};
+					stateSnapshotsCache.push(stateObject);
+					stateProjectsCache.push(data.projects);
+					resetSnapshotsCache();
+				});
       });
 
 		svg.append("path")
