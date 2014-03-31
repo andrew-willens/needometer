@@ -15,23 +15,17 @@ function initSlider() {
 	});
 }
 
-function hideData() {
-  $( "button" ).click(function() {
-    $( "#hide" ).remove();
-  });
+function initEvents(){
+	$("#databtn").on("click", function(){
+		return fetchAndRenderData();
+	})
+
+	$("#clrdatabtn").on("click", function(){
+		$("#col1").html("");
+		$("#col2").html("");
+		selectedGeos = [];
+		snapshotsCache = [];
+		$(".state.selected").attr("class", "state")
+	})
 }
 
-function hideShowData() {
-  $( "button" ).click(function() {
-    $( this ).toggleClass( "off" );
-  });
-  var p;
-  $( "button" ).click(function() {
-    if ( p ) {
-      p.appendTo( "body" );
-      p = null;
-    } else {
-      p = $( "#hideshow" ).detach();
-    }
-  });
-}

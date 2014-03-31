@@ -1,15 +1,17 @@
 ////////////////////////////////////////////////////////////////////////////////
 function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
+	$("#col1").html("");
+	$("#col2").html("");
 
-	snapshotsCache.forEach(function(state){
-		console.log(state);
+	snapshotsCache.forEach(function(geo){
+		console.log(geo);
 		column_number++;
-		//following four functions in js/dataChef.js
-		snapshotText(state.snapshot_text, state.properties.NAME, column_number);
-		pieChart(state.poverty, column_number);
-		pieChart(state.resource, column_number);
-		pieChart(state.subject, column_number);
+		snapshotText(geo.snapshot_text, geo.NAME, column_number);
+		//following three functions in js/dataChef.js
+		pieChart(geo.poverty, column_number);
+		pieChart(geo.resource, column_number);
+		pieChart(geo.subject, column_number);
 		// pieChart2(state.subject, column_number);
 	})
 
