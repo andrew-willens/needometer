@@ -28,6 +28,3 @@ node_modules
 
 # ignore test file
 test
-
-# ignore big data file
-opendata_projects.csv

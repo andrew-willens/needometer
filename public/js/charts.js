@@ -5,7 +5,7 @@ var pieChart1a = function(width) {
 
   var color = d3.scale.ordinal()
       // .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-      .range(["red", "orange"]);
+      .range(["red", "orange", "yellow", "green", "blue", "purple", "gray"]);
 
   var arc = d3.svg.arc()
       .outerRadius(radius - 10)
@@ -53,8 +53,8 @@ var pieChart1a = function(width) {
   .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
 legend.append("rect")
-  .attr("width", 18/2)
-  .attr("height", 18/2)
+  .attr("width", 18)
+  .attr("height", 18)
   .style("fill", function(d, i) { return color(i); });
 
 legend.append("text")
