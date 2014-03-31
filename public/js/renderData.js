@@ -31,8 +31,9 @@ function pieChart(data, column){
       height = 500/2.5,
       radius = Math.min(width, height) / 2;
 
-	var color = d3.scale.ordinal()
-	    .range(["red", "orange", "yellow", "green", "blue", "purple", "gray"]);
+  var color = d3.scale.category20();
+  // var color = d3.scale.category20b(); //alt color scheme1
+  // var color = d3.scale.category20c(); //alt color scheme2
 
 	var arc = d3.svg.arc()
 	    .outerRadius(radius - 0)
@@ -89,8 +90,8 @@ function pieChart(data, column){
 
 ////////////////////////////////////////////////////////////////////////////////
 function pieChart2(data, column){
+	console.log("here's your pie chart 2")
 	var width = 960/2.5,
-	    // height = 450/2.5,
 	    height = 500/2.5,
 		radius = Math.min(width, height) / 2;
 
@@ -108,7 +109,10 @@ function pieChart2(data, column){
 
 	var pie = d3.layout.pie()
 		.sort(null)
-		.value(function(d) { return d.data.count; });
+		.value(function(d) {
+			console.log(d.data.count);
+			return d.data.count;
+		});
 
 	var arc = d3.svg.arc()
 		.outerRadius(radius - 0)
@@ -120,26 +124,27 @@ function pieChart2(data, column){
 
 	svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-	var key = function(d){ return d.data.type; };
+	var key = function(d){
+		console.log(d.data.type);
+		return d.data.type;
+	};
 
-	var color = d3.scale.ordinal()
-		.domain(["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"])
-		.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+	var color = d3.scale.category20();
 
-	// function randomData (){
-	// 	var labels = color.domain();
-	// 	return labels.map(function(label){
-	// 		return { label: label, value: Math.random() }
-	// 	});
-	// }
+	function randomData (){
+		var labels = color.domain();
+		return labels.map(function(label){
+			return { label: label, value: Math.random() }
+		});
+	}
 
-	// var labels = ["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"]
-	// change(randomData());
+	var labels = ["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"]
+	change(randomData());
 
-	// d3.select(".randomize")
-	// 	.on("click", function(){
-	// 		change(randomData());
-	// 	});
+	d3.select(".randomize")
+		.on("click", function(){
+			change(randomData());
+		});
 
 
 	function change(data) {
