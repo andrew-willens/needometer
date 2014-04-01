@@ -16,15 +16,18 @@ function initSlider() {
 }
 
 function initEvents(){
+
 	$("#databtn").on("click", function(){
-		return fetchAndRenderData();
+		fetchAndRenderData();
 	})
 
 	$("#clrdatabtn").on("click", function(){
+		console.log($("#mapCanvas:first-child"));
 		$("#col1").html("");
 		$("#col2").html("");
 		selectedGeos = [];
 		snapshotsCache = [];
+		initD3();
 		$(".state.selected").attr("class", "state")
 	})
 }

@@ -1,13 +1,77 @@
 ////////////////////////////////////////////////////////////////////////////////
+var stateAbbrs = { AL: 'Alabama',
+  AK: 'Alaska',
+  AS: 'American Samoa',
+  AZ: 'Arizona',
+  AR: 'Arkansas',
+  CA: 'California',
+  CO: 'Colorado',
+  CT: 'Connecticut',
+  DE: 'Delaware',
+  DC: 'District Of Columbia',
+  FM: 'Federated States Of Micronesia',
+  FL: 'Florida',
+  GA: 'Georgia',
+  GU: 'Guam',
+  HI: 'Hawaii',
+  ID: 'Idaho',
+  IL: 'Illinois',
+  IN: 'Indiana',
+  IA: 'Iowa',
+  KS: 'Kansas',
+  KY: 'Kentucky',
+  LA: 'Louisiana',
+  ME: 'Maine',
+  MH: 'Marshall Islands',
+  MD: 'Maryland',
+  MA: 'Massachusetts',
+  MI: 'Michigan',
+  MN: 'Minnesota',
+  MS: 'Mississippi',
+  MO: 'Missouri',
+  MT: 'Montana',
+  NE: 'Nebraska',
+  NV: 'Nevada',
+  NH: 'New Hampshire',
+  NJ: 'New Jersey',
+  NM: 'New Mexico',
+  NY: 'New York',
+  NC: 'North Carolina',
+  ND: 'North Dakota',
+  MP: 'Northern Mariana Islands',
+  OH: 'Ohio',
+  OK: 'Oklahoma',
+  OR: 'Oregon',
+  PW: 'Palau',
+  PA: 'Pennsylvania',
+  PR: 'Puerto Rico',
+  RI: 'Rhode Island',
+  SC: 'South Carolina',
+  SD: 'South Dakota',
+  TN: 'Tennessee',
+  TX: 'Texas',
+  UT: 'Utah',
+  VT: 'Vermont',
+  VI: 'Virgin Islands',
+  VA: 'Virginia',
+  WA: 'Washington',
+  WV: 'West Virginia',
+  WI: 'Wisconsin',
+  WY: 'Wyoming' }
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
 function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
 	$("#col1").html("");
 	$("#col2").html("");
+	$('#mapCanvas').empty();
 
 	snapshotsCache.forEach(function(geo){
-		console.log(geo);
+		var name = stateAbbrs[geo.NAME];
 		column_number++;
-		snapshotText(geo.snapshot_text, geo.NAME, column_number);
+		snapshotText(geo.snapshot_text, name, column_number);
 		//following three functions in js/dataChef.js
 		pieChart(geo.poverty, column_number);
 		pieChart(geo.resource, column_number);
@@ -36,7 +100,6 @@ function commas(x) {
 
 ////////////////////////////////////////////////////////////////////////////////
 function pieChart(data, column){
-
 	// var width = 960,
   var width = 960/2.5 // 384
 	// var width = 960/2 // 480
@@ -63,7 +126,6 @@ function pieChart(data, column){
 	    .attr("height", height)
 	  .append("g")
 	  	// .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-	    // .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 	    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 	var g = svg.selectAll(".arc")
@@ -74,14 +136,7 @@ function pieChart(data, column){
 	g.append("path")
 	    .attr("d", arc)
 	    .attr("data-legend", function(d){return d.data.name})
-	    // .style("fill", function(d) { return color(i); });
   	  .style("fill", function(d, i) { return color(i); });
-
-	// g.append("text")
-	    // .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-	    // .attr("dy", ".35em")
-	    // .style("text-anchor", "middle")
-	    // .text(function(d) { return d.data.count+" "+d.data.type; });
 
 	  var legend = d3.select("#col"+column).append("svg")
 			  .attr("class", "legend")
