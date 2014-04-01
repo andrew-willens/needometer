@@ -3,20 +3,100 @@ function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
 
 	snapshotsCache.forEach(function(state){
-		console.log(state);
 		column_number++;
-		//following four functions in js/dataChef.js
 		snapshotText(state.snapshot_text, state.properties.NAME, column_number);
-		pieChart(state.poverty, column_number);
-		pieChart(state.resource, column_number);
-		pieChart(state.subject, column_number);
-		pieChart2(state.subject, column_number);
+		var chartdiv = "chartdiv"+column_number;
+
+		if (column_number == 1) {
+			AmCharts.makeChart(chartdiv+"a", reformat_D3_amCharts(state, "poverty"));
+			AmCharts.makeChart(chartdiv+"b", reformat_D3_amCharts(state, "resource"));
+			AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts(state, "subject"));
+		} else {
+			AmCharts.makeChart(chartdiv+"a", reformat_D3_amCharts(state, "poverty"));
+			AmCharts.makeChart(chartdiv+"b", reformat_D3_amCharts(state, "resource"));
+			AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts(state, "subject"));
+		}
+
 	})
 
 	stateDataCache = [];
 }
 ////////////////////////////////////////////////////////////////////////////////
 
+function sortStatePovertyData(data) {
+	console.log(data)
+	// data = [{'type':"highest poverty", 'count':1000}, {'type':"moderate poverty", 'count':500}]
+	// highest poverty, high poverty, moderate poverty, low poverty
+	var tempData = {};
+	var tempDataArray = [];
+	// console.log("inside sortStatePovertyData function");
+	// console.log(data.length, data[0].type, data[0].count);
+	// var i;
+	var index;
+	// look for "highest poverty"
+	for (var i=0; i<data.length; i++) {
+		// console.log(i)
+		index = 0;
+		// console.log(data[i].type)
+		if (data[i].type === "highest poverty") {
+			index = i;
+		}
+	}
+	// console.log(index)
+	if (index > 0) {
+		// console.log("index = "+index)
+		// console.log("i = "+i)
+		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
+  } else {
+  	tempDataArray.push({'type': "", 'count': 0})
+  }
+
+	// look for "high poverty"
+	for (var i=0; i<data.length; i++) {
+		// console.log(i)
+		index = 0;
+		// console.log(data[i].type)
+		if (data[i].type === "high poverty") {
+			index = i;
+		}
+	}
+	// console.log(index)
+	if (index > 0) {
+		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
+  } else {
+  	tempDataArray.push({'type': "", 'count': 0})
+  }
+
+	// look for "moderate poverty"
+	for (var i=0; i<data.length; i++) {
+		index = 0;
+		if (data[i].type === "moderate poverty") {
+			index = i;
+		}
+	}
+	if (index > 0) {
+		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
+  } else {
+  	tempDataArray.push({'type': "", 'count': 0})
+  }
+
+	// look for "low poverty"
+	for (var i=0; i<data.length; i++) {
+		index = 0;
+		if (data[i].type === "low poverty") {
+			index = i;
+		}
+	}
+	if (index > 0) {
+		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
+  } else {
+  	tempDataArray.push({'type': "", 'count': 0})
+  }
+
+  tempData = tempDataArray;
+  console.log(tempData)
+	// return tempData;
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 function snapshotText(data, name, column){
@@ -34,7 +114,21 @@ function commas(x) {
 
 ////////////////////////////////////////////////////////////////////////////////
 function pieChart(data, column){
-<<<<<<< HEAD
+	// console.log("data = "+data)
+	console.log("data coming into pieChart:");
+	console.log(data);
+	// console.log("data.length = "+data.length);
+	// for (var n=0; n<data.length; n++) {
+		// console.log("data["+n+"].type = "+data[n].type+" ... data["+n+"].count = "+data[n].count)
+	// }
+
+	// testing to see if I can custom sort this
+	// if (data[0].type === "moderate poverty" && data[0].count === 116) {
+		// data[0].type = "you should not see me";
+		// data[0].count = 1700;
+		// data[1].type = "you should not see me either";
+		// data[1].count = 1900;
+	// }
 
 	// var width = 960,
   var width = 960/2.5 // 384
@@ -42,15 +136,20 @@ function pieChart(data, column){
   // var height = 500
   var height = 500/2.5 // 200
   // var height = 500/2 // 250
-      radius = Math.min(width, height) / 2;
+  var radius = Math.min(width, height) / 2;
 
-  var color = d3.scale.category20();
   // var color = d3.scale.category20b();
   // var color = d3.scale.category20c();
 
-	// var color = d3.scale.ordinal()
-	    // .range(data.length)
-	    console.log(data.length)
+	// if ("poverty".indexOf(data[0].type) !== -1) {
+	if (data[0].type.split(' ')[1] === "poverty") {
+		var color = d3.scale.ordinal()
+		    .range(["#d62728", "#ff9896", "#ff7f0e", "#ffbb78", "#1f77b4"])
+	} else {
+	  var color = d3.scale.category20();
+	};
+
+	// console.log("color(1) = "+color(1))
 
 	var arc = d3.svg.arc()
 	    .outerRadius(radius - 0)
@@ -59,6 +158,9 @@ function pieChart(data, column){
 
 	var pie = d3.layout.pie()
 	    .sort(null)
+	    // .sort(function(d) { return d.value; })
+	    // .sort(function(d) { return ["highest poverty","high poverty","moderate poverty","low poverty"]})
+	    // .value(function(d) { console.log("d.count = "+d.count);return d.count; });
 	    .value(function(d) { return d.count; });
 
 	var svg = d3.select("#col"+column).append("svg")
@@ -71,14 +173,17 @@ function pieChart(data, column){
 
 	var g = svg.selectAll(".arc")
 	    .data(pie(data))
+	    // .data(pie(data), function(d) { return ["highest poverty","high poverty","moderate poverty","low poverty"] })
 	  .enter().append("g")
 	    .attr("class", "arc");
 
 	g.append("path")
 	    .attr("d", arc)
-	    .attr("data-legend", function(d){return d.data.name})
+	    // .attr("data-legend", function(d){console.log("d.data.name = "+d.data.name);return d.data.name})
+	    .attr("data-legend", function(d){ return d.data.name; })
 	    // .style("fill", function(d) { return color(i); });
-  	  .style("fill", function(d, i) { return color(i); });
+  	  // .style("fill", function(d, i) {console.log("color("+i+") = "+color(i));return color(i); });
+  	  .style("fill", function(d, i) { return color(i); }); //easier? return d.data.color (color tag must be assigned)
 
 	// g.append("text")
 	    // .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
@@ -94,6 +199,7 @@ function pieChart(data, column){
 			  .attr("height", height)
 			  .selectAll("g")
 			  .data(pie(data))
+			  // .data(pie(data), function(d) { return ["highest poverty","high poverty","moderate poverty","low poverty"] })
 			  .enter().append("g")
 			  // .attr("transform", function(d, i) { console.log("translate(0," + i * 20 + ")"); return "translate(0," + i * 20 + ")"; });
 			  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
@@ -111,6 +217,99 @@ function pieChart(data, column){
 };
 //end piechart//////////////////////////////////////////////////////////////////
 
+
+////////////////////////////////////////////////////////////////////////////////
+function barChart(data, column) {
+	var margin = {top: 20, right: 20, bottom: 30, left: 40},
+	    width = 960 - margin.left - margin.right,
+	    height = 500 - margin.top - margin.bottom;
+
+	var formatPercent = d3.format(".0%");
+
+	var x = d3.scale.ordinal()
+	    .rangeRoundBands([0, width], .1, 1);
+
+	var y = d3.scale.linear()
+	    .range([height, 0]);
+
+	var xAxis = d3.svg.axis()
+	    .scale(x)
+	    .orient("bottom");
+
+	var yAxis = d3.svg.axis()
+	    .scale(y)
+	    .orient("left")
+	    .tickFormat(formatPercent);
+
+	var svg = d3.select("body").append("svg")
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	  .append("g")
+	    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	d3.csv("/data/pie_chart.csv", function(error, data) {
+
+	  data.forEach(function(d) {
+	    d.frequency = +d.frequency;
+	  });
+
+	  x.domain(data.map(function(d) { return d.letter; }));
+	  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+
+	  svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis);
+
+	  svg.append("g")
+	      .attr("class", "y axis")
+	      .call(yAxis)
+	    .append("text")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 6)
+	      .attr("dy", ".71em")
+	      .style("text-anchor", "end")
+	      .text("Frequency");
+
+	  svg.selectAll(".bar")
+	      .data(data)
+	    .enter().append("rect")
+	      .attr("class", "bar")
+	      .attr("x", function(d) { return x(d.letter); })
+	      .attr("width", x.rangeBand())
+	      .attr("y", function(d) { return y(d.frequency); })
+	      .attr("height", function(d) { return height - y(d.frequency); });
+
+	  d3.select("input").on("change", change);
+
+	  var sortTimeout = setTimeout(function() {
+	    d3.select("input").property("checked", true).each(change);
+	  }, 2000);
+
+	  function change() {
+	    clearTimeout(sortTimeout);
+
+	    // Copy-on-write since tweens are evaluated after a delay.
+	    var x0 = x.domain(data.sort(this.checked
+	        ? function(a, b) { return b.frequency - a.frequency; }
+	        : function(a, b) { return d3.ascending(a.letter, b.letter); })
+	        .map(function(d) { return d.letter; }))
+	        .copy();
+
+	    var transition = svg.transition().duration(750),
+	        delay = function(d, i) { return i * 50; };
+
+	    transition.selectAll(".bar")
+	        .delay(delay)
+	        .attr("x", function(d) { return x0(d.letter); });
+
+	    transition.select(".x.axis")
+	        .call(xAxis)
+	      .selectAll("g")
+	        .delay(delay);
+	  }
+	});
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////
