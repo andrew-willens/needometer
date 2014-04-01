@@ -88,7 +88,8 @@ function summableProperties(dataArray){
 //==============================================================================
 
 
-function reformat_D3_amCharts(data, category) {
+//==============================================================================
+function reformat_D3_amCharts(data, category, name) {
 	var titles_text, dataProvider;
 
 	if (category === "poverty") {
@@ -106,7 +107,7 @@ function reformat_D3_amCharts(data, category) {
 		"type": "pie",
 		"theme": "none",
 		"titles": [{
-			"text": titles_text+" in "+data.properties.NAME,
+			"text": titles_text+" in "+name,
 			"size": 16
 		}],
 		"dataProvider": dataProvider,
@@ -121,3 +122,4 @@ function reformat_D3_amCharts(data, category) {
     "angle": 15
 	};
 }
+//==============================================================================

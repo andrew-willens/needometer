@@ -36,11 +36,11 @@ var initD3 = function() {
 			.on("click", function(d){
 				if (d3.select(this).classed("selected") === true) {
 					d3.select(this).classed("selected", false);
-					d3.select(this).classed("active", true);
+					selectedGeos.shift(selectedGeos.indexOf(this.id),1);
 				} else {
 					d3.select(this).classed("active", false);
 					d3.select(this).classed("selected", true);
-					fetchAndRenderData(d); // from 'js/mapLogic.js'
+					selectJustTwo(this); //in js/mapLogic.js;
 				}
       });
 

@@ -20,88 +20,60 @@
 </head>
 
 <body>
-
-
-
-<script type="text/javascript" src="js/amcharts.js"></script>
-<script type="text/javascript" src="js/pie.js"></script>
-<script type="text/javascript" src="js/none.js"></script>
-
-
-
-	<h2>Please select two areas you would like to compare.</h2>
-  <!-- <div class="row"> -->
-    <!-- Filters Bar -->
-    <!-- <nav>
-      <ul>
-        <li><a href="#">Student Info</a>
-          <ul>
-            <li><a href="#">Grade Level</a></li>
-            <li><a href="#">Students Reached</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Teacher Info</a>
-          <ul>
-            <li><a href="#">New York Teaching Fellow</a></li>
-            <li><a href="#">Teach for America Teacher</a></li>
-            <li><a href="#">Gender</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Project Info</a>
-        	<ul>
-	        	<li><a href="#">Resource Type</a></li>
-	        	<li><a href="#">Primary Focus Area</a></li>
-	        	<li><a href="#">Secondary Focus Area</a></li>
-	        	<li><a href="#">Primary Focus Subject</a></li>
-	        	<li><a href="#">Secondary Focus Subject</a></li>
-	          <li><a href="#"></a></li>
-  				</ul>
-        </li>
-        <li><a href="#">Financial/Economic Info</a>
-          <ul>
-            <li><a href="#">Funding Status</a></li>
-            <li><a href="#">Number of Donors</a></li>
-            <li><a href="#">Payment Processing Charges</a></li>
-            <li><a href="#">Sales Tax</a></li>
-            <li><a href="#">Total Donations</a></li>
-            <li><a href="#">Vendor Shipping Charges</a></li>
-            <li><a href="#">"Almost Home" Match Project</a></li>
-            <li><a href="#">"Double Your Impact" Match Project</a></li>
-          </ul>
-        </li>
-        <li><a href="#">School Information</a>
-          <ul>
-            <li><a href="#">Charter School</a></li>
-            <li><a href="#">Kipp School</a></li>
-            <li><a href="#">Magnet School</a></li>
-            <li><a href="#">New Leaders School</a></li>
-            <li><a href="#">NCES Info</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-  </div> -->
+	<h1>The Needometer</h1>
+	<h3>Please select two areas you would like to compare.</h3>
+	<a id="databtn" class="btn btn-primary">Show Data</a>
+	<a id="clrdatabtn" class="btn btn-primary">Clear</a>
 
   <!-- D3 USA Projection -->
   <div id="mapCanvas"></div>
   <!-- end map -->
-<!--
-  <br><br><br><br>
-
-  <p align="center">
-    <label for="years">Select Range of Years:</label>
-    <input type="text" id="years" readonly="readonly" style="border:0; color:red; font-weight:bold;">
-    <div class="col-xs-6">
-      <div id="slider-range"></div>
-    </div>
-  </p> -->
 
   <div class="row">
     <div id="col1" class="col-md-6"></div>
     <div id="col2" class="col-md-6"></div>
   </div>
 
+	<div class="row">
+	  <div class="col-md-6">
+	    <div class="demo-panel-white" style="margin-top: 30px;">
+	      <div class="chart-reset" id="chartdiv1a"></div>
+	    </div>
+	  </div>
+	  <div class="col-md-6">
+	    <div class="demo-panel-white" style="margin-top: 30px;">
+	      <div class="chart-reset" id="chartdiv2a"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-6">
+	    <div class="demo-panel-white" style="margin-top: 30px;">
+	      <div class="chart-reset" id="chartdiv1b"></div>
+	    </div>
+	  </div>
+	  <div class="col-md-6">
+	    <div class="demo-panel-white" style="margin-top: 30px;">
+	      <div class="chart-reset" id="chartdiv2b"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-md-6">
+	    <div class="demo-panel-white" style="margin-top: 30px;">
+	      <div class="chart-reset" id="chartdiv1c"></div>
+	    </div>
+	  </div>
+	  <div class="col-md-6">
+	    <div class="demo-panel-white" style="margin-top: 30px;">
+	      <div class="chart-reset" id="chartdiv2c"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal"></div>
 
   <!-- Javascripts -->
   <!-- JQuery dependencies -->
@@ -111,6 +83,10 @@
 	<!-- D3 -->
 	<script src="libs/d3/d3.min.js"></script>
 	<script src="libs/topojson/topojson.js"></script>
+	<!-- JSCharts -->
+	<script src="libs/jscharts/amcharts.js"></script>
+	<script src="libs/jscharts/pie.js"></script>
+	<script src="libs/jscharts/none.js"></script>
   <!-- local scripts -->
   <script src="js/dataChef.js"></script>
   <script src="js/renderData.js"></script>
@@ -118,56 +94,16 @@
   <script src="js/mapLogic.js"></script>
   <script src="js/map.js"></script>
 
-
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="demo-panel-white" style="margin-top: 30px;">
-      <div class="chart-reset" id="chartdiv1a"></div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="demo-panel-white" style="margin-top: 30px;">
-      <div class="chart-reset" id="chartdiv2a"></div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="demo-panel-white" style="margin-top: 30px;">
-      <div class="chart-reset" id="chartdiv1b"></div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="demo-panel-white" style="margin-top: 30px;">
-      <div class="chart-reset" id="chartdiv2b"></div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="demo-panel-white" style="margin-top: 30px;">
-      <div class="chart-reset" id="chartdiv1c"></div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="demo-panel-white" style="margin-top: 30px;">
-      <div class="chart-reset" id="chartdiv2c"></div>
-    </div>
-  </div>
-</div>
-
-
   <!-- script calls -->
   <script>
   	initD3();
+  	initEvents();
   	// initSlider();
   </script>
 	<script>
 		var dataStore = [];
 		var snapshotsCache = [];
+		var selectedGeos = [];
 	</script>
 
 </body>
