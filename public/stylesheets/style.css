@@ -9,6 +9,10 @@ a {
   color: #00B7FF;
 }
 
+#mapCanvas {
+	padding: 100px 0;
+}
+
 .state {
 	fill: gray;
 }
@@ -22,6 +26,29 @@ a {
 .state-border {
   fill: none;
   stroke: #fff;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba( 255, 255, 255, .8 )
+						 url('http://business.comcast.com/img/preloader.gif')
+						 50%
+						 50%
+						 no-repeat;
+}
+
+body.loading {
+	overflow: hidden;
+}
+
+body.loading .modal {
+	display: block;
 }
 
 .state.selected {
@@ -179,3 +206,47 @@ nav ul {
   nav ul ul ul {
     position: absolute; left: 100%; top:0;
   }
+
+#chartdiv1a {
+  height    : 400px;
+  font-size : 11px;
+}
+
+#chartdiv1b {
+  height    : 400px;
+  font-size : 11px;
+}
+
+#chartdiv1c {
+  height    : 400px;
+  font-size : 11px;
+}
+
+#chartdiv2a {
+  height    : 400px;
+  font-size : 11px;
+}
+
+#chartdiv2b {
+  height    : 400px;
+  font-size : 11px;
+}
+
+#chartdiv2c {
+  height    : 400px;
+  font-size : 11px;
+}
+
+.demo-panel-white {
+background-color: #dddddd;
+border-radius: 10px;
+padding: 10px;
+box-shadow: 0 2px 10px 0 rgb(0,0,0);
+box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+}
+
+.chart-reset * {
+-webkit-box-sizing                : initial;
+-moz-box-sizing                 : initial;
+box-sizing                    : initial;
+}

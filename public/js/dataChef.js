@@ -87,3 +87,39 @@ function summableProperties(dataArray){
 }
 //==============================================================================
 
+
+//==============================================================================
+function reformat_D3_amCharts(data, category, name) {
+	var titles_text, dataProvider;
+
+	if (category === "poverty") {
+		titles_text = "Poverty";
+		dataProvider = data.poverty;
+	} else if (category === "resource") {
+		titles_text = "Resources";
+		dataProvider = data.resource;
+	} else {
+		titles_text = "Subjects";
+		dataProvider = data.subject;
+	}
+
+	return {
+		"type": "pie",
+		"theme": "none",
+		"titles": [{
+			"text": titles_text+" in "+name,
+			"size": 16
+		}],
+		"dataProvider": dataProvider,
+    "valueField": "count",
+    "titleField": "type",
+    "startEffect": "elastic",
+    "startDuration": 2,
+    "labelRadius": 15,
+    "innerRadius": "50%",
+    "depth3D": 10,
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    "angle": 15
+	};
+}
+//==============================================================================

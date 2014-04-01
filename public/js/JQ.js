@@ -16,19 +16,29 @@ function initSlider() {
 }
 
 function initEvents(){
+	$(".row").hide()
+
+	$(document).on({
+		ajaxStart: function() { $("body").addClass("loading"); },
+		ajaxStop: function() { $("body").removeClass("loading"); }
+	});
 
 	$("#databtn").on("click", function(){
 		fetchAndRenderData();
 	})
 
 	$("#clrdatabtn").on("click", function(){
-		console.log($("#mapCanvas:first-child"));
-		$("#col1").html("");
-		$("#col2").html("");
-		selectedGeos = [];
-		snapshotsCache = [];
-		initD3();
-		$(".state.selected").attr("class", "state")
+		window.location = "/";
+		// $(".demo-panel-white").remove();
+		// $(".row").hide();
+		// $("h3").show();
+		// $("#databtn").show();
+		// $(".state.selected").attr("class", "state");
+		// $("#mapCanvas").show();
+		// $("#col1").html("");
+		// $("#col2").html("");
+		// snapshotsCache = [];
+		// selectedGeos = [];
 	})
 }
 

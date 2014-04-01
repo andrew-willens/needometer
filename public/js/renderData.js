@@ -64,18 +64,33 @@ var stateAbbrs = { AL: 'Alabama',
 ////////////////////////////////////////////////////////////////////////////////
 function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
-	$("#col1").html("");
-	$("#col2").html("");
-	$('#mapCanvas').empty();
+	// $("#col1").html("");
+	// $("#col2").html("");
+	$("#databtn").hide();
+	$("h3").hide();
+	$('#mapCanvas').hide();
+	$(".row").show();
 
 	snapshotsCache.forEach(function(geo){
-		var name = stateAbbrs[geo.NAME];
 		column_number++;
+		var name = stateAbbrs[geo.NAME]
 		snapshotText(geo.snapshot_text, name, column_number);
+		var chartdiv = "chartdiv"+column_number;
+		//jscharts pie/barcharts
+		if (column_number == 1) {
+      AmCharts.makeChart(chartdiv+"a", reformat_D3_amCharts(geo, "poverty", name));
+      AmCharts.makeChart(chartdiv+"b", reformat_D3_amCharts(geo, "resource", name));
+      AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts(geo, "subject", name));
+    } else {
+      AmCharts.makeChart(chartdiv+"a", reformat_D3_amCharts(geo, "poverty", name));
+      AmCharts.makeChart(chartdiv+"b", reformat_D3_amCharts(geo, "resource", name));
+      AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts(geo, "subject", name));
+    }
+
 		//following three functions in js/dataChef.js
-		pieChart(geo.poverty, column_number);
-		pieChart(geo.resource, column_number);
-		pieChart(geo.subject, column_number);
+		// pieChart(geo.poverty, column_number);
+		// pieChart(geo.resource, column_number);
+		// pieChart(geo.subject, column_number);
 		// pieChart2(state.subject, column_number);
 	})
 
@@ -86,6 +101,7 @@ function generateSnapshots(){ //called in js/mapLogic.js
 
 ////////////////////////////////////////////////////////////////////////////////
 function snapshotText(data, name, column){
+	console.log(data, name, column)
 	$("#col"+column).append("<h2>"+name+"</h2>"+commas(data.num_donors)+
 		" donors contributed $"+commas(Math.floor(data.total_donations))+
 		" to "+commas(data.projects)+" projects, reaching "+

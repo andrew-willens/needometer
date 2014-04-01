@@ -40,8 +40,7 @@ var initD3 = function() {
 				} else {
 					d3.select(this).classed("active", false);
 					d3.select(this).classed("selected", true);
-					selectJustTwo(this); //in
-					// fetchAndRenderData(); // from 'js/mapLogic.js'
+					selectJustTwo(this); //in js/mapLogic.js;
 				}
       });
 

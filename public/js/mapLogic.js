@@ -10,29 +10,37 @@ function selectJustTwo(geo) {
 
 
 function fetchAndRenderData(){ // called from js/map.js
-	console.log('running')
-	if (dataStore.length === 0) { //dataStore is an array instantiated in the bottomscripts of views/index.
+	// // console.log('running')
+	// if (dataStore.length === 0 ) { //dataStore is an array instantiated in the bottomscripts of views/index.
+	// 	console.log(dataStore.length);
 		selectedGeos.forEach(function(geoId){
-			console.log(geoId);
+			// console.log(geoId);
 			makeGeoObject(geoId);
 		});
-	} else {
-		dataStore.forEach(function(geo){
-			selectedGeos.forEach(function(geogId){
-				console.log(geogId)
-				// if (geo.properties.STUSPS === geogId){
-					// snapshotsCache.push(geo);
-					// renderTwoSnapshots();
-				// } else {
-				// 	makeGeoObject();
-				// }
-			})
-		});
-	}
+	// } else {
+	// 	console.log("datastore = "+dataStore.length);
+	// 	console.log("entering else of fetchAndRender")
+	// 	selectedGeos.forEach(function(geogId){
+
+	// 		dataStore.forEach(function(geo){
+	// 		// console.log(geo.NAME);
+	// 			console.log(geogId)
+	// 			if (geo.NAME === geogId){
+	// 				console.log(geogId)
+	// 				selectedGeos.splice(selectedGeos.indexOf(geogId),1);
+	// 		// 		console.log(geo.NAME, geogId);
+	// 		// 		snapshotsCache.push(geo);
+	// 		// 		// renderTwoSnapshots();
+	// 			} else {
+	// 		// 		makeGeoObject(geogId);
+	// 			}
+	// 		})
+	// 	});
+	// }
 }
 
 function makeGeoObject(geoId) {
-	console.log('making geo object')
+	console.log('making '+geoId+' geo object')
 	$.get('/'+geoId, function(data){
 		var projects = data.projects;
 		var geoObject = {
