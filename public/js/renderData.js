@@ -67,6 +67,7 @@ function generateSnapshots(){ //called in js/mapLogic.js
 	// $("#col1").html("");
 	// $("#col2").html("");
 	$("#databtn").hide();
+	$("h1").html("Your Data");
 	$("h3").hide();
 	$('#mapCanvas').hide();
 	$(".row").show();
@@ -80,11 +81,11 @@ function generateSnapshots(){ //called in js/mapLogic.js
 		if (column_number == 1) {
       AmCharts.makeChart(chartdiv+"a", reformat_D3_amCharts(geo, "poverty", name));
       AmCharts.makeChart(chartdiv+"b", reformat_D3_amCharts(geo, "resource", name));
-      AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts(geo, "subject", name));
+      AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts2(geo, "subject", name));
     } else {
       AmCharts.makeChart(chartdiv+"a", reformat_D3_amCharts(geo, "poverty", name));
       AmCharts.makeChart(chartdiv+"b", reformat_D3_amCharts(geo, "resource", name));
-      AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts(geo, "subject", name));
+      AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts2(geo, "subject", name));
     }
 
 		//following three functions in js/dataChef.js

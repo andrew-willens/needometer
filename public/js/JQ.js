@@ -29,8 +29,10 @@ function initEvents(){
 
 	$("#clrdatabtn").on("click", function(){
 		window.location = "/";
+
 		// $(".demo-panel-white").remove();
 		// $(".row").hide();
+		// $("h1").html("Welcome to the Needometer");
 		// $("h3").show();
 		// $("#databtn").show();
 		// $(".state.selected").attr("class", "state");

@@ -9,8 +9,17 @@ a {
   color: #00B7FF;
 }
 
+#databtn {
+	margin: 10px 0 0 0;
+}
+
+#clrdatabtn {
+	float: right;
+	margin: 8px;
+}
+
 #mapCanvas {
-	padding: 100px 0;
+	padding: 80px 0;
 }
 
 #chartdiv {
@@ -102,11 +111,11 @@ body.loading .modal {
 }
 
 .state.selected {
-	fill: orange;
+	fill: #d35d5a;
 }
 
 .state.active{
-	fill: yellow;
+	fill: #EB6864;
 }
 
 .legend rect {
