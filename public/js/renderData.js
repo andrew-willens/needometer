@@ -1,7 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 var stateAbbrs = { AL: 'Alabama',
   AK: 'Alaska',
-  AS: 'American Samoa',
   AZ: 'Arizona',
   AR: 'Arkansas',
   CA: 'California',
@@ -9,7 +8,6 @@ var stateAbbrs = { AL: 'Alabama',
   CT: 'Connecticut',
   DE: 'Delaware',
   DC: 'District Of Columbia',
-  FM: 'Federated States Of Micronesia',
   FL: 'Florida',
   GA: 'Georgia',
   GU: 'Guam',
@@ -66,6 +64,7 @@ function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
 	// $("#col1").html("");
 	// $("#col2").html("");
+	$(".navbar-fixed-bottom").hide();
 	$("#databtn").hide();
 	$("h1").html("Your Data");
 	$("h3").hide();

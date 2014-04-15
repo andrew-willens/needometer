@@ -11,7 +11,7 @@ var express = require('express'),
 
 // rendering views
 app.engine('html', swig.renderFile);
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 8000);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view cache', false);

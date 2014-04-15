@@ -1,6 +1,6 @@
 /*test*/
 body {
-  padding: 50px;
+  padding: 80px 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
 }
@@ -9,105 +9,54 @@ a {
   color: #00B7FF;
 }
 
-#databtn {
-	margin: 10px 0 0 0;
+/*circle {
+  fill: steelblue;
 }
 
-#clrdatabtn {
-	float: right;
-	margin: 8px;
+polyline {
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}*/
+
+nav {
+  margin: 100px auto;
+  text-align: center;
 }
 
-#mapCanvas {
-	padding: 80px 0;
-}
-
-#chartdiv {
-  width   : 100%;
-  height    : 400px;
-  font-size : 11px;
-}
-
-#chartdiv1a {
-  height    : 400px;
-  font-size : 11px;
-}
-
-#chartdiv1b {
-  height    : 400px;
-  font-size : 11px;
-}
-
-#chartdiv1c {
-  height    : 400px;
-  font-size : 11px;
-}
-
-#chartdiv2a {
-  height    : 400px;
-  font-size : 11px;
-}
-
-#chartdiv2b {
-  height    : 400px;
-  font-size : 11px;
-}
-
-#chartdiv2c {
-  height    : 400px;
-  font-size : 11px;
-}
-
-.demo-panel-white {
-background-color: #dddddd;
-border-radius: 10px;
-padding: 10px;
-box-shadow: 0 2px 10px 0 rgb(0,0,0);
-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+.chart-cols {
+  background-color: #eee;
+  border: 1px;
 }
 
 .chart-reset * {
--webkit-box-sizing                : initial;
--moz-box-sizing                 : initial;
-box-sizing                    : initial;
+	-webkit-box-sizing: initial;
+	-moz-box-sizing: initial;
+	box-sizing: initial;
+}
+
+.container {
+  padding: 50px;
+}
+
+.demo-panel-white {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.hidden {
+	display: none;
 }
 
 .state {
 	fill: gray;
 }
 
-.county-border {
-  fill: none;
-  stroke: #fff;
-  stroke-width: .5px;
-}
-
 .state-border {
   fill: none;
   stroke: #fff;
-}
-
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1000;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba( 255, 255, 255, .8 )
-						 url('http://business.comcast.com/img/preloader.gif')
-						 50%
-						 50%
-						 no-repeat;
-}
-
-body.loading {
-	overflow: hidden;
-}
-
-body.loading .modal {
-	display: block;
 }
 
 .state.selected {
@@ -118,153 +67,23 @@ body.loading .modal {
 	fill: #EB6864;
 }
 
-.legend rect {
- fill:white;
- stroke:black;
- opacity:0.8;
-}
-
-path.slice{
-  stroke-width: 2px;
-}
-
-polyline {
-  opacity: .3;
-  stroke: black;
-  stroke-width: 2px;
-  fill: none;
-}
-
-path.slice{
-  stroke-width: 2px;
-}
-
-polyline {
-  opacity: .3;
-  stroke: black;
-  stroke-width: 2px;
-  fill: none;
-}
-
-#svg {
+#chartdiv {
   width: 100%;
-  height: auto;
+  height: 400px;
+  font-size: 11px;
 }
 
-#slider-range {
-  float: center;
+#clrdatabtn {
+	float: right;
+	margin: 8px;
 }
 
-.container {
-  padding: 50px;
+#databtn {
+	margin: 10px;
+	display: inline-block;
+	background: white;
+	color: black;
 }
-
-.chart-cols {
-  background-color: #eee;
-  border: 1px;
-}
-
-.bar {
-  fill: blue;
-}
-
-.bar:hover {
-  fill: red;
-}
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.arc path {
-  stroke: #fff;
-}
-
-circle {
-  fill: steelblue;
-}
-
-nav {
-  margin: 100px auto;
-  text-align: center;
-}
-
-nav ul ul {
-  display: none;
-}
-
-nav ul li:hover > ul {
-  display: block;
-}
-
-
-nav ul {
-  background: #efefef;
-  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
-  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
-  background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
-  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-  padding: 0 20px;
-  border-radius: 10px;
-  list-style: none;
-  position: relative;
-  display: inline-table;
-}
-
-  nav ul:after {
-    content: ""; clear: both; display: block;
-  }
-
-  nav ul li {
-    float: left;
-  }
-    nav ul li:hover {
-      background: #4b545f;
-      background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-      background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-      background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
-    }
-      nav ul li:hover a {
-        color: #fff;
-      }
-
-    nav ul li a {
-      display: block; padding: 25px 40px;
-      color: #757575; text-decoration: none;
-    }
-
-
-  nav ul ul {
-    background: #5f6975; border-radius: 0px; padding: 0;
-    position: absolute; top: 100%;
-  }
-    nav ul ul li {
-      float: none;
-      border-top: 1px solid #6b727c;
-      border-bottom: 1px solid #575f6a; position: relative;
-    }
-      nav ul ul li a {
-        padding: 15px 40px;
-        color: #fff;
-      }
-        nav ul ul li a:hover {
-          background: #4b545f;
-        }
-
-  nav ul ul ul {
-    position: absolute; left: 100%; top:0;
-  }
 
 #chartdiv1a {
   height    : 400px;
@@ -296,16 +115,70 @@ nav ul {
   font-size : 11px;
 }
 
-.demo-panel-white {
-background-color: #dddddd;
-border-radius: 10px;
-padding: 10px;
-box-shadow: 0 2px 10px 0 rgb(0,0,0);
-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+#mapCanvas {
+	padding: 80px 0;
 }
 
-.chart-reset * {
--webkit-box-sizing                : initial;
--moz-box-sizing                 : initial;
-box-sizing                    : initial;
+#slider-range {
+  float: center;
 }
+
+#sidebar {
+    xbackground: blue;
+    float: left;
+    /*position: fixed;*/
+    top: 10px;
+    left: -180px;
+    width: 200px;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+#sidebar-content {
+    width: 80%;
+    float: left;
+    background-color: white;
+}
+
+#svg {
+  width: 100%;
+  height: auto;
+}
+
+#tglbtn {
+	  float: left;
+    height: 100%;
+    width: 20px;
+}
+
+
+/* responsive  ====================================================== */
+
+	/* 'data loading' icon =================================================== */
+	body.loading {
+		overflow: hidden;
+	}
+
+	body.loading .modal {
+		display: block;
+	}
+
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba( 255, 255, 255, .8 )
+							 url('http://business.comcast.com/img/preloader.gif')
+							 50%
+							 50%
+							 no-repeat;
+	}
+	/* end 'data loading' icon ================================================ */
+
+/* end responsive ================================================== */
+
+
