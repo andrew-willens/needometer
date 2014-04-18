@@ -69,7 +69,8 @@ function generateSnapshots(){ //called in js/mapLogic.js
 	$("h1").html("Your Data");
 	$("h3").hide();
 	$('#mapCanvas').hide();
-	$(".row").show();
+	$("#clrbtn2").show();
+	$(".col-md-6").show();
 
 	snapshotsCache.forEach(function(geo){
 		column_number++;
@@ -98,80 +99,6 @@ function generateSnapshots(){ //called in js/mapLogic.js
 }
 ////////////////////////////////////////////////////////////////////////////////
 
-function sortStatePovertyData(data) {
-	console.log(data)
-	// data = [{'type':"highest poverty", 'count':1000}, {'type':"moderate poverty", 'count':500}]
-	// highest poverty, high poverty, moderate poverty, low poverty
-	var tempData = {};
-	var tempDataArray = [];
-	// console.log("inside sortStatePovertyData function");
-	// console.log(data.length, data[0].type, data[0].count);
-	// var i;
-	var index;
-	// look for "highest poverty"
-	for (var i=0; i<data.length; i++) {
-		// console.log(i)
-		index = 0;
-		// console.log(data[i].type)
-		if (data[i].type === "highest poverty") {
-			index = i;
-		}
-	}
-	// console.log(index)
-	if (index > 0) {
-		// console.log("index = "+index)
-		// console.log("i = "+i)
-		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
-  } else {
-  	tempDataArray.push({'type': "", 'count': 0})
-  }
-
-	// look for "high poverty"
-	for (var i=0; i<data.length; i++) {
-		// console.log(i)
-		index = 0;
-		// console.log(data[i].type)
-		if (data[i].type === "high poverty") {
-			index = i;
-		}
-	}
-	// console.log(index)
-	if (index > 0) {
-		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
-  } else {
-  	tempDataArray.push({'type': "", 'count': 0})
-  }
-
-	// look for "moderate poverty"
-	for (var i=0; i<data.length; i++) {
-		index = 0;
-		if (data[i].type === "moderate poverty") {
-			index = i;
-		}
-	}
-	if (index > 0) {
-		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
-  } else {
-  	tempDataArray.push({'type': "", 'count': 0})
-  }
-
-	// look for "low poverty"
-	for (var i=0; i<data.length; i++) {
-		index = 0;
-		if (data[i].type === "low poverty") {
-			index = i;
-		}
-	}
-	if (index > 0) {
-		tempDataArray.push({'type': data[index].type, 'count': data[index].count})
-  } else {
-  	tempDataArray.push({'type': "", 'count': 0})
-  }
-
-  tempData = tempDataArray;
-  console.log(tempData)
-	// return tempData;
-}
 
 ////////////////////////////////////////////////////////////////////////////////
 function snapshotText(data, name, column){

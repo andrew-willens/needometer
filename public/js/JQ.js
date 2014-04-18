@@ -20,7 +20,8 @@
 
 //==============================================================================
 function initEvents(){
-	$(".row").hide()
+	$(".col-md-6").hide()
+	$("#clrbtn2").hide()
 
 	$(document).on({
 		ajaxStart: function() { $("body").addClass("loading"); },
@@ -31,19 +32,11 @@ function initEvents(){
 		fetchAndRenderData();
 	})
 
-	$("#tglbtn").on("click", function(){
-		if ($("#sidebar").hasClass("hidden")) {
-			$("#sidebar").removeClass("hidden");
-		} else {
-			$("#sidebar").addClass("hidden");
-		}
-	})
-
 	$("#clrdatabtn").on("click", function(){
 		// window.location = "/";
 
 		$(".demo-panel-white").remove();
-		$(".row").hide();
+		$(".col-md-6").hide();
 		$("h1").html("Welcome to the Needometer");
 		$("h3").show();
 		$("#databtn").show();

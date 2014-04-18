@@ -9,17 +9,6 @@ a {
   color: #00B7FF;
 }
 
-/*circle {
-  fill: steelblue;
-}
-
-polyline {
-  opacity: .3;
-  stroke: black;
-  stroke-width: 2px;
-  fill: none;
-}*/
-
 nav {
   margin: 100px auto;
   text-align: center;
@@ -73,12 +62,12 @@ nav {
   font-size: 11px;
 }
 
-#clrdatabtn {
+#clrbtn {
 	float: right;
 	margin: 8px;
 }
 
-#databtn {
+#databtn, #clrbtn2 {
 	margin: 10px;
 	display: inline-block;
 	background: white;
@@ -115,42 +104,10 @@ nav {
   font-size : 11px;
 }
 
-#mapCanvas {
-	padding: 80px 0;
-}
-
-#slider-range {
-  float: center;
-}
-
-#sidebar {
-    xbackground: blue;
-    float: left;
-    /*position: fixed;*/
-    top: 10px;
-    left: -180px;
-    width: 200px;
-    height: 1000px;
-    border: 1px solid black;
-}
-
-#sidebar-content {
-    width: 80%;
-    float: left;
-    background-color: white;
-}
-
 #svg {
   width: 100%;
   height: auto;
 }
-
-#tglbtn {
-	  float: left;
-    height: 100%;
-    width: 20px;
-}
-
 
 /* responsive  ====================================================== */
 
