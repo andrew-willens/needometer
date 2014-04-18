@@ -62,15 +62,13 @@ var stateAbbrs = { AL: 'Alabama',
 ////////////////////////////////////////////////////////////////////////////////
 function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
-	// $("#col1").html("");
-	// $("#col2").html("");
+
 	$(".navbar-fixed-bottom").hide();
 	$("#databtn").hide();
-	$("h1").html("Your Data");
-	$("h3").hide();
+	$("h4").hide();
 	$('#mapCanvas').hide();
 	$("#clrbtn2").show();
-	$(".col-md-6").show();
+	$(".demo-panel-white").show();
 
 	snapshotsCache.forEach(function(geo){
 		column_number++;
@@ -116,40 +114,28 @@ function commas(x) {
 
 ////////////////////////////////////////////////////////////////////////////////
 function pieChart(data, column){
-	// var width = 960,
-  var width = 960/2.5 // 384
-	// var width = 960/2 // 480
-  // var height = 500
-  var height = 500/2.5 // 200
-  // var height = 500/2 // 250
+  var width = 960/2.5
+  var height = 500/2.5
   var radius = Math.min(width, height) / 2;
 
   var color = d3.scale.category20();
-  // var color = d3.scale.category20b(); //alt color scheme1
-  // var color = d3.scale.category20c(); //alt color scheme2
 
 	var arc = d3.svg.arc()
 	    .outerRadius(radius - 0)
 	    .innerRadius(50);
-	    // .innerRadius(62.5); // 250/4
 
 	var pie = d3.layout.pie()
 	    .sort(null)
-	    // .sort(function(d) { return d.value; })
-	    // .sort(function(d) { return ["highest poverty","high poverty","moderate poverty","low poverty"]})
-	    // .value(function(d) { console.log("d.count = "+d.count);return d.count; });
 	    .value(function(d) { return d.count; });
 
 	var svg = d3.select("#col"+column).append("svg")
 	    .attr("width", width)
 	    .attr("height", height)
 	  .append("g")
-	  	// .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 	    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 	var g = svg.selectAll(".arc")
 	    .data(pie(data))
-	    // .data(pie(data), function(d) { return ["highest poverty","high poverty","moderate poverty","low poverty"] })
 	  .enter().append("g")
 	    .attr("class", "arc");
 
@@ -160,15 +146,11 @@ function pieChart(data, column){
 
 	  var legend = d3.select("#col"+column).append("svg")
 			  .attr("class", "legend")
-			  // .attr("width", 180)
 			  .attr("width", 240)
-			  // .attr("height", 180 * 2)
 			  .attr("height", height)
 			  .selectAll("g")
 			  .data(pie(data))
-			  // .data(pie(data), function(d) { return ["highest poverty","high poverty","moderate poverty","low poverty"] })
 			  .enter().append("g")
-			  // .attr("transform", function(d, i) { console.log("translate(0," + i * 20 + ")"); return "translate(0," + i * 20 + ")"; });
 			  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
 	legend.append("rect")

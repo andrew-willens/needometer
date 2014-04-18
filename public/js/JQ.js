@@ -20,7 +20,7 @@
 
 //==============================================================================
 function initEvents(){
-	$(".col-md-6").hide()
+	$(".demo-panel-white").hide()
 	$("#clrbtn2").hide()
 
 	$(document).on({
@@ -33,18 +33,25 @@ function initEvents(){
 	})
 
 	$("#clrbtn").on("click", function(){
-
-		$(".demo-panel-white").remove();
-		$(".col-md-6").hide();
-		$("h1").html("Welcome to the Needometer");
-		$("h3").show();
-		$("#databtn").show();
 		$(".state.selected").attr("class", "state");
-		$("#mapCanvas").show();
-		$("#col1").html("");
-		$("#col2").html("");
 		snapshotsCache = [];
 		selectedGeos = [];
 	})
+
+	$("#clrbtn2").on("click", function(){
+		snapshotsCache = [];
+		selectedGeos = [];
+		$("#col1").html("");
+		$("#col2").html("");
+		$(".demo-panel-white").hide();
+		$("#clrbtn2").hide();
+		$("#clrbtn").show();
+		$("#databtn").show();
+		$("h4").show();
+		$(".state.selected").attr("class", "state");
+		$("#mapCanvas").show();
+		$(".navbar-fixed-bottom").show();
+	})
+
 }
 //==============================================================================
