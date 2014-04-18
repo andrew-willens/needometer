@@ -33,10 +33,48 @@ nav {
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 10px;
+	opacity: 0;
+	display:none;
 }
 
-.hidden {
+.fltrbtn, #databtn, #clrbtn {
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline-block;
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.fltrbtn {
+	margin: 30px;
+}
+
+.geofilter {
+	background-color: #eb6864;
+	opacity: .8;
+	position: fixed;
+	z-index: 1;
 	display: none;
+  top: 0px;
+  width: 250px;
+  height: 100%;
+}
+
+.geofilter-content {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.geofilter-content>h3 {
+	text-align: center;
+	color: black;
+	margin: 80px 0 30px 0;
+}
+
+.hidesb {
+	display:none;
 }
 
 .state {
@@ -56,22 +94,17 @@ nav {
 	fill: #EB6864;
 }
 
+.tglbtn {
+  height: 100%;
+  width: 20px;
+  font-size: 25px;
+	color: black;
+}
+
 #chartdiv {
   width: 100%;
   height: 400px;
   font-size: 11px;
-}
-
-#clrbtn {
-	float: right;
-	margin: 8px;
-}
-
-#databtn, #clrbtn2 {
-	margin: 10px;
-	display: inline-block;
-	background: white;
-	color: black;
 }
 
 #chartdiv1a {
@@ -102,6 +135,26 @@ nav {
 #chartdiv2c {
   height    : 400px;
   font-size : 11px;
+}
+
+#ftglleft {
+	position: fixed;
+	left: 20px;
+	z-index: 2;
+}
+
+#ftglright {
+	position: fixed;
+	right: 20px;
+	z-index: 2;
+}
+
+#gf1 {
+	left: 0px;
+}
+
+#gf2 {
+	right: 0px;
 }
 
 #svg {

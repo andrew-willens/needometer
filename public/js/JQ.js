@@ -20,8 +20,6 @@
 
 //==============================================================================
 function initEvents(){
-	$(".demo-panel-white").hide()
-	$("#clrbtn2").hide()
 
 	$(document).on({
 		ajaxStart: function() { $("body").addClass("loading"); },
@@ -33,25 +31,58 @@ function initEvents(){
 	})
 
 	$("#clrbtn").on("click", function(){
-		$(".state.selected").attr("class", "state");
-		snapshotsCache = [];
-		selectedGeos = [];
-	})
-
-	$("#clrbtn2").on("click", function(){
 		snapshotsCache = [];
 		selectedGeos = [];
 		$("#col1").html("");
 		$("#col2").html("");
-		$(".demo-panel-white").hide();
-		$("#clrbtn2").hide();
-		$("#clrbtn").show();
-		$("#databtn").show();
-		$("h4").show();
+		$(".demo-panel-white").hide(1000);
+		$("#clrbtn2").hide(1000);
+		$("#clrbtn").show(2000);
+		$("#databtn").show(2000);
+		$("h4").show(2000);
 		$(".state.selected").attr("class", "state");
-		$("#mapCanvas").show();
-		$(".navbar-fixed-bottom").show();
+		$("#mapCanvas").show(2000);
+		$(".navbar-fixed-bottom").show(2000);
 	})
+
+
+	//==================== filter sidebar functionaility ====================//
+	function showSidebar(btn) {
+		var parent = $(btn).parent();
+
+		if (parent.attr("id") === "ftglleft") {
+			parent.css("left", "270px");
+			$("#gf1").toggle(1000);
+		} else {
+			parent.css("right", "270px");
+			$("#gf2").toggle(1000);
+		}
+	}
+
+	function hideSidebar(btn) {
+		var parent = $(btn).parent();
+
+		if (parent.attr("id") === "ftglleft") {
+			parent.css("left", "20px");
+			$("#gf1").toggle(1000);
+		} else {
+			parent.css("right", "20px");
+			$("#gf2").toggle(1000);
+		}
+		$(btn).prev().toggle(1000)
+	}
+
+	$(".tglbtn").on("click", function(){
+		$(this).toggle();
+		$(this).next().toggle(1000);
+
+		if ($(this).hasClass("showsb")) {
+			showSidebar(this);
+		} else {
+			hideSidebar(this);
+		}
+	})
+	//================== end filter sidebar functionality ===================//
 
 }
 //==============================================================================

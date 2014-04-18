@@ -14,7 +14,6 @@
   <link href="libs/bootstrap/dist/css/bootstrap-journal.min.css" rel="stylesheet" type="text/css">
   <link href="libs/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link href="http://www.amcharts.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/download-monitor/assets/css/frontend.css" rel="stylesheet" type="text/css">
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -22,7 +21,6 @@
 <body>
 
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 	        <span class="sr-only">Toggle navigation</span>
@@ -34,23 +32,48 @@
 	    </div>
 	    <div class="nav navbar-right">
 	    	<a id="databtn" class="btn btn-default">Show Data</a>
-	    	<a id="clrbtn2" class="btn btn-primary">Clear</a>
+	    	<a id="clrbtn" class="btn btn-primary">Clear</a>
 	    </div>
-	  </div>
 	</div>
 
-	  <div id="sidebar" class="hidden">
-    <div id="sidebar-content">
-    	<!--Sidebar content-->
-    	<h3>Sidebar</h3>
-  	</div>
-  </div>
-	<a id="tglbtn" href="#" class="toggles"><div class="btn btn-default" ></div></a>
+	<div id="gf1" class='geofilter'>
+		<div class='geofilter-content'>
+			<h3>Location 1</h3>
+			<form>
+				<input type="radio" name="sex" value="male">&nbsp;Field<br>
+				<input type="radio" name="sex" value="female">&nbsp;Field<br>
+				<input type="checkbox" name="vehicle" value="Bike">&nbsp;Field<br>
+				<input type="checkbox" name="vehicle" value="Car">&nbsp;Field<br>
+				<div class="btn btn-primary fltrbtn">Filter</div>
+			</form>
+		</div>
+	</div>
+	<div id="ftglleft">
+		<i class="fa fa-chevron-right tglbtn showsb"></i>
+		<i class="fa fa-chevron-left tglbtn hidesb"></i>
+	</div>
 
+	<div id='gf2' class="geofilter">
+		<div class='geofilter-content'>
+			<h3>Location 2</h3>
+			<form>
+				<input type="radio" name="sex" value="male">&nbsp;Field<br>
+				<input type="radio" name="sex" value="female">&nbsp;Field<br>
+				<input type="checkbox" name="vehicle" value="Bike">&nbsp;Field<br>
+				<input type="checkbox" name="vehicle" value="Car">&nbsp;Field<br>
+				<div class="btn btn-primary fltrbtn">Filter</div>
+			</form>
+		</div>
+	</div>
+	<div id="ftglright">
+		<i class="fa fa-chevron-left tglbtn showsb"></i>
+		<i class="fa fa-chevron-right tglbtn hidesb"></i>
+	</div>
+
+	<h4>Please select two areas you would like to compare.</h4>
 	<div class="container-fluid">
     <div class="row-fluid span12">
     	<!-- D3 USA Projection -->
-    	<h4>Please select two areas you would like to compare.</h4>
 			<div id="mapCanvas"></div>
 			<!-- end map -->
 		</div>
@@ -103,7 +126,7 @@
 	</div>
 
 
-	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+<!-- 	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -118,7 +141,7 @@
 				<a id="clrbtn" class="btn btn-primary">Clear</a>
 	    </div>
 	  </div>
-	</div>
+	</div> -->
 
 	<div class="modal"></div>
 

@@ -63,11 +63,11 @@ var stateAbbrs = { AL: 'Alabama',
 function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
 
-	$(".navbar-fixed-bottom").hide();
-	$("#databtn").hide();
-	$("h4").hide();
-	$('#mapCanvas').hide();
-	$("#clrbtn2").show();
+
+	$(".navbar-fixed-bottom").hide(1000);
+	$("#databtn").hide(1000);
+	$("h4").hide(1000);
+	$('#mapCanvas').hide(1000);
 	$(".demo-panel-white").show();
 
 	snapshotsCache.forEach(function(geo){
