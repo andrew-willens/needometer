@@ -32,8 +32,7 @@ function initEvents(){
 		fetchAndRenderData();
 	})
 
-	$("#clrdatabtn").on("click", function(){
-		// window.location = "/";
+	$("#clrbtn").on("click", function(){
 
 		$(".demo-panel-white").remove();
 		$(".col-md-6").hide();

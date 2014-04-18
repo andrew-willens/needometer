@@ -40,7 +40,6 @@ function fetchAndRenderData(){ // called from js/map.js
 }
 
 function makeGeoObject(geoId) {
-	console.log('making '+geoId+' geo object')
 	$.get('/'+geoId, function(data){
 		var projects = data.projects;
 		var geoObject = {

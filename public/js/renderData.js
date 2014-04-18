@@ -102,7 +102,6 @@ function generateSnapshots(){ //called in js/mapLogic.js
 
 ////////////////////////////////////////////////////////////////////////////////
 function snapshotText(data, name, column){
-	console.log(data, name, column)
 	$("#col"+column).append("<h2>"+name+"</h2>"+commas(data.num_donors)+
 		" donors contributed $"+commas(Math.floor(data.total_donations))+
 		" to "+commas(data.projects)+" projects, reaching "+

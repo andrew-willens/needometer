@@ -127,18 +127,8 @@ function reformat_D3_amCharts(data, category, name) {
 
 //==============================================================================
 function reformat_D3_amCharts2(data, category, name) {
-  console.log("data2:");
-  console.log(data);
-  console.log("category2:");
-  console.log(category);
-
-  var titles_text, dataProvider;
-
-  titles_text = "Subjects";
-  dataProvider = data.subject;
-
-  // console.log("dataProvider2 (before colors):")
-  // console.log(dataProvider);
+  var titles_text = "Subjects",
+      dataProvider = data.subject;
 
   var colors = [
     "#FF0F00", "#FF6600", "#FF9E01", "#FCD202", "#F8FF01", "#B0DE09",
@@ -148,13 +138,10 @@ function reformat_D3_amCharts2(data, category, name) {
     "#04D215", "#0D8ECF", "#0D52D1", "#2A0CD0", "#8A0CCF", "#CD0D74",
     "#754DEB", "#DDDDDD", "#999999", "#333333", "#000000"
   ];
-  // for (var i<0; i<dataProvider.length; i++) {
+
   for (var i=0; i<dataProvider.length; i++) {
     dataProvider[i].color = colors[i];
   }
-
-  // console.log("dataProvider2 (before colors):")
-  // console.log(dataProvider);
 
   return {
     "theme": "none",
