@@ -10,7 +10,6 @@
   <title>Needometer</title>
 
   <!-- CSS -->
-  <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="libs/bootstrap/dist/css/bootstrap-journal.min.css" rel="stylesheet" type="text/css">
   <link href="libs/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
@@ -20,7 +19,7 @@
 
 <body>
 
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-inverse" role="navigation">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 	        <span class="sr-only">Toggle navigation</span>
@@ -30,9 +29,21 @@
 	      </button>
 	      <a class="navbar-brand" href="http://www.donorschoose.org/">​Needometer</a>
 	    </div>
+	    <div id="nav-content">
+	    	<div id="brdcrmb1" class="brdcrmb">
+	    		<h3>Area 1</h3><i class="fa fa-chevron-right"></i>
+	    	</div>
+	    	<div id="brdcrmb2" style="display:none" class="brdcrmb">
+	    		<h3>Area 2</h3><i class="fa fa-chevron-right"></i>
+	    	</div>
+	    	<div id="brdcrmb3" style="display:none">
+	    		<a id="databtn" class="btn btn-default">Generate</a><i class="fa fa-chevron-right"></i>
+	    	</div>
+	    </div>
 	    <div class="nav navbar-right">
-	    	<a id="databtn" class="btn btn-default">Show Data</a>
-	    	<a id="clrbtn" class="btn btn-primary">Clear</a>
+	    	<a id="backbtn" class="btn btn-default">Back</a>
+	    	<a id="slctbtn" class="btn btn-default">Select</a>
+	    	<a id="clrbtn" class="btn btn-default">Clear</a>
 	    </div>
 	</div>
 
@@ -44,7 +55,7 @@
 				<input type="radio" name="sex" value="female">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Bike">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Car">&nbsp;Field<br>
-				<div class="btn btn-primary fltrbtn">Filter</div>
+				<div id="fltrbtn1" class="btn btn-default fltrbtn">Filter</div>
 			</form>
 		</div>
 	</div>
@@ -61,7 +72,7 @@
 				<input type="radio" name="sex" value="female">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Bike">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Car">&nbsp;Field<br>
-				<div class="btn btn-primary fltrbtn">Filter</div>
+				<div id="fltrbtn2" class="btn btn-default flltrbtn">Filter</div>
 			</form>
 		</div>
 	</div>
@@ -70,7 +81,6 @@
 		<i class="fa fa-chevron-right tglbtn hidesb"></i>
 	</div>
 
-	<h4>Please select two areas you would like to compare.</h4>
 	<div class="container-fluid">
     <div class="row-fluid span12">
     	<!-- D3 USA Projection -->

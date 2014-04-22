@@ -1,6 +1,5 @@
 /*test*/
-body {
-  padding: 80px 50px;
+body {nav-content
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
 }
@@ -9,9 +8,9 @@ a {
   color: #00B7FF;
 }
 
-nav {
-  margin: 100px auto;
-  text-align: center;
+.brdcrmb {
+	display: inline-block;
+	margin-top: 15px;
 }
 
 .chart-cols {
@@ -37,8 +36,15 @@ nav {
 	display:none;
 }
 
-.fltrbtn, #databtn, #clrbtn {
-	margin-left: 10px;
+.fa {
+	height: 100%;
+	width: 20px;
+  font-size: 25px;
+	color: black;
+}
+
+#fltrbtn1, #fltrbtn2, #databtn, #clrbtn, #backbtn, #slctbtn {
+	margin-right: 10px;
 	margin-top: 10px;
 	display: inline-block;
 	background: white;
@@ -94,12 +100,9 @@ nav {
 	fill: #EB6864;
 }
 
-.tglbtn {
-  height: 100%;
-  width: 20px;
-  font-size: 25px;
-	color: black;
-}
+/*.tglbtn {
+	display: none;
+}*/
 
 #chartdiv {
   width: 100%;
@@ -133,17 +136,19 @@ nav {
 }
 
 #chartdiv2c {
-  height    : 400px;
-  font-size : 11px;
+  height: 400px;
+  font-size: 11px;
 }
 
 #ftglleft {
+	display: none;
 	position: fixed;
 	left: 20px;
 	z-index: 2;
 }
 
 #ftglright {
+	display: none;
 	position: fixed;
 	right: 20px;
 	z-index: 2;
@@ -155,6 +160,15 @@ nav {
 
 #gf2 {
 	right: 0px;
+}
+
+#nav-content, #nav-content:first-child {
+	display:inline-block;
+	color: white;
+}
+
+#nav-content h3 {
+	display: inline;
 }
 
 #svg {

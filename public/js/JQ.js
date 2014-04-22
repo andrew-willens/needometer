@@ -20,15 +20,48 @@
 
 //==============================================================================
 function initEvents(){
+	// fetchAndRenderData();
 
 	$(document).on({
 		ajaxStart: function() { $("body").addClass("loading"); },
 		ajaxStop: function() { $("body").removeClass("loading"); }
 	});
 
-	$("#databtn").on("click", function(){
-		fetchAndRenderData();
+	$("#slctbtn").on("click", function(){
+		if ($("#brdcrmb2").css("display") === "none") {
+			if ($("#ftglleft").css("display") === "none") {
+				$("#ftglleft").toggle(1000);
+			}
+			tglLeftSidebar();
+		} else {
+			if ($("#ftglright").css("display") === "none") {
+				$("#ftglright").toggle(1000);
+			}
+			tglRightSidebar();
+		}
 	})
+
+	$("#ftglleft").on("click", function() {
+		tglLeftSidebar();
+	})
+
+	$("#ftglright").on("click", function() {
+		tglRightSidebar();
+	})
+
+	$("#fltrbtn1").on("click", function(){
+		$("#brdcrmb2").fadeIn(2000);
+		tglLeftSidebar();
+	});
+
+	$("#fltrbtn2").on("click", function(){
+		$("#brdcrmb3").fadeIn(2000).css("display", "inline");
+		tglRightSidebar();
+	});
+
+	$("#backbtn").on("click", function(){
+		$(".brdcrmb2").fadeOut(2000);
+	});
 
 	$("#clrbtn").on("click", function(){
 		snapshotsCache = [];
@@ -36,52 +69,33 @@ function initEvents(){
 		$("#col1").html("");
 		$("#col2").html("");
 		$(".demo-panel-white").hide(1000);
-		$("#clrbtn2").hide(1000);
-		$("#clrbtn").show(2000);
 		$("#databtn").show(2000);
-		$("h4").show(2000);
 		$(".state.selected").attr("class", "state");
 		$("#mapCanvas").show(2000);
-		$(".navbar-fixed-bottom").show(2000);
 	})
 
 
 	//==================== filter sidebar functionaility ====================//
-	function showSidebar(btn) {
-		var parent = $(btn).parent();
 
-		if (parent.attr("id") === "ftglleft") {
-			parent.css("left", "270px");
-			$("#gf1").toggle(1000);
+	function tglLeftSidebar() {
+		if ($("#gf1").css("display") === "none"){
+			$("#ftglleft").css("left", "270px");
 		} else {
-			parent.css("right", "270px");
-			$("#gf2").toggle(1000);
+			$("#ftglleft").css("left", "20px");
 		}
+		$("#ftglleft").children().toggle(400);
+		$("#gf1").toggle(1000);
 	}
 
-	function hideSidebar(btn) {
-		var parent = $(btn).parent();
-
-		if (parent.attr("id") === "ftglleft") {
-			parent.css("left", "20px");
-			$("#gf1").toggle(1000);
+	function tglRightSidebar() {
+		if ($("#gf2").css("display") === "none"){
+			$("#ftglright").css("right", "270px");
 		} else {
-			parent.css("right", "20px");
-			$("#gf2").toggle(1000);
+			$("#ftglright").css("right", "20px");
 		}
-		$(btn).prev().toggle(1000)
+		$("#ftglright").children().toggle(400);
+		$("#gf2").toggle(1000);
 	}
-
-	$(".tglbtn").on("click", function(){
-		$(this).toggle();
-		$(this).next().toggle(1000);
-
-		if ($(this).hasClass("showsb")) {
-			showSidebar(this);
-		} else {
-			hideSidebar(this);
-		}
-	})
 	//================== end filter sidebar functionality ===================//
 
 }
