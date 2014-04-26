@@ -1,49 +1,47 @@
 /*test*/
-body {nav-content
+body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
 }
-
 a {
   color: #00B7FF;
 }
-
 .brdcrmb {
-	display: inline-block;
+	display: none;
 	margin-top: 15px;
 }
-
 .chart-cols {
   background-color: #eee;
   border: 1px;
 }
-
 .chart-reset * {
 	-webkit-box-sizing: initial;
 	-moz-box-sizing: initial;
 	box-sizing: initial;
 }
-
 .container {
   padding: 50px;
 }
-
 .demo-panel-white {
+	display:none;
+	margin: 20px;
+	padding: 10px;
 	border: 1px solid black;
 	border-radius: 10px;
-	padding: 10px;
-	opacity: 0;
-	display:none;
 }
-
 .fa {
 	height: 100%;
 	width: 20px;
   font-size: 25px;
 	color: black;
 }
-
-#fltrbtn1, #fltrbtn2, #databtn, #clrbtn, #backbtn, #slctbtn {
+#databtn {
+	margin-bottom: 10px;
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
+#clrbtn, #fltrbtn1, #fltrbtn2, #slctbtn {
 	margin-right: 10px;
 	margin-top: 10px;
 	display: inline-block;
@@ -51,11 +49,9 @@ a {
 	color: black;
 	border: 1px solid black;
 }
-
 .fltrbtn {
 	margin: 30px;
 }
-
 .geofilter {
 	background-color: #eb6864;
 	opacity: .8;
@@ -66,127 +62,106 @@ a {
   width: 250px;
   height: 100%;
 }
-
 .geofilter-content {
   width: 100%;
   color: white;
   text-align: center;
 }
-
 .geofilter-content>h3 {
 	text-align: center;
 	color: black;
 	margin: 80px 0 30px 0;
 }
-
 .hidesb {
-	display:none;
+	display: none;
 }
-
+.showsb {
+	display: inline-block;
+}
 .state {
 	fill: gray;
 }
-
 .state-border {
   fill: none;
   stroke: #fff;
 }
-
 .state.selected {
 	fill: #d35d5a;
 }
-
 .state.active{
 	fill: #EB6864;
 }
-
-/*.tglbtn {
-	display: none;
-}*/
-
 #chartdiv {
   width: 100%;
   height: 400px;
   font-size: 11px;
 }
-
 #chartdiv1a {
   height    : 400px;
   font-size : 11px;
 }
-
 #chartdiv1b {
   height    : 400px;
   font-size : 11px;
 }
-
 #chartdiv1c {
   height    : 400px;
   font-size : 11px;
 }
-
 #chartdiv2a {
   height    : 400px;
   font-size : 11px;
 }
-
 #chartdiv2b {
   height    : 400px;
   font-size : 11px;
 }
-
 #chartdiv2c {
   height: 400px;
   font-size: 11px;
 }
-
 #ftglleft {
 	display: none;
 	position: fixed;
 	left: 20px;
 	z-index: 2;
 }
-
 #ftglright {
 	display: none;
 	position: fixed;
 	right: 20px;
 	z-index: 2;
 }
-
 #gf1 {
 	left: 0px;
 }
-
 #gf2 {
 	right: 0px;
 }
-
+#mapCanvas {
+	margin-top: 60px;
+}
 #nav-content, #nav-content:first-child {
 	display:inline-block;
 	color: white;
+	margin-top: 10px;
 }
-
 #nav-content h3 {
 	display: inline;
 }
-
 #svg {
   width: 100%;
   height: auto;
 }
-
 /* responsive  ====================================================== */
 
 	/* 'data loading' icon =================================================== */
 	body.loading {
 		overflow: hidden;
 	}
-
 	body.loading .modal {
 		display: block;
 	}
-
 	.modal {
 		display: none;
 		position: fixed;
@@ -204,5 +179,3 @@ a {
 	/* end 'data loading' icon ================================================ */
 
 /* end responsive ================================================== */
-
-

@@ -34,13 +34,17 @@ var initD3 = function() {
 			})
 			.on("mouseout", function(d){d3.select(this).classed("active", false)})
 			.on("click", function(d){
+				$("#instructions").hide()
 				if (d3.select(this).classed("selected") === true) {
 					d3.select(this).classed("selected", false);
 					selectedGeos.shift(selectedGeos.indexOf(this.id),1);
 				} else {
 					d3.select(this).classed("active", false);
 					d3.select(this).classed("selected", true);
-					selectJustTwo(this); //in js/mapLogic.js;
+					//these functions in js/mapLogic.js;
+					selectJustTwo(d);
+					assignHeaders();
+					toggleSidebars();
 				}
       });
 

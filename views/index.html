@@ -30,24 +30,23 @@
 	      <a class="navbar-brand" href="http://www.donorschoose.org/">​Needometer</a>
 	    </div>
 	    <div id="nav-content">
+	    	<h4 id="instructions">Please select two areas you would like to compare.</h4>
 	    	<div id="brdcrmb1" class="brdcrmb">
-	    		<h3>Area 1</h3><i class="fa fa-chevron-right"></i>
+	    		<h3></h3><i class="fa fa-chevron-right"></i>
 	    	</div>
-	    	<div id="brdcrmb2" style="display:none" class="brdcrmb">
-	    		<h3>Area 2</h3><i class="fa fa-chevron-right"></i>
+	    	<div id="brdcrmb2" class="brdcrmb">
+	    		<h3></h3><i class="fa fa-chevron-right"></i>
 	    	</div>
-	    	<div id="brdcrmb3" style="display:none">
-	    		<a id="databtn" class="btn btn-default">Generate</a><i class="fa fa-chevron-right"></i>
+	    	<div id="brdcrmb3" class="brdcrmb">
+	    		<a id="databtn" class="btn btn-default">Generate</a>
 	    	</div>
 	    </div>
 	    <div class="nav navbar-right">
-	    	<a id="backbtn" class="btn btn-default">Back</a>
-	    	<a id="slctbtn" class="btn btn-default">Select</a>
 	    	<a id="clrbtn" class="btn btn-default">Clear</a>
 	    </div>
 	</div>
 
-	<div id="gf1" class='geofilter'>
+	<div id="gf1" class='geofilter untoggled'>
 		<div class='geofilter-content'>
 			<h3>Location 1</h3>
 			<form>
@@ -55,7 +54,6 @@
 				<input type="radio" name="sex" value="female">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Bike">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Car">&nbsp;Field<br>
-				<div id="fltrbtn1" class="btn btn-default fltrbtn">Filter</div>
 			</form>
 		</div>
 	</div>
@@ -64,7 +62,7 @@
 		<i class="fa fa-chevron-left tglbtn hidesb"></i>
 	</div>
 
-	<div id='gf2' class="geofilter">
+	<div id='gf2' class="geofilter untoggled">
 		<div class='geofilter-content'>
 			<h3>Location 2</h3>
 			<form>
@@ -72,7 +70,6 @@
 				<input type="radio" name="sex" value="female">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Bike">&nbsp;Field<br>
 				<input type="checkbox" name="vehicle" value="Car">&nbsp;Field<br>
-				<div id="fltrbtn2" class="btn btn-default flltrbtn">Filter</div>
 			</form>
 		</div>
 	</div>
@@ -95,12 +92,12 @@
 
 		<div class="row-fluid span12">
 		  <div class="col-md-6">
-			    <div class="demo-panel-white" style="margin-top: 30px;">
+			    <div class="demo-panel-white">
 		      <div class="chart-reset" id="chartdiv1a"></div>
 		    </div>
 			</div>
 			<div class="col-md-6">
-		    <div class="demo-panel-white" style="margin-top: 30px;">
+		    <div class="demo-panel-white">
 	      	<div class="chart-reset" id="chartdiv2a"></div>
 				</div>
 			</div>
@@ -108,12 +105,12 @@
 
 		<div class="row-fluid span12">
 		  <div class="col-md-6">
-		    <div class="demo-panel-white" style="margin-top: 30px; text-align: right;">
+		    <div class="demo-panel-white" style="text-align: right;">
 		      <div class="chart-reset" id="chartdiv1c"></div>
 		    </div>
 		  </div>
 		  <div class="col-md-6">
-		    <div class="demo-panel-white" style="margin-top: 30px; text-align: right;">
+		    <div class="demo-panel-white" style="text-align: right;">
 		      <div class="chart-reset" id="chartdiv2c"></div>
 		    </div>
 		  </div>
@@ -174,7 +171,7 @@
   <!-- local scripts -->
   <script src="js/dataChef.js"></script>
   <script src="js/renderData.js"></script>
-  <script src="js/JQ.js"></script>
+  <script src="js/events.js"></script>
   <script src="js/mapLogic.js"></script>
   <script src="js/map.js"></script>
 
@@ -182,12 +179,12 @@
   <script>
   	initD3();
   	initEvents();
-  	// initSlider();
   </script>
 	<script>
-		var dataStore = [];
-		var snapshotsCache = [];
-		var selectedGeos = [];
+		var dataStore = [],
+			snapshotsCache = [],
+			selectedGeos = [],
+			sgeonames = [];
 	</script>
 
 </body>
