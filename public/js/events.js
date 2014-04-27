@@ -26,7 +26,8 @@ function initEvents(){
 		if ($("#ftglleft").css("left") === "270px") tglLeftSidebar();
 		$("#gf2, #gf1").removeClass("toggled").addClass("untoggled");
 		$(".brdcrmb, .demo-panel-white").hide();
-		$(".geofilter h3, .brdcrmb h3").text("Please select an area.");
+		$(".geofilter h3").text("Please select an area.");
+		$(".brdcrmb h3").text("");
 		$("#col1").html("");
 		$("#col2").html("");
 		$(".state.selected").attr("class", "state");

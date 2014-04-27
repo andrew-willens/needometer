@@ -24,7 +24,7 @@ function toggleSidebars() {
   	tglLeftSidebar();
   } else if (selectedGeos.length === 2 && $("#gf2").hasClass("untoggled")) {
   	tglRightSidebar();
-  	$("#brdcrmb3").css("display", "inline-block").fadeIn(1000);
+  	$("#brdcrmb3").css("display", "inline-block").fadeIn(3000);
   }
 }
 
