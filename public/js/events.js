@@ -7,7 +7,10 @@ function initEvents(){
 	});
 
 	$("#databtn").on("click", function(){
-		fetchAndRenderData();
+		fetchAndRenderData(); //in renderData.js
+		tglLeftSidebar();
+		tglRightSidebar();
+		$("#brdcrmb1, #brdcrmb2").fadeOut(1000);
 	})
 
 	$("#ftglleft").on("click", function() {

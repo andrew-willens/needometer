@@ -1,4 +1,4 @@
-////////////////////////////////////////////////////////////////////////////////
+//==============================================================================
 var stateAbbrs = { AL: 'Alabama',
   AK: 'Alaska',
   AZ: 'Arizona',
@@ -56,14 +56,24 @@ var stateAbbrs = { AL: 'Alabama',
   WV: 'West Virginia',
   WI: 'Wisconsin',
   WY: 'Wyoming' }
-////////////////////////////////////////////////////////////////////////////////
+//==============================================================================
 
 
-////////////////////////////////////////////////////////////////////////////////
+//==============================================================================
+function renderTwoSnapshots(){
+	if (snapshotsCache.length >= 2) {
+		generateSnapshots(); //in js/renderData.js.
+		snapshotsCache = [];
+	}
+}
+//==============================================================================
+
+
+//==============================================================================
 function generateSnapshots(){ //called in js/mapLogic.js
 	var column_number = 0;
 
-	$('#mapCanvas').hide(1000);
+	$('#mapCanvas').hide();
 	$(".demo-panel-white").show();
 
 	snapshotsCache.forEach(function(geo){
@@ -81,20 +91,14 @@ function generateSnapshots(){ //called in js/mapLogic.js
       AmCharts.makeChart(chartdiv+"b", reformat_D3_amCharts(geo, "resource", name));
       AmCharts.makeChart(chartdiv+"c", reformat_D3_amCharts2(geo, "subject", name));
     }
-
-		//following three functions in js/dataChef.js
-		// pieChart(geo.poverty, column_number);
-		// pieChart(geo.resource, column_number);
-		// pieChart(geo.subject, column_number);
-		// pieChart2(state.subject, column_number);
 	})
 
 	stateDataCache = [];
 }
-////////////////////////////////////////////////////////////////////////////////
+//==============================================================================
 
 
-////////////////////////////////////////////////////////////////////////////////
+//==============================================================================
 function snapshotText(data, name, column){
 	$("#col"+column).append("<h2>"+name+"</h2>"+commas(data.num_donors)+
 		" donors contributed $"+commas(Math.floor(data.total_donations))+
@@ -105,60 +109,4 @@ function snapshotText(data, name, column){
 function commas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
-////////////////////////////////////////////////////////////////////////////////
-
-
-////////////////////////////////////////////////////////////////////////////////
-function pieChart(data, column){
-  var width = 960/2.5
-  var height = 500/2.5
-  var radius = Math.min(width, height) / 2;
-
-  var color = d3.scale.category20();
-
-	var arc = d3.svg.arc()
-	    .outerRadius(radius - 0)
-	    .innerRadius(50);
-
-	var pie = d3.layout.pie()
-	    .sort(null)
-	    .value(function(d) { return d.count; });
-
-	var svg = d3.select("#col"+column).append("svg")
-	    .attr("width", width)
-	    .attr("height", height)
-	  .append("g")
-	    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-	var g = svg.selectAll(".arc")
-	    .data(pie(data))
-	  .enter().append("g")
-	    .attr("class", "arc");
-
-	g.append("path")
-	    .attr("d", arc)
-	    .attr("data-legend", function(d){return d.data.name})
-  	  .style("fill", function(d, i) { return color(i); });
-
-	  var legend = d3.select("#col"+column).append("svg")
-			  .attr("class", "legend")
-			  .attr("width", 240)
-			  .attr("height", height)
-			  .selectAll("g")
-			  .data(pie(data))
-			  .enter().append("g")
-			  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-	legend.append("rect")
-	  .attr("width", 18)
-	  .attr("height", 18)
-	  .style("fill", function(d, i) { return color(i); });
-
-	legend.append("text")
-	  .attr("x", 24)
-	  .attr("y", 9)
-	  .attr("dy", ".35em")
-	  .text(function(d) { return d.data.type+": "+commas(d.data.count); });
-};
-//end piechart//////////////////////////////////////////////////////////////////
-
+//==============================================================================

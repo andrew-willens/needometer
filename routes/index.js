@@ -1,6 +1,5 @@
 // dependencies
-// var request = require('request'),
-		path = require('path'),
+var path = require('path'),
     http = require('http'),
     mongoose = require('mongoose'),
     models = require('../models');
@@ -19,13 +18,4 @@ exports.stateData = function(req, res) {
 	});
 };
 
-// module.exports = function(app){
-//   // res.render('index', { title: 'Needometer' });
-
-// 	//frontend routes ============================================================
-// 	//route to handle all angular requests
-// 	app.get('*', function(req, res) {
-// 		res.sendfile('./public/views/index.html');// load our public/views/index.html file
-// 	})
-// };
 

@@ -1,4 +1,25 @@
 //==============================================================================
+function makeGeoObject(geoId) {
+	$.get('/'+geoId, function(data){
+		var projects = data.projects;
+		var geoObject = {
+			"NAME": geoId,
+			"projects":projects,
+			//these functions in js/dataChef;
+			"poverty": povertyLevel(projects),
+			"resource": resourceType(projects),
+			"subject": focusSubject(projects),
+			"snapshot_text": summableProperties(projects)
+		};
+		dataStore.push(geoObject);
+		snapshotsCache.push(geoObject);
+		renderTwoSnapshots();
+	});
+}
+//==============================================================================
+
+
+//==============================================================================
 function povertyLevel(dataArray) {
 	var povertyData = {};
 	var povertyDataArray =[];
@@ -83,6 +104,7 @@ function summableProperties(dataArray){
 			}
 		})
 	});
+
 	return all_prop_obj;
 }
 //==============================================================================
