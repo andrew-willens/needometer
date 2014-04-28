@@ -1,18 +1,41 @@
 //========================== charts logic ======================================
-// function renderSnapshot(){ //called from dataChef.js
-// 	if (snapshots_cache.length === 2) {
-// 		generateSnapshots();
-// 	}
-// }
-
-function generateChart(geo){ //called from renderSnapshot, above
+function generateChart(geo){ // called from
 	$('#mapCanvas').hide();
 	$(".demo-panel-white").show();
 	var name = geo.name;
-  AmCharts.makeChart(name+geo.data_type, configChart(geo, geo.data_type, 2000)); // configChart() in js/dataChef.js
+
+//   AmCharts.makeChart(name+geo.data_type, configChart(geo, geo.data_type), 2000); // configChart() in js/dataChef.js
+  AmCharts.makeChart(name+geo.data_type, configChart(geo, geo.data_type), 2000); // configChart() in js/dataChef.js
 	// AmCharts.makeChart(divId, chartConfig, delay)
 }
-//======================= end charts logic =====================================
+//==============================================================================
+
+//==============================================================================
+function configChart(geo, data_type) {
+	var chart_title = data_type+" Requested by DonorsChoose Projects in "+geo.name,
+		data_provider = geo.resource;
+
+	return {
+		"type": "pie",
+		"theme": "none",
+		"titles": [{
+			"text": chart_title,
+			"size": 16
+		}],
+		"dataProvider": geo.project_resources,
+    "valueField": "count",
+    "titleField": "type",
+    "startEffect": "elastic",
+    "startDuration": 2,
+    "labelRadius": 15,
+    "innerRadius": "50%",
+    "depth3D": 10,
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    "angle": 15
+	};
+}
+//============================ end charts logic ================================
+
 
 
 //==============================================================================

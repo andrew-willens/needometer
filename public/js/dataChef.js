@@ -1,35 +1,122 @@
 //==============================================================================
-function makeGeoObject(geo_id) {
-	$.get('/'+geo_id, function(data){
-		var geo_object = {
-			name: data.state_name,
-			data_type: data.data_type,
-			project_resources: data.project_resources,
-		};
+function renderSnapshot(){ //called from dataChef.js
+	if (snapshots_cache.length === 2) {
+		getChartData();
+	} else {
+		alert("Please select two areas.")
+	}
+}
 
-		// data-storage objects defined in bottomscripts of index.html
-		query_cache.push(geo_object);
-		snapshots_cache.push(geo_object);
+function getChartData() {
+	selected_geos.forEach(function(geo_id){
+		$.get('/'+geo_id, function(data){
+			var geo_object = {
+				name: data.state_name,
+				projects: data.projects,
+			};
 
-		generateChart(geo_object); // in renderData.js
-	});
+			// data-storage objects defined in bottomscripts of index.html
+			query_cache.push(geo_object);
+			snapshots_cache.push(geo_object);
+
+			generateChart(geo_object); // in renderData.js
+		});
+	})
 }
 //==============================================================================
 
 
 //==============================================================================
-function configChart(geo, data_type) {
-	var chart_title = data_type+" Requested by DonorsChoose Projects in "+geo.name,
-		data_provider = geo.resource;
+function povertyLevel(dataArray) {
+	var povertyData = {};
+	var povertyDataArray =[];
+	dataArray.forEach(function(project){
+		if (!povertyData[project.poverty_level]) {
+			povertyData[project.poverty_level] = 1;
+		} else {
+			povertyData[project.poverty_level]++;
+		}
+	})
+
+	for (var val in povertyData){
+		povertyDataArray.push({'type':val, 'count':povertyData[val]});
+	}
+
+	povertyData = povertyDataArray;
+	return povertyData;
+};
+//==============================================================================
+
+
+//==============================================================================
+function focusSubject(dataArray){
+	var subjectData = {};
+	var subjectDataArray =[];
+
+	dataArray.forEach(function(project){
+		if (!subjectData[project.primary_focus_subject]) {
+			subjectData[project.primary_focus_subject] = 1;
+		} else {
+			subjectData[project.primary_focus_subject]++;
+		}
+	})
+
+	for (var val in subjectData){
+		subjectDataArray.push({'type':val, 'count':subjectData[val]});
+	}
+
+	subjectData = subjectDataArray;
+	return subjectData
+}
+//==============================================================================
+
+
+//==============================================================================
+function summableProperties(dataArray){
+	var properties = ['num_donors', 'total_donations', 'students_reached'];
+	var all_prop_obj = {
+		'projects': 0
+	};
+
+	dataArray.forEach(function(project){
+		all_prop_obj.projects++;
+		properties.forEach(function(prop){
+			if (!all_prop_obj[prop]) {
+				all_prop_obj[prop] = project[prop];
+			} else {
+				all_prop_obj[prop] += project[prop];
+			}
+		})
+	});
+
+	return all_prop_obj;
+}
+//==============================================================================
+
+
+//==============================================================================
+function reformat_D3_amCharts(data, category, name) {
+	var titles_text, dataProvider;
+
+	if (category === "poverty") {
+		titles_text = "Poverty";
+		dataProvider = data.poverty;
+	} else if (category === "resource") {
+		titles_text = "Resources";
+		dataProvider = data.resource;
+	} else {
+		titles_text = "Subjects";
+		dataProvider = data.subject;
+	}
 
 	return {
 		"type": "pie",
 		"theme": "none",
 		"titles": [{
-			"text": chart_title,
+			"text": titles_text+" in "+name,
 			"size": 16
 		}],
-		"dataProvider": geo.project_resources,
+		"dataProvider": dataProvider,
     "valueField": "count",
     "titleField": "type",
     "startEffect": "elastic",

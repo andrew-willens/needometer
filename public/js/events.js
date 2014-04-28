@@ -7,7 +7,7 @@ function initEvents(){
 	});
 
 	$("#databtn").on("click", function(){
-		fetchAndRenderData(); //in renderData.js
+		getChartData(); //in renderData.js
 		tglLeftSidebar();
 		tglRightSidebar();
 		$("#brdcrmb1, #brdcrmb2").fadeOut(1000);

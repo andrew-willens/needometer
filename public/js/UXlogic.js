@@ -23,7 +23,6 @@ function toggleSidebars() {
 //==============================================================================
 
 
-
 //==================== filter sidebar functionaility =========================//
 	function tglLeftSidebar() {
 		var leftSidebar = $("#gf1");
