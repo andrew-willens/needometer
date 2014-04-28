@@ -1,3 +1,11 @@
+//=============== file README ===============
+
+//Creates USA map DOM element with D3.js. Also assigns functionality to events occurring on the map element. (Mouseovers and clicks.)
+
+//=============== file README ===============
+
+
+
 //=============== create D3 USA map, assign event handling to it ===============
 var initD3 = function() {
 	var	width = 960,
@@ -20,6 +28,7 @@ var initD3 = function() {
 	d3.json("data/us.json", function(err, us) {
 		var states = topojson.feature(us, us.objects.states).features;
 
+		// create USA map by creating a DOM element for each USA state object passed to D3.
     svg.selectAll("path")
 				.data(states)
 			.enter().append("path")
@@ -28,27 +37,44 @@ var initD3 = function() {
 			})
 			.attr("class", "state")
 			.attr("d", path)
-			// ===================== interactive map functionality ===================
-			.on("mouseover", function(d){ // changes map color "on hover"
+		// end create map
+
+		// ===================== assign event handling to map ======================
+			// change color of area "on hover"
+			.on("mouseover", function(d){
 				if (d3.select(this).classed("selected") === false) {
 					d3.select(this).classed("active", true)
 				}
 			})
-			.on("mouseout", function(d){d3.select(this).classed("active", false)}) //changes map color back to default (gray) when "hover" is removed
+			// change area color back to default color when "hover" is removed
+			.on("mouseout", function(d){d3.select(this).classed("active", false)})
+
+			// change color of area "on click"
 			.on("click", function(d){
-				$("#instructions").hide()
-				if (d3.select(this).classed("selected") === true) {
-					d3.select(this).classed("selected", false);
-					selectedGeos.shift(selectedGeos.indexOf(this.id),1);
-				} else {
+				if (d3.select(this).classed("selected") !== true) { // if area is not selected (already colored)
+
+					// set its color to "selected" color
 					d3.select(this).classed("active", false);
 					d3.select(this).classed("selected", true);
-					selectJustTwo(d); // js/mapLogic.js;
-					assignHeaders(); // js/UXLogic.js
-					toggleSidebars(); // js/UXLogic.js
+
+					// do not allow user to select more than two areas. (in eventLogic/mapLogic.js)
+					selectJustTwo(d);
+					// assign name of area to sidebar header/s and navbar instructions. (in eventLogic/nonmapLogic.js)
+					assignHeaders();
+					// if sidebar corresponding to selected area is not already open, open it. (in eventLogic/nonmapLogic.js)
+					toggleSidebars(); // (in eventLogic/nonmapLogic.js)
+
+				} else {
+					// reset the area's color back to default color
+					d3.select(this).classed("selected", false);
+					// remove the area from the arrays that track which areas are selected: "selected_areas" and "sgeonames" (in eventLogic/mapLogic.js).
+					unselect(d);
+					// close corresponding sidebar.
+					toggleSidebars(); // (in eventLogic/nonmapLogic.js)
 				}
       });
-      // ===================== end interactive map functionality ===============
+      // ===================== end assign event handling =======================
+
 
 		svg.append("path")
 			.datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
@@ -56,4 +82,4 @@ var initD3 = function() {
 			.attr("d", path);
 	});
 };
-//============================== end D3 USA map ================================
+//============================== end D3 USA map creation/event handling ================================

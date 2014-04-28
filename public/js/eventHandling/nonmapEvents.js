@@ -1,3 +1,11 @@
+//=============== file README ===============
+
+// Assigns functionality to events occurring on all DOM elements that are not the USA map. (Mouseovers and clicks.)
+
+//=============== file README ===============
+
+
+
 //===================== begin event handling ================================ //
 function initEvents(){
 
@@ -13,29 +21,18 @@ function initEvents(){
 		$("#brdcrmb1, #brdcrmb2").fadeOut(1000);
 	})
 
-	$("#ftglleft").on("click", function() {
+	$("#leftchevron").on("click", function() {
 		tglLeftSidebar();
 	})
 
-	$("#ftglright").on("click", function() {
+	$("#rightchevron").on("click", function() {
 		tglRightSidebar();
 	})
 
 	$("#clrbtn").on("click", function(){
-		snapshotsCache = [];
-		selectedGeos = [];
-		sgeonames = [];
-		if ($("#ftglright").css("right") === "270px") tglRightSidebar();
-		if ($("#ftglleft").css("left") === "270px") tglLeftSidebar();
-		$("#gf2, #gf1").removeClass("toggled").addClass("untoggled");
-		$(".brdcrmb, .demo-panel-white").hide();
-		$(".geofilter h3").text("Please select an area.");
-		$(".brdcrmb h3").text("");
-		$("#col1").html("");
-		$("#col2").html("");
-		$(".state.selected").attr("class", "state");
-		$("#mapCanvas").show(2000);
-		$("#instructions").fadeIn(2000);
+		// close sidebars, unselect all areas, clear navbar instructions (in eventLogic/nonmapLogic.js)
+		resetUI();
 	})
+
 }
 //==============================================================================
