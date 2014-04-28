@@ -1,19 +1,17 @@
 //========================== charts logic ======================================
-function generateChart(geo){ // called from
+function generateChart(geo){ // called from getChartData() in js/dataChef.js
 	$('#mapCanvas').hide();
 	$(".demo-panel-white").show();
 	var name = geo.name;
 
-//   AmCharts.makeChart(name+geo.data_type, configChart(geo, geo.data_type), 2000); // configChart() in js/dataChef.js
-  AmCharts.makeChart(name+geo.data_type, configChart(geo, geo.data_type), 2000); // configChart() in js/dataChef.js
+  AmCharts.makeChart(name+geo.data_type, configChartData(geo, geo.data_type), 2000); // configChart() is in js/renderData.js (below)
 	// AmCharts.makeChart(divId, chartConfig, delay)
 }
-//==============================================================================
 
-//==============================================================================
-function configChart(geo, data_type) {
-	var chart_title = data_type+" Requested by DonorsChoose Projects in "+geo.name,
-		data_provider = geo.resource;
+function configChartData(geo, data_type) { //called from generate
+	var chart_title = data_type+" Requested by DonorsChoose Projects in "+geo.name;
+
+	console.log(geo.project_resources);
 
 	return {
 		"type": "pie",

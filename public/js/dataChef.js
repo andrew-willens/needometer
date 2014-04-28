@@ -12,7 +12,8 @@ function getChartData() {
 		$.get('/'+geo_id, function(data){
 			var geo_object = {
 				name: data.state_name,
-				projects: data.projects,
+				project_resources: data.project_resources,
+				data_type: data.data_type
 			};
 
 			// data-storage objects defined in bottomscripts of index.html

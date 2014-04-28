@@ -14,14 +14,5 @@ function selectJustTwo(geo) { // called from js/map.js
 //==============================================================================
 
 
-//==============================================================================
-function fetchAndRenderData(){ // called from js/map.js
-	selected_geos.forEach(function(geo_id){
-		makeGeoObject(geo_id); // js/dataChef.js
-	});
-}
-//==============================================================================
-
-
 
 
