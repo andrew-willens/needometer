@@ -7,7 +7,7 @@ function initEvents(){
 	});
 
 	$("#databtn").on("click", function(){
-		getChartData(); //in renderData.js
+		getChartData(); //in dataChef.js
 		tglLeftSidebar();
 		tglRightSidebar();
 		$("#brdcrmb1, #brdcrmb2").fadeOut(1000);

@@ -1,3 +1,4 @@
+//=============== create D3 USA map, assign event handling to it ===============
 var initD3 = function() {
 	var	width = 960,
 			height = width / 2
@@ -27,12 +28,13 @@ var initD3 = function() {
 			})
 			.attr("class", "state")
 			.attr("d", path)
-			.on("mouseover", function(d){
+			// ===================== interactive map functionality ===================
+			.on("mouseover", function(d){ // changes map color "on hover"
 				if (d3.select(this).classed("selected") === false) {
 					d3.select(this).classed("active", true)
 				}
 			})
-			.on("mouseout", function(d){d3.select(this).classed("active", false)})
+			.on("mouseout", function(d){d3.select(this).classed("active", false)}) //changes map color back to default (gray) when "hover" is removed
 			.on("click", function(d){
 				$("#instructions").hide()
 				if (d3.select(this).classed("selected") === true) {
@@ -46,6 +48,7 @@ var initD3 = function() {
 					toggleSidebars(); // js/UXLogic.js
 				}
       });
+      // ===================== end interactive map functionality ===============
 
 		svg.append("path")
 			.datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
@@ -53,3 +56,4 @@ var initD3 = function() {
 			.attr("d", path);
 	});
 };
+//============================== end D3 USA map ================================

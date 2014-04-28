@@ -1,7 +1,3 @@
- /**
- * Module dependencies.
- */
-
 var express = require('express'),
     swig = require('swig'),
     routes = require('./routes'),

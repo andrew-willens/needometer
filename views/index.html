@@ -133,24 +133,6 @@
 
 	</div>
 
-
-<!-- 	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">DonorsChoose.org</a>
-	    </div>
-	    <div class-"nav navbar-nav navbar-right">
-				<a id="clrbtn" class="btn btn-primary">Clear</a>
-	    </div>
-	  </div>
-	</div> -->
-
 	<div class="modal"></div>
 
   <!-- Javascripts -->
@@ -170,12 +152,12 @@
 	<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
 
   <!-- local scripts -->
-  <script src="js/renderData.js"></script>
-  <script src="js/dataChef.js"></script>
-  <script src="js/events.js"></script>
-  <script src="js/UXLogic.js"></script>
-  <script src="js/mapLogic.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/data/renderData.js"></script>
+  <script src="js/data/fetchData.js"></script>
+  <script src="js/eventLogic/nonmapLogic.js"></script>
+  <script src="js/eventLogic/mapLogic.js"></script>
+  <script src="js/eventHandling/nonmapEvents.js"></script>
+  <script src="js/eventHandling/mapEvents.js"></script>
 
   <!-- script calls -->
   <script>
@@ -183,8 +165,7 @@
   	initEvents();
   </script>
 	<script>
-		var query_cache = [],
-			snapshots_cache = [],
+		var snapshots_cache = [],
 			selected_geos = [],
 			sgeonames = [];
 	</script>
