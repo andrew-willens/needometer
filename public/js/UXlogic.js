@@ -14,9 +14,9 @@ function assignHeaders() {
 
 //==============================================================================
 function toggleSidebars() {
-  if (selectedGeos.length === 1 && $("#gf1").hasClass("untoggled")) {
+  if (selected_geos.length === 1 && $("#gf1").hasClass("untoggled")) {
   	tglLeftSidebar();
-  } else if (selectedGeos.length === 2 && $("#gf2").hasClass("untoggled")) {
+  } else if (selected_geos.length === 2 && $("#gf2").hasClass("untoggled")) {
   	tglRightSidebar();
   }
 }

@@ -41,10 +41,9 @@ var initD3 = function() {
 				} else {
 					d3.select(this).classed("active", false);
 					d3.select(this).classed("selected", true);
-					//these functions in js/mapLogic.js;
-					selectJustTwo(d);
-					assignHeaders();
-					toggleSidebars();
+					selectJustTwo(d); // js/mapLogic.js;
+					assignHeaders(); // js/UXLogic.js
+					toggleSidebars(); // js/UXLogic.js
 				}
       });
 
