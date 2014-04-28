@@ -8,6 +8,8 @@ function initEvents(){
 
 	$("#databtn").on("click", function(){
 		fetchAndRenderData();
+		tglLeftSidebar();
+		tglRightSidebar();
 	})
 
 	$("#ftglleft").on("click", function() {
