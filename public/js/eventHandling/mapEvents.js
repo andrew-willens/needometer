@@ -37,10 +37,10 @@ var initD3 = function() {
 			})
 			.attr("class", "state")
 			.attr("d", path)
-		// end create map
+		// all geo-DOM elements are created
 
 		// ===================== assign event handling to map ======================
-			// change color of area "on hover"
+			// indicate mouseover by changing color of area moused over
 			.on("mouseover", function(d){
 				if (d3.select(this).classed("selected") === false) {
 					d3.select(this).classed("active", true)
@@ -57,29 +57,28 @@ var initD3 = function() {
 					d3.select(this).classed("active", false);
 					d3.select(this).classed("selected", true);
 
-					// do not allow user to select more than two areas. (in eventLogic/mapLogic.js)
-					selectJustTwo(d);
-					// assign name of area to sidebar header/s and navbar instructions. (in eventLogic/nonmapLogic.js)
-					assignHeaders();
-					// if sidebar corresponding to selected area is not already open, open it. (in eventLogic/nonmapLogic.js)
-					toggleSidebars(); // (in eventLogic/nonmapLogic.js)
+					// these functions in eventLogic/uiLogic.js.
+					selectJustTwoAreas(d);
+					assignNavAndSidebarHeaders();
+					toggleSidebars();
 
 				} else {
 					// reset the area's color back to default color
 					d3.select(this).classed("selected", false);
-					// remove the area from the arrays that track which areas are selected: "selected_areas" and "sgeonames" (in eventLogic/mapLogic.js).
-					unselect(d);
-					// close corresponding sidebar.
-					toggleSidebars(); // (in eventLogic/nonmapLogic.js)
+
+					 // these functions in eventLogic/uiLogic.js
+					unselectArea(d);
+					toggleSidebars();
 				}
       });
       // ===================== end assign event handling =======================
 
-
+    // create the borders that separate states. is a single DOM element.
 		svg.append("path")
 			.datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
 			.attr("class", "state-border")
 			.attr("d", path);
+		// end create borders
 	});
 };
 //============================== end D3 USA map creation/event handling ================================
