@@ -12,8 +12,14 @@ function initEvents(){ // assigns event handling to selected DOM elements
 	//============================================================================
 	// activates the css-class that displays the translucent "loading" spinner icon
 	$(document).on({
-		ajaxStart: function() { $("body").addClass("loading"); },
-		ajaxStop: function() { $("body").removeClass("loading"); }
+		ajaxStart: function() {
+			$("body").addClass("loading");
+			$('#mapCanvas').hide();
+			$(".demo-panel-white").show();
+		},
+		ajaxStop: function() {
+			$("body").removeClass("loading");
+		}
 	});
 	//============================================================================
 

@@ -56,6 +56,39 @@ var state_abbrs = { AL: 'Alabama',
 //======================= end data-manipulation variables ======================
 
 
+//======================= create area description string =======================
+		// Create a string describing the area queried for - number of donors,
+		// total $ donated, and number of students reached.
+		function makeAreaDescriptionString(data_array, area_name){
+			var properties = ['num_donors', 'total_donations', 'students_reached'];
+			var all_properties_object = {
+				'projects': 0
+			};
+			var commaInserter = function(number) {
+				return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			};
+
+			data_array.forEach(function(project){
+				all_properties_object.projects++;
+				properties.forEach(function(property){
+					if (!all_properties_object[property]) {
+						all_properties_object[property] = project[property];
+					} else {
+						all_properties_object[property] += project[property];
+					}
+				})
+			});
+
+
+			var description_string = "<h2>"+area_name+"</h2>"+commaInserter(all_properties_object.num_donors)+
+				" donors contributed $"+commaInserter(Math.floor(all_properties_object.total_donations))+
+				" to "+commaInserter(all_properties_object.projects)+" projects, reaching "+
+				commaInserter(all_properties_object.students_reached)+" students.";
+
+			return description_string;
+		}
+//=================== end create area description string =======================
+
 
 //======================= format poverty data ==================================
 		// format poverty data for AMCharts.js. "poverty data" = stratify entries
@@ -63,8 +96,12 @@ var state_abbrs = { AL: 'Alabama',
 		// poverty_level is a metric for socioeconomic well-being of the area
 		// the DonorsChoose project would benefit
 		function formatPovertyData(data_array, area_name) {
-			var poverty_data = {};
-			var poverty_data_array =[];
+			var poverty_data = {},
+			poverty_data_array =[],
+			// data_type_for_chart_header will be concatenated into the header/title of the chart generated on the UI.
+			// ie: "DonorsChoose Projects Organized by "+[data_type_for_chart_header]+" in "+area_name;
+			data_type_for_chart_header = "Level of Poverty";
+
 			data_array.forEach(function(project){
 				if (!poverty_data[project.poverty_level]) {
 					poverty_data[project.poverty_level] = 1;
@@ -77,7 +114,8 @@ var state_abbrs = { AL: 'Alabama',
 				poverty_data_array.push({'type':val, 'count':poverty_data[val]});
 			}
 
-			poverty_data = formatDataForPieChart(poverty_data_array, "poverty", area_name);
+			poverty_data = formatDataForPieChart(poverty_data_array, "Poverty", area_name);
+			// console.log(poverty_data)
 			return poverty_data;
 		};
 //======================= end format poverty data ==============================
@@ -88,24 +126,27 @@ var state_abbrs = { AL: 'Alabama',
 		// in this dataset by the value of their "resource_type" attribute,
 		// ie what did the DonorsChoose project seek funding for? pencils? books?
 		// a fieldtrip?
-		function formatResourceData(dataArray) {
-			var resourceData = {};
-			var resourceDataArray =[];
+		function formatResourceData(data_array, area_name) {
+			var resource_data = {},
+					resource_data_array =[],
+					// data_type_for_chart_header will be concatenated into the header/title of the chart generated on the UI.
+					// ie: "DonorsChoose Projects Organized by "+[data_type_for_chart_header]+" in "+area_name;
+					data_type_for_chart_header = "Resource Requested";
 
-			dataArray.forEach(function(project){
-				if (!resourceData[project.resource_type]) {
-					resourceData[project.resource_type] = 1;
+			data_array.forEach(function(project){
+				if (!resource_data[project.resource_type]) {
+					resource_data[project.resource_type] = 1;
 				} else {
-					resourceData[project.resource_type]++;
+					resource_data[project.resource_type]++;
 				}
 			})
 
-			for (var val in resourceData){
-				resourceDataArray.push({'type':val, 'count':resourceData[val]});
+			for (var val in resource_data){
+				resource_data_array.push({'type':val, 'count':resource_data[val]});
 			}
 
-			resourceData = resourceDataArray;
-			return resourceData;
+			resource_data = formatDataForPieChart(resource_data_array, data_type_for_chart_header, area_name);
+			return resource_data;
 		}
 //====================== end format resource data ==============================
 
@@ -115,108 +156,62 @@ var state_abbrs = { AL: 'Alabama',
 		// in this response by the value of their "focus_area" attribute,
 		// ie did the DonorsChoose project seek funding for science? mathematics?
 		// foreign language? physical fitness?
-		function formatFocusSubjectData(dataArray){
-			var subjectData = {};
-			var subjectDataArray =[];
+		function formatFocusSubjectData(data_array, area_name){
+			var subject_data = {},
+					subject_data_array = [],
+					// data_type_for_chart_header will be concatenated into the header/title of the chart generated on the UI.
+					// ie: "DonorsChoose Projects Organized by "+[data_type_for_chart_header]+" in "+area_name;
+					data_type_for_chart_header = "Subject Area";
 
-			dataArray.forEach(function(project){
-				if (!subjectData[project.primary_focus_subject]) {
-					subjectData[project.primary_focus_subject] = 1;
+			data_array.forEach(function(project){
+				if (!subject_data[project.primary_focus_subject]) {
+					subject_data[project.primary_focus_subject] = 1;
 				} else {
-					subjectData[project.primary_focus_subject]++;
+					subject_data[project.primary_focus_subject]++;
 				}
 			})
 
-			for (var val in subjectData){
-				subjectDataArray.push({'type':val, 'count':subjectData[val]});
+			for (var val in subject_data){
+				subject_data_array.push({'type':val, 'count':subject_data[val]});
 			}
 
-			subjectData = subjectDataArray;
-			return subjectData
+			subject_data = formatDataForBarChart(subject_data_array, data_type_for_chart_header, area_name);
+			return subject_data;
 		}
 //======================= end format focus subject data ========================
 
 
-//======================= create area description string =======================
-		// Create a string describing the area queried for - number of donors,
-		// total $ donated, and number of students reached.
-		function makeAreaDescriptionString(dataArray, area_name){
-			var properties = ['num_donors', 'total_donations', 'students_reached'];
-			var all_props_obj = {
-				'projects': 0
-			};
-			var commaInserter = function(number) {
-				return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-			};
-
-			dataArray.forEach(function(project){
-				all_props_obj.projects++;
-				properties.forEach(function(prop){
-					if (!all_props_obj[prop]) {
-						all_props_obj[prop] = project[prop];
-					} else {
-						all_props_obj[prop] += project[prop];
-					}
-				})
-			});
-
-			console.log("All prop obj: " + all_props_obj);
-
-			// var description_string = "<h2>"+area_name+"</h2>"+commaInserter(all_props_obj.num_donors)+
-			// 	" donors contributed $"+commaInserter(Math.floor(all_props_object.total_donations))+
-			// 	" to "+commaInserter(all_props_object.projects)+" projects, reaching "+
-			// 	commaInserter(all_props_object.students_reached)+" students.";
-
-			// return description_string;
-		}
-//=================== end create area description string =======================
-
-
 //==============================================================================
-		// formats
-		function formatDataForPieChart(data, category, name) {
-			console.log(data);
+		function formatDataForPieChart(data, data_type, area_name) {
+			var dataProvider = data,
+					header_text = "DonorsChoose Projects by "+data_type+" in "+area_name;
 
-			var title_text, dataProvider;
-
-			if (category === "poverty") {
-				title_text = "Projects Stratified by Level of Poverty in "+name;
-				dataProvider = data;
-			} else if (category === "resource") {
-				title_text = "Resources";
-				dataProvider = data.resource;
-			} else {
-				title_text = "Subjects";
-				dataProvider = data.subject;
+			return {
+				"type": "pie",
+				"theme": "none",
+				"titles": [{
+					"text": header_text,
+					"size": 16
+				}],
+				"dataProvider": dataProvider,
+		    "valueField": "count",
+		    "titleField": "type",
+		    "startEffect": "elastic",
+		    "startDuration": 2,
+		    "labelRadius": 15,
+		    "innerRadius": "50%",
+		    "depth3D": 10,
+		    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]] projects</b> ([[percents]]% of area total)</span>",
+		    "angle": 15
 			};
-
-			// return {
-			// 	"type": "pie",
-			// 	"theme": "none",
-			// 	"titles": [{
-			// 		"text": titles_text,
-			// 		"size": 16
-			// 	}],
-			// 	"dataProvider": dataProvider,
-		 //    "valueField": "count",
-		 //    "titleField": "type",
-		 //    "startEffect": "elastic",
-		 //    "startDuration": 2,
-		 //    "labelRadius": 15,
-		 //    "innerRadius": "50%",
-		 //    "depth3D": 10,
-		 //    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-		 //    "angle": 15
-			// };
 		}
 //==============================================================================
 
 
-
 //==============================================================================
-		function reformat_D3_amCharts2(data, category, name) {
-		  var titles_text = "Subjects",
-		      dataProvider = data.subject;
+		function formatDataForBarChart(data, data_type, area_name) {
+				var dataProvider = data,
+		      header_text = "DonorsChoose Projects by "+data_type+" in "+area_name;
 
 		  var colors = [
 		    "#FF0F00", "#FF6600", "#FF9E01", "#FCD202", "#F8FF01", "#B0DE09",
@@ -237,8 +232,8 @@ var state_abbrs = { AL: 'Alabama',
 		    "startDuration": 2,
 		    "dataProvider": dataProvider,
 		    "valueAxes": [{
-		      "position": "left",
-		      "title": "Subjects in "+name
+		      "position": "right",
+		      "title": header_text
 		    }],
 		    "graphs": [{
 		      "balloonText": "[[category]]: <b>[[value]]</b>",

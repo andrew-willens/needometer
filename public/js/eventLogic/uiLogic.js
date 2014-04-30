@@ -87,18 +87,18 @@
 		//============== called from eventHandling/nonmapEvents.js =================
 		// unselects all areas on the UI map, clears the sidebar headbars, and clears the nvabar blank spaces.
 			function resetUI() {
-				snapshots_cache = [];
 				selected_areas = [];
 				sgeonames = [];
 				if ($("#leftsidebar").hasClass("open")) toggleLeftSidebar();
 				if ($("#rightsidebar").hasClass("open")) toggleRightSidebar();
 				$("#brdcrmb3, .demo-panel-white").hide();
+				$("chartdiv").empty();
 				$(".geofilter h3").text("Please select an area.");
-				$("#brdcrmb1, #brdcrmb2").html("<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>");
+				$("#brdcrmb1 h3, #brdcrmb2 h3").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
 				$("#col1").html("");
 				$("#col2").html("");
 				$(".state.selected").attr("class", "state");
-				$("#mapCanvas").show(2000);
+				$("#mapCanvas").fadeIn(2000);
 				$("#instructions").fadeIn(2000);
 			}
 		//==========================================================================

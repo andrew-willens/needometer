@@ -9,9 +9,7 @@
 //=================== Selected-areas tracking ============================================//
 	// variables that hold information on the selected areas on the UI, as well as the filters applied to those selected areas.
 
-		var snapshots_cache = []; // holds data objects that will be passed back from database query after areas and filters are selected. is iterated over by generateChart (in data/renderData.js) to create data visualizations.
-
-		var filter_fields = {/* area1: [], area2: [] */};  // holds values of selected filters from UI sidebars, which will be used to build db query.
+		var filter_fields = {/* area1: [], area2: [] */};  // will hold values of selected filters from UI sidebars, which will be used to build db query.
 //=================== Selected-areas tracking ============================================//
 
 
@@ -39,14 +37,8 @@
 		function getChartData() {
 			selected_areas.forEach(function(geo_id) {
 				$.get('/area/'+geo_id /* queryBuilder() (above) */, function(data){
-
-
-
-					// data-storage array, which is itereated over to produce data visualizations. (charts/graphs)
-					snapshots_cache.push(geo_object);
-
 					// these functions in renderData.js
-					generateChart(data.poverty_data);
+					generateChart(data.focus_subject_data_array, data.area_name);
 					renderDescriptionText(data.area_description_string);
 				});
 			})
