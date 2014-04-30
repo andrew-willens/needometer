@@ -38,19 +38,16 @@
 		// submits query for each area selected on the UI map (with selected filters built in.) and passes the data from the server response to renderData.js.
 		function getChartData() {
 			selected_areas.forEach(function(geo_id) {
-				$.get('/'+geo_id /* queryBuilder() (above) */, function(data){
-					var geo_object = {
-						name: data.state_name,
-						project_resources: data.project_resources,
-						data_type: data.data_type
-					};
+				$.get('/area/'+geo_id /* queryBuilder() (above) */, function(data){
+
+
 
 					// data-storage array, which is itereated over to produce data visualizations. (charts/graphs)
 					snapshots_cache.push(geo_object);
 
 					// these functions in renderData.js
-					generateChart(geo_object);
-					generateSnapshotText();
+					generateChart(data.poverty_data);
+					renderDescriptionText(data.area_description_string);
 				});
 			})
 		}
