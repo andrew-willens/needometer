@@ -51,11 +51,11 @@
 			sgeonames.splice(name_index, 1);
 
 			if (selected_areas.length === 1) {
-				$("#rightsidebar h3").text("Please select an area.");
-		  	$("#brdcrmb2").html("<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>");
+				$("#right-sidebar h3").text("Please select an area.");
+		  	$("#area-blank2").html("<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>");
 		  } else if (selected_areas.length === 0) {
-		  	$("#leftsidebar h3").text("Please select an area.");
-				$("#brdcrmb1").html("<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>");
+		  	$("#left-sidebar h3").text("Please select an area.");
+				$("#area-blank1").html("<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>");
 		  }
 
 		}
@@ -65,12 +65,12 @@
 		//================= called from eventHandling/mapEvents.js =================
 		// populates the navbar blank space and sidebar headers with the name of the geographic area that is clicked.
 		function assignNavAndSidebarHeaders() {
-			$("#brdcrmb1 h3, #leftsidebar h3").text(sgeonames[0]);
+			$("#area-blank1 h3, #left-sidebar h3").text(sgeonames[0]);
 
-		  $("#brdcrmb1").css("display", "inline-block");
+		  $(".area-blank").css("display", "inline-block");
 		  if (sgeonames[1]) {
-		  	$("#brdcrmb2 h3, #rightsidebar h3").text(sgeonames[1]);
-		  	$("#brdcrmb3").css("display", "inline-block");
+		  	$("#area-blank2 h3, #right-sidebar h3").text(sgeonames[1]);
+		  	$("#data-buttons").css("display", "inline-block");
 		  }
 		}
 		//==========================================================================
@@ -89,16 +89,20 @@
 			function resetUI() {
 				selected_areas = [];
 				sgeonames = [];
-				if ($("#leftsidebar").hasClass("open")) toggleLeftSidebar();
-				if ($("#rightsidebar").hasClass("open")) toggleRightSidebar();
-				$("#brdcrmb3, .demo-panel-white").hide();
-				$("chartdiv").empty();
-				$(".geofilter h3").text("Please select an area.");
-				$("#brdcrmb1 h3, #brdcrmb2 h3").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+				if ($("#left-sidebar").hasClass("open")) {
+					toggleSidebar("left");
+				};
+				if ($("#right-sidebar").hasClass("open")) {
+					toggleSidebar("right");
+				};
+				$("#data-buttons, .demo-panel-white").hide();
+				$(".chartdiv").empty();
+				$(".sidebar h3").text("Please select an area.");
+				$("#area-blank1 h3, #area-blank2 h3").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
 				$("#col1").html("");
 				$("#col2").html("");
 				$(".state.selected").attr("class", "state");
-				$("#mapCanvas").fadeIn(2000);
+				$("#map-canvas").fadeIn(2000);
 				$("#instructions").fadeIn(2000);
 			}
 		//==========================================================================
@@ -115,60 +119,38 @@
 
 		//============== called from eventHandling/nonmapEvents.js  ================
 		// open or close both sidebars. if sidebar toggle-buttons (chevrons) is not displayed, display it.
-		function toggleSidebars() {
+		function toggleBothSidebars() {
 		  var sa_length = selected_areas.length, // number of areas selected
-		  		left_sidebar = $("#leftsidebar"),
-		  		right_sidebar = $("#rightsidebar");
+		  		left_sidebar = $("#left-sidebar"),
+		  		right_sidebar = $("#right-sidebar");
 
 		  if ( sa_length === 1 && left_sidebar.hasClass("closed") || sa_length === 0 && left_sidebar.hasClass("open")) {
-		  	toggleLeftSidebar();
+		  	toggleSidebar("left");
 		  } else if (sa_length === 2 && right_sidebar.hasClass("closed") || sa_length === 1 && right_sidebar.hasClass("open")) {
-		  	toggleRightSidebar();
+		  	toggleSidebar("right");
 		  }
 		}
 		//==========================================================================
 
 
 		//================== called from eventHandling/nonmapEvents.js =============
-		// open or close left sidebar.
-		function toggleLeftSidebar() {
-			var left_sidebar = $("#leftsidebar"),
-					left_chevron = $("#leftchevron");
+		// open or close left or right sidebar, depending on value of "side" parameter.
+		function toggleSidebar(side) {
+			var sidebar = $("#"+side+"-sidebar"),
+					chevron = $("#"+side+"-chevron");
 
-			if (left_sidebar.css("display") === "none"){
-				left_chevron.css("left", "270px").show(500);
-				if ( left_sidebar.hasClass("closed") ) {
-					left_sidebar.removeClass("closed").addClass("open");
+			if (sidebar.css("display") === "none"){
+				chevron.css(side, "270px").show(500);
+				if ( sidebar.hasClass("closed") ) {
+					sidebar.removeClass("closed").addClass("open");
 				}
 			} else {
-				left_sidebar.removeClass("open").addClass("closed");
-				left_chevron.css("left", "20px");
+				sidebar.removeClass("open").addClass("closed");
+				chevron.css(side, "20px");
 			}
 
-			left_chevron.children().toggle(400);
-			left_sidebar.toggle(1000);
-		}
-		//==========================================================================
-
-
-		//=============== called from eventHandling/nonmapEvents.js ================
-		// open or close right sidebar.
-		function toggleRightSidebar() {
-			var right_sidebar = $("#rightsidebar"),
-					right_chevron = $("#rightchevron");
-
-			if (right_sidebar.css("display") === "none"){
-				right_chevron.css("right", "270px").show(500);
-				if ( right_sidebar.hasClass("closed") ) {
-					right_sidebar.removeClass("closed").addClass("open");
-				}
-			} else {
-				right_sidebar.removeClass("open").addClass("closed");
-				right_chevron.css("right", "20px");
-			}
-
-			right_chevron.children().toggle(400);
-			right_sidebar.toggle(1000);
+			chevron.children().toggle(400);
+			sidebar.toggle(1000);
 		}
 		//==========================================================================
 

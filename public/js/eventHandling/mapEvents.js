@@ -18,7 +18,7 @@ var initD3 = function() {
 	var path = d3.geo.path()
 			.projection(projection);
 
-	var svg = d3.select("#mapCanvas").append("svg")
+	var svg = d3.select("#map-canvas").append("svg")
 			.attr("id", "svg")
 			.attr("width", width)
 			.attr("height", height)
@@ -60,7 +60,7 @@ var initD3 = function() {
 					// these functions in eventLogic/uiLogic.js.
 					selectJustTwoAreas(d);
 					assignNavAndSidebarHeaders();
-					toggleSidebars();
+					toggleBothSidebars();
 
 				} else {
 					// reset the area's color back to default color
@@ -68,7 +68,7 @@ var initD3 = function() {
 
 					 // these functions in eventLogic/uiLogic.js
 					unselectArea(d);
-					toggleSidebars();
+					toggleBothSidebars();
 				}
       });
       // ===================== end assign event handling =======================

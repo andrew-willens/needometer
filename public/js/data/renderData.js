@@ -28,7 +28,7 @@
 				var i = iterator;
 				return function(data_object, area_name) {
 					i++;
-					var div_name = "chartdiv"+i;
+					var div_name = "chart-div"+i;
 
 					// syntax of this library method: AmCharts.makeChart(divId, chartConfig, delay)
 					AmCharts.makeChart(div_name, data_object, 1000);
