@@ -7,7 +7,12 @@ a {
   color: #00B7FF;
 }
 .brdcrmb {
-	display: none;
+	display: inline;
+	border-bottom: 2px solid black;
+}
+.brdcrmb h4 {
+	display: inline;
+	border-bottom: 2px solid black;
 }
 .chart-cols {
   background-color: #eee;
@@ -33,12 +38,6 @@ a {
 	width: 20px;
   font-size: 25px;
 	color: black;
-}
-#databtn, #clrbtn  {
-	margin-bottom: 10px;
-	background: white;
-	color: black;
-	border: 1px solid black;
 }
 .geofilter {
 	background-color: #eb6864;
@@ -79,6 +78,10 @@ a {
 .state.active{
 	fill: #EB6864;
 }
+#brdcrmb3 {
+	display: none;
+	border: none;
+}
 #chartdiv {
   width: 100%;
   height: 400px;
@@ -108,22 +111,28 @@ a {
   height: 400px;
   font-size: 11px;
 }
-#ftglleft {
+#databtn, #clrbtn  {
+	margin-bottom: 10px;
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
+#leftchevron {
 	display: none;
 	position: fixed;
 	left: 20px;
 	z-index: 2;
 }
-#ftglright {
+#rightchevron {
 	display: none;
 	position: fixed;
 	right: 20px;
 	z-index: 2;
 }
-#gf1 {
+#leftsidebar {
 	left: 0px;
 }
-#gf2 {
+#rightsidebar {
 	right: 0px;
 }
 #mapCanvas {

@@ -1,7 +1,3 @@
- /**
- * Module dependencies.
- */
-
 var express = require('express'),
     swig = require('swig'),
     routes = require('./routes'),
@@ -31,7 +27,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/:state', routes.stateData);
+app.get('/area/:state', routes.stateData);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

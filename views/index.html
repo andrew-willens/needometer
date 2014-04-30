@@ -30,13 +30,23 @@
 	      <a class="navbar-brand" href="http://www.donorschoose.org/">​Needometer</a>
 	    </div>
 	    <div id="nav-content">
-	    	<h4 id="instructions">Please select two areas you would like to compare.</h4>
-	    	<div id="brdcrmb1" class="brdcrmb">
+	    	<h4 id="instructions">
+	    		What sets
+	    		<div id="brdcrmb1" class="brdcrmb">
+	    			<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+	    		</div>
+	    		apart from
+	    		<div id="brdcrmb2" class="brdcrmb">
+	    			<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+	    		</div>
+	    		?
+	    	</h4>
+	    <!-- 	<div id="brdcrmb1" class="brdcrmb">
 	    		<h3></h3><i class="fa fa-chevron-right"></i>
 	    	</div>
 	    	<div id="brdcrmb2" class="brdcrmb">
 	    		<h3></h3><i class="fa fa-chevron-right"></i>
-	    	</div>
+	    	</div> -->
 	    	<div id="brdcrmb3" class="brdcrmb">
 	    		<a id="databtn" class="btn btn-default">Generate</a>
 	    		<a id="clrbtn" class="btn btn-default">Clear</a>
@@ -47,9 +57,9 @@
 	    </div>
 	</div>
 
-	<div id="gf1" class='geofilter untoggled'>
+	<div id="leftsidebar" class='geofilter closed'>
 		<div class='geofilter-content'>
-			<h3>Location 1</h3>
+			<h3></h3>
 			<form>
 				<input type="radio" name="sex" value="male">&nbsp;Field<br>
 				<input type="radio" name="sex" value="female">&nbsp;Field<br>
@@ -58,14 +68,14 @@
 			</form>
 		</div>
 	</div>
-	<div id="ftglleft">
+	<div id="leftchevron">
 		<i class="fa fa-chevron-right tglbtn showsb"></i>
 		<i class="fa fa-chevron-left tglbtn hidesb"></i>
 	</div>
 
-	<div id='gf2' class="geofilter untoggled">
+	<div id='rightsidebar' class="geofilter closed">
 		<div class='geofilter-content'>
-			<h3>Location 2</h3>
+			<h3></h3>
 			<form>
 				<input type="radio" name="sex" value="male">&nbsp;Field<br>
 				<input type="radio" name="sex" value="female">&nbsp;Field<br>
@@ -74,7 +84,7 @@
 			</form>
 		</div>
 	</div>
-	<div id="ftglright">
+	<div id="rightchevron">
 		<i class="fa fa-chevron-left tglbtn showsb"></i>
 		<i class="fa fa-chevron-right tglbtn hidesb"></i>
 	</div>
@@ -133,24 +143,6 @@
 
 	</div>
 
-
-<!-- 	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">DonorsChoose.org</a>
-	    </div>
-	    <div class-"nav navbar-nav navbar-right">
-				<a id="clrbtn" class="btn btn-primary">Clear</a>
-	    </div>
-	  </div>
-	</div> -->
-
 	<div class="modal"></div>
 
   <!-- Javascripts -->
@@ -170,23 +162,16 @@
 	<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
 
   <!-- local scripts -->
-  <script src="js/dataChef.js"></script>
-  <script src="js/renderData.js"></script>
-  <script src="js/events.js"></script>
-  <script src="js/mapLogic.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/data/renderData.js"></script>
+  <script src="js/data/fetchData.js"></script>
+  <script src="js/eventLogic/uiLogic.js"></script>
+  <script src="js/eventHandling/nonmapEvents.js"></script>
+  <script src="js/eventHandling/mapEvents.js"></script>
 
   <!-- script calls -->
   <script>
   	initD3();
   	initEvents();
   </script>
-	<script>
-		var dataStore = [],
-			snapshotsCache = [],
-			selectedGeos = [],
-			sgeonames = [];
-	</script>
-
 </body>
 </html>

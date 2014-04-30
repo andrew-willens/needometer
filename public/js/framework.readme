@@ -1,0 +1,16 @@
+js:
+
+	js/eventHandling :
+	First/top layer of client-side js logic.
+		mapEvents.js: Creates USA map DOM element with D3.js. Also assigns functionality to events occurring on the map element. (Mouseovers and clicks.)
+		nonmapEvents.js: Assigns functionality to events occurring on all DOM elements that are not the USA map. (Mouseovers and clicks.)
+
+	js/eventLogic :
+	Second/middle layer of client-side js logic.
+		All logic (functions) for events that occur on the UI. (USA map, navbar, and sidebars.)
+		Logic tied to events for any DOM elements newly added to this application should be placed in this file.
+
+	js/data :
+	Third/bottom layer of client-side js logic.
+		fetchData.js: Builds and sends queries to server-side routes (needometer/routes/index.js).
+		renderData.js: Passes looker/mongodb response to proper data visualization function (D3.js or amcharts.js).
