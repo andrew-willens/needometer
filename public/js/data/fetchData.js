@@ -37,7 +37,7 @@
 		//====================== called from nonmapEvents.js =======================
 		// submits query for each area selected on the UI map (with selected filters built in.) and passes the data from the server response to renderData.js.
 		function getChartData() {
-			selected_geos.forEach(function(geo_id) {
+			selected_areas.forEach(function(geo_id) {
 				$.get('/'+geo_id /* queryBuilder() (above) */, function(data){
 					var geo_object = {
 						name: data.state_name,

@@ -66,10 +66,10 @@
 		// populates the navbar blank space and sidebar headers with the name of the geographic area that is clicked.
 		function assignNavAndSidebarHeaders() {
 			$("#brdcrmb1 h3, #leftsidebar h3").text(sgeonames[0]);
-		  $("#brdcrmb2 h3, #rightsidebar h3").text(sgeonames[1]);
 
-		  if ($("#brdcrmb1 h3").text()) $("#brdcrmb1").css("display", "inline-block").show();
-		  if ($("#brdcrmb2 h3").text().indexOf(" ") !== -1) {
+		  $("#brdcrmb1").css("display", "inline-block");
+		  if (sgeonames[1]) {
+		  	$("#brdcrmb2 h3, #rightsidebar h3").text(sgeonames[1]);
 		  	$("#brdcrmb3").css("display", "inline-block");
 		  }
 		}
@@ -90,8 +90,8 @@
 				snapshots_cache = [];
 				selected_areas = [];
 				sgeonames = [];
-				if ($("#leftsidebar").hasClass("open")) tglLeftSidebar();
-				if ($("#rightsidebar").hasClass("open")) tglRightSidebar();
+				if ($("#leftsidebar").hasClass("open")) toggleLeftSidebar();
+				if ($("#rightsidebar").hasClass("open")) toggleRightSidebar();
 				$("#brdcrmb3, .demo-panel-white").hide();
 				$(".geofilter h3").text("Please select an area.");
 				$("#brdcrmb1, #brdcrmb2").html("<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>");
