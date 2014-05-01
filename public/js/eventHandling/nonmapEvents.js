@@ -5,9 +5,8 @@
 
 
 
-//===================== begin assign event handling (initEvents()) ===================================//
+//============================== begin initEvents()) ===================================//
 function initEvents(){ // assigns event handling to selected DOM elements
-
 
 	//============================================================================
 	// activates the css-class that displays the translucent "loading" spinner icon
@@ -23,19 +22,22 @@ function initEvents(){ // assigns event handling to selected DOM elements
 	});
 	//============================================================================
 
-
 	//============================================================================
-	// close sidebars and submit AJAX request for data-visualization data
+	// close sidebars and submit AJAX requests for each selected area's data
 	$("#get-data-button").on("click", function(){
+		chart_generation_tracker = true;
+		$("#get-data-button").hide();
+		// in eventLogic/uiLogic.js
+		var query_strings_array = getSpecsAndBuildQuery();
+
 		// in data/fetchData.js
-		getChartData();
+		getChartData(query_strings_array);
 
 		// below functions in eventLogic/uiLogic.js
 		toggleSidebar("left");
 		toggleSidebar("right");
 	})
 	//============================================================================
-
 
 	//============================================================================
 	// open or close left sidebar
@@ -44,14 +46,12 @@ function initEvents(){ // assigns event handling to selected DOM elements
 	})
 	//============================================================================
 
-
 	//============================================================================
 	// open or close right sidebar
 	$("#right-chevron").on("click", function() {
 		toggleSidebar("right");
 	})
 	//============================================================================
-
 
 	//============================================================================
 	// close sidebars, unselect all areas, clear navbar instructions (in eventLogic/nonmapLogic.js)
@@ -61,5 +61,24 @@ function initEvents(){ // assigns event handling to selected DOM elements
 	//============================================================================
 
 }
+//============================= end initEvents()=================================//
 
-//============================= end assign event handling (initEvents())=================================//
+
+//==============================================================================
+	// function initSlider() {
+	// 	$(function() {
+	//     $( "#slider-range" ).slider({
+	//       range: true,
+	//       min: 2005,
+	//       max: 2014,
+	//       step: 1,
+	//       values: [ 2005, 2014 ],
+	//       slide: function( event, ui ) {
+	//         $( "#years" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+	//       }
+	//     });
+	//     $( "#years" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+	//       " - " + $( "#slider-range" ).slider( "values", 1 ) );
+	// 	});
+	// }
+// ==============================================================================

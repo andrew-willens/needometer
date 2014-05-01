@@ -110,8 +110,12 @@
 	}
 	.sidebar-content>h3 {
 		text-align: center;
-		color: black;
+		color: white;
 		margin: 80px 0 30px 0;
+	}
+	.sidebar-content>form {
+		text-align: left;
+		margin: 0px 40px;
 	}
 /* ============================ end sidebar stylings ============================== */
 

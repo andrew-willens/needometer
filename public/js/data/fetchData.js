@@ -18,30 +18,17 @@
 
 //============================= query logic ============================================//
 
-		//============================== called from getChartData(), below ==============================
-			// function queryBuilder() {
-				// pulls geo-ids from selected_areas array, as well as filter_fields object, and build them into a query to send to mongodb/Looker.
-				// var query = "";
-				// for (area in filter_fields) {
-				// 	area.forEach(function(filter){
-				// 		query += "&" + filter;
-				// 	})
-				// };
-				// return query;
-			// }
-		//==========================================================================
-
-
 		//====================== called from nonmapEvents.js =======================
 		// submits query for each area selected on the UI map (with selected filters built in.) and passes the data from the server response to renderData.js.
-		function getChartData() {
-			selected_areas.forEach(function(geo_id) {
-				$.get('/area/'+geo_id /* queryBuilder() (above) */, function(data){
+		function getChartData(query_strings_array) {
+			for (var i=selected_areas.length-1; i>=0; i--) {
+				$.get('/data/'+selected_areas[i]+"/"+query_strings_array[i], function(data){
 					// these functions in renderData.js
-					generateChart(data.focus_subject_data_array, data.area_name);
+					// console.log(data.area_data, data.area_name);
+					generateChart(data.area_data, data.area_name);
 					renderDescriptionText(data.area_description_string);
 				});
-			})
+			}
 		}
 		//==============================================================================
 

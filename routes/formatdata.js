@@ -59,7 +59,7 @@ var state_abbrs = { AL: 'Alabama',
 //======================= create area description string =======================
 		// Create a string describing the area queried for - number of donors,
 		// total $ donated, and number of students reached.
-		function makeAreaDescriptionString(data_array, area_name){
+		function makeAreaDescriptionString(projects_array, area_name){
 			var properties = ['num_donors', 'total_donations', 'students_reached'];
 			var all_properties_object = {
 				'projects': 0
@@ -68,7 +68,7 @@ var state_abbrs = { AL: 'Alabama',
 				return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 			};
 
-			data_array.forEach(function(project){
+			projects_array.forEach(function(project){
 				all_properties_object.projects++;
 				properties.forEach(function(property){
 					if (!all_properties_object[property]) {
@@ -79,15 +79,32 @@ var state_abbrs = { AL: 'Alabama',
 				})
 			});
 
-
-			var description_string = "<h2>"+area_name+"</h2>"+commaInserter(all_properties_object.num_donors)+
+			var description_string = "<h2>"+area_name+"</h2><p>"+commaInserter(all_properties_object.num_donors)+
 				" donors contributed $"+commaInserter(Math.floor(all_properties_object.total_donations))+
 				" to "+commaInserter(all_properties_object.projects)+" projects, reaching "+
-				commaInserter(all_properties_object.students_reached)+" students.";
+				commaInserter(all_properties_object.students_reached)+" students.</p>";
 
 			return description_string;
 		}
 //=================== end create area description string =======================
+
+
+
+//=============== select visualization for which to format =====================
+		function selectVisualization(filter_string, area_name, projects) {
+			switch (filter_string) {
+				case "poverty":
+					return formatdata.formatPovertyData(projects, area_name);
+					break;
+				case "resource":
+					return formatdata.formatResourceData(projects, area_name);
+					break;
+				case "focus_subject":
+					return formatdata.formatFocusSubjectData(projects, area_name);
+					break;
+			}
+		};
+//====================== end select visualization ==============================
 
 
 //======================= format poverty data ==================================
@@ -115,7 +132,6 @@ var state_abbrs = { AL: 'Alabama',
 			}
 
 			poverty_data = formatDataForPieChart(poverty_data_array, "Poverty", area_name);
-			// console.log(poverty_data)
 			return poverty_data;
 		};
 //======================= end format poverty data ==============================
@@ -261,4 +277,4 @@ var state_abbrs = { AL: 'Alabama',
 //==============================================================================
 
 
-module.exports = { 'state_abbrs':state_abbrs, 'formatPovertyData':formatPovertyData, 'formatResourceData':formatResourceData, 'formatFocusSubjectData':formatFocusSubjectData, 'makeAreaDescriptionString':makeAreaDescriptionString };
+module.exports = { 'state_abbrs':state_abbrs, 'formatPovertyData':formatPovertyData, 'formatResourceData':formatResourceData, 'formatFocusSubjectData':formatFocusSubjectData, 'makeAreaDescriptionString':makeAreaDescriptionString, "selectVisualization": selectVisualization };
