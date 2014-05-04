@@ -51,7 +51,13 @@ var initD3 = function() {
 
 			// change color of area "on click"
 			.on("click", function(d){
-				if (d3.select(this).classed("selected") !== true) { // if area is not selected (already colored)
+				// if the state clicked is California or New York, don't
+				// let user select it - query is too expensive for our current system.
+				if (d.properties.NAME === "California" || d.properties.NAME === "New York") {
+					alert("We're sorry, but this is a beta version of the Needometer, and selecting "+d.properties.NAME+" will cause it to crash. Please select another area.");
+				}
+				//otherwise
+				else if (d3.select(this).classed("selected") !== true) { // if area is not selected (already colored)
 
 					// set its color to "selected" color
 					d3.select(this).classed("active", false);
