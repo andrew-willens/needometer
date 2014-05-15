@@ -1,7 +1,7 @@
 Welcome to the Needometer
 =================
 
-The Needometer is a database interface for opendata at [donorschoose.org](data.donorschose.org), allowing users to explore relationships within 13 years of historic data on projects posted on the site since the organization's inception. Check out the [live demo](needometer.fullstackacademy.com) of the most recent iteration!
+The Needometer is a database interface for opendata at [donorschoose.org](http://data.donorschose.org), allowing users to explore relationships within 13 years of historic data on projects posted on the site since the organization's inception. Check out the [live demo](http://needometer.fullstackacademy.com) of the most recent iteration!
 
 ##Specs:
 - Stack: MongoDB, Express.js, Node.js, jQuery.js
