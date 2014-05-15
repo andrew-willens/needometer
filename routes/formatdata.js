@@ -52,7 +52,8 @@ var state_abbrs = { AL: 'Alabama',
   WA: 'Washington',
   WV: 'West Virginia',
   WI: 'Wisconsin',
-  WY: 'Wyoming' }
+  WY: 'Wyoming'
+}
 //======================= end data-manipulation variables ======================
 
 
@@ -201,6 +202,19 @@ var state_abbrs = { AL: 'Alabama',
 		function formatDataForPieChart(data, data_type, area_name) {
 			var dataProvider = data,
 					header_text = "DonorsChoose Projects by "+data_type+" in "+area_name;
+
+			 var colors = [
+		    "#FF0F00", "#FF6600", "#FF9E01", "#FCD202", "#F8FF01", "#B0DE09",
+		    "#04D215", "#0D8ECF", "#0D52D1", "#2A0CD0", "#8A0CCF", "#CD0D74",
+		    "#04D215", "#0D8ECF", "#0D52D1", "#2A0CD0", "#8A0CCF", "#CD0D74",
+		    "#04D215", "#0D8ECF", "#0D52D1", "#2A0CD0", "#8A0CCF", "#CD0D74",
+		    "#04D215", "#0D8ECF", "#0D52D1", "#2A0CD0", "#8A0CCF", "#CD0D74",
+		    "#754DEB", "#DDDDDD", "#999999", "#333333", "#000000"
+		  ];
+
+		  for (var i=0; i<dataProvider.length; i++) {
+		    dataProvider[i].color = colors[i];
+		  }
 
 			return {
 				"type": "pie",

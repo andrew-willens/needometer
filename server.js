@@ -26,8 +26,11 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+// routing for all requests (GET, POST, DELETE, PUTS)
 app.get('/', routes.index);
-app.get('/data/:area_id/:query', routes.areaData);
+
+// '/data/:area_id/:query' is the format of the string passed back by GET request from function call 'getChartData()' from public/js/fetchData.js
+app.get('/data/:area_id/:query', routes.areaData); // in routes/index.js
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

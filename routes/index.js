@@ -24,14 +24,19 @@ exports.areaData = function(req, res) {
 
 	console.log("Querying mongodb for "+area_id+" projects.");
 	console.log(new Date()); //timestamp = start time of mongodb query
-	models.Project.find({"school_state": area_id }, function(err, projects){
+
+  // models.Project.find() is the functionality that access MongoDB
+  // it is located in models/index.js
+  models.Project.find({"school_state": area_id }, function(err, projects){
 		if (err) console.log(err);
 
+    // formatdata is a module passed in from routes/formatdata.js
 		var area_name = formatdata.state_abbrs[area_id],
 				area_description_string = formatdata.makeAreaDescriptionString(projects, area_name);
 				area_data = formatdata.selectVisualization(filter_string, area_name, projects);
 
-		// // this data sent to/used by getChartData(), in js/data/fetchData.js
+		// this data sent to/used by getChartData(), in js/data/fetchData.js
+    // res.send() is an Express.js function
 		res.send({'area_name':area_name, 'area_description_string':area_description_string, 'area_data':area_data });
 		console.log(new Date()); //timestamp = end time of mongodb query
 	});
