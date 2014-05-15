@@ -1,9 +1,12 @@
 {
-	"name": "starte-node-angular",
-	"version": "1.0.0",
+	"name": "Needometer",
+	"version": "1.0.3",
 	"dependencies": {
 		"bootstrap": "latest",
-		"angular": "latest",
-		"angular-route": "latest"
+    "d3": "latest",
+    "fontawesome": "latest",
+    "jquery": "latest",
+    "topojson": "latest",
+    "amcharts": "latest"
 	}
 }
