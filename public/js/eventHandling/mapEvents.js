@@ -25,13 +25,14 @@ var initD3 = function() {
 			.attr("viewBox", "0 0 " + width + " " + height)
 			.attr("preserveAspectRatio", "xMidYMid");
 
-
-  var state_geometries = {type: 'GeometryCollection', geometries: states}
+  // 'var states' and 'var us' are instantiated in bottomscripts of root/views/index.html.
+  // they're objects containing geographic data on us states and the U.S.A.
+  var state_geometries = {type: 'GeometryCollection', geometries: states};
   us['objects'] = {};
   us.objects['states'] = state_geometries;
-  states = topojson.feature(us, state_geometries).features;
+  var states = topojson.feature(us, state_geometries).features;
 
-	// create USA map by creating a DOM element for each USA state object passed to D3.
+	// create USA map by creating a DOM element for each state object passed to D3 functions.
   svg.selectAll("path")
 			.data(states)
 		.enter().append("path")
@@ -55,7 +56,7 @@ var initD3 = function() {
 		// change color of area "on click"
 		.on("click", function(d){
 			// if the state clicked is California or New York, don't
-			// let user select it - query is too expensive for our current system.
+			// let user select it - query is too expensive for current system.
 			if (d.properties.NAME === "California" || d.properties.NAME === "New York") {
 				alert("We're sorry, but this is a beta version of the Needometer, and selecting "+d.properties.NAME+" will cause it to crash. Please select another area.");
 			}
@@ -75,7 +76,7 @@ var initD3 = function() {
 				// reset the area's color back to default color
 				d3.select(this).classed("selected", false);
 
-				 // these functions in eventLogic/uiLogic.js
+				// these functions in eventLogic/uiLogic.js
 				unselectArea(d);
 				toggleBothSidebars();
 			}

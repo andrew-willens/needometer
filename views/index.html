@@ -134,11 +134,13 @@
   <!-- script calls -->
   <script>
     {% autoescape false %}
+      // these variables utilized in root/public/js/eventHandling/mapEvents.js
       var states = {{ states | json }};
       var us = {{ topology | json }}
     {% endautoescape %}
-  	initD3();
-  	initEvents();
+
+  	initD3(); //root/public/js/eventHandling/mapEvents.js
+  	initEvents(); //root/public/js/eventHandling/nonMapEvents.js
   </script>
 </body>
 </html>
