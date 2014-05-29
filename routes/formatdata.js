@@ -201,7 +201,7 @@ var state_abbrs = { AL: 'Alabama',
 //==============================================================================
 		function formatDataForPieChart(data, data_type, area_name) {
 			var dataProvider = data,
-					header_text = "DonorsChoose Projects by "+data_type+" in "+area_name;
+					header_text = "Projects by "+data_type+" in "+area_name;
 
 			 var colors = [
 		    "#FF0F00", "#FF6600", "#FF9E01", "#FCD202", "#F8FF01", "#B0DE09",
@@ -241,7 +241,7 @@ var state_abbrs = { AL: 'Alabama',
 //==============================================================================
 		function formatDataForBarChart(data, data_type, area_name) {
 				var dataProvider = data,
-		      header_text = "DonorsChoose Projects by "+data_type+" in "+area_name;
+		      header_text = "Projects by "+data_type+" in "+area_name;
 
 		  var colors = [
 		    "#FF0F00", "#FF6600", "#FF9E01", "#FCD202", "#F8FF01", "#B0DE09",
