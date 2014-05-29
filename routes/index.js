@@ -9,7 +9,13 @@ formatdata = require('./formatdata');
 
 //==============================================================================
 exports.index = function(req, res) {
-	res.render('index');
+	models.State.find({}, function(err, states){
+    if (err) throw(err);
+    models.Topology.findOne({}, function(err, topo){
+
+      res.render('index', {'states': states, 'topology': {arcs: topo.arcs, transform: topo.transform, type: topo.type}});
+    })
+  })
 };
 //==============================================================================
 

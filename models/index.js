@@ -57,24 +57,21 @@ var projectSchema = new Schema({
   'date_expiration': Date
 });
 
-var countiesSchema = new Schema({
-  'type': String,
-  // properties will have these attributes:
-  // STATEFP (String), AWATER (Number), Projects (Object Array)
-  'properties': Object, // includes state
-  'id': String,
-  'arcs': Array
-  // 'school_state': String,
-  // 'school_county': String
+var stateSchema = new Schema({
+  'arcs': Object,
+  'properties': Object, // attributes = AWATER (Number)[delete this], NAME(String), STUSPS(String), STATEFP (Number), , Projects (Object Array)
+  'type': String
 });
 
-var statesSchema = new Schema({
-  // 'school_state': String
-  'school_state': [countiesSchema]
+var topologySchema = new Schema({
+  'arcs': Array,
+  'transform': Object,
+  'type': String
 });
 
-var Project = mongoose.model('Project', projectSchema);
-var Counties = mongoose.model('Counties', countiesSchema);
-var States = mongoose.model('States', statesSchema);
+var Project = mongoose.model('Project', projectSchema),
+    State = mongoose.model('State', stateSchema),
+    Topology = mongoose.model('Topology', topologySchema);
 
-module.exports = { 'Project': Project, 'Counties': Counties, 'States': States };
+
+module.exports = { 'Project': Project, 'State': State, 'Topology': Topology };

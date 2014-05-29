@@ -133,6 +133,10 @@
 
   <!-- script calls -->
   <script>
+    {% autoescape false %}
+      var states = {{ states | json }};
+      var us = {{ topology | json }}
+    {% endautoescape %}
   	initD3();
   	initEvents();
   </script>
